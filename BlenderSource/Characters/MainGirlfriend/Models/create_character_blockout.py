@@ -24,9 +24,10 @@ from mathutils.bvhtree import BVHTree
 # Main proportions (metres)
 # ===========================================================================
 
-CHARACTER_HEIGHT = 1.65   # sole to head top
-HEAD_HEIGHT = 0.55        # chin to head top (no hair). Head top stays at CHARACTER_HEIGHT; grows downward
-HEAD_WIDTH = 0.486        # skull width at its widest (temples), front view. Not the hair silhouette
+CHARACTER_HEIGHT = 1.65   # sole to head top including the hair volume on the crown
+HEAD_HEIGHT = 0.55        # chin to CHARACTER_HEIGHT. Grows downward from the head top
+CROWN_HAIR_SPACE = 0.015  # the bare skull top sits this far below CHARACTER_HEIGHT; the hair fills the gap later
+HEAD_WIDTH = 0.42         # skull width at its widest (temples), front view. Hair volume is added later
 HEAD_DEPTH = 0.48         # skull depth, side view; face front matches Side.png skin, skull stays inside the hair
 SHOULDER_WIDTH = 0.28     # outer shoulder to outer shoulder
 TORSO_LENGTH = 0.22       # waist to shoulder top
@@ -42,11 +43,15 @@ ARM_LENGTH = 0.32         # shoulder joint to wrist
 PELVIS_HEIGHT = 0.21      # crotch to waist
 WAIST_WIDTH = 0.19
 CHEST_WIDTH = 0.23
-NECK_RADIUS = 0.045
-NECK_FLARE_HEIGHT = 0.035 # trapezius flare above the shoulder line; higher = shorter visible neck
+NECK_RADIUS = 0.04        # neck radius just under the chin; the base is a few percent thinner
+NECK_FLARE_HEIGHT = 0.035 # height of the lower neck ring above the shoulder line
+TORSO_TOP_HALF_WIDTH = 0.072  # half width of the torso top ring around the neck base
 NECK_HEAD_INSET = 0.09    # how far the neck reaches up inside the head
 NECK_TOP_OFFSET_Y = -0.035 # neck top relative to the head centre (-Y = toward the chin); leans the neck forward
+NECK_BACK_OFFSET = 0.028  # moves the whole neck toward the back of the head / upper back (+Y)
 
+SHOULDER_JOINT_DROP = 0.055  # shoulder joint below the shoulder line; larger = the arm top sinks to the trapezius slope
+ARM_ROOT_SCALE = 0.8      # size of the arm end hidden in the torso; smaller = no ball rising above the shoulder
 ARM_ANGLE_DEG = 52.0      # A-pose: upper arm angle below horizontal (front view)
 FOREARM_ANGLE_DEG = 55.0  # forearm angle below horizontal (front view)
 ELBOW_BEND_DEG = 2.0      # forearm bends forward (-Y)
@@ -78,12 +83,16 @@ HEEL_BACK = 0.046         # heel extends this far behind the ankle (+Y)
 # ===========================================================================
 
 CHEST_DEPTH = 0.18
-BUST_FORWARD = 0.072      # extra chest depth on the front side only (bare body, blouse excluded)
+BUST_FORWARD = 0.09       # extra chest depth on the front side only (bare body, blouse excluded)
 BUST_CENTER = 0.47        # height of the fullest point, as a fraction of TORSO_LENGTH above the waist
-BUST_SPACING = 0.045      # distance of each bust mound's centre from the body centre line (X)
-BUST_RADIUS = 0.065       # sideways radius of each mound; smaller = deeper gap between the two
-BUST_HEIGHT = 0.065       # vertical radius of each mound; larger = rounder, less pointed
-BUST_ROUNDNESS = 0.75     # mound profile exponent; lower = fuller, more spherical
+BUST_SPACING = 0.062      # distance of each bust mound's centre from the body centre line (X)
+BUST_RADIUS = 0.078       # outward radius of each mound (toward the arm)
+BUST_INNER_RADIUS = 0.066 # inward radius of each mound; smaller = deeper cleavage, separately rounded undersides
+BUST_TOP = 0.095          # mound radius above the fullest point; larger = longer, gentler upper slope
+BUST_BOTTOM = 0.062       # mound radius below the fullest point; smaller = rounder, fuller underside
+BUST_ROUNDNESS = 0.55     # mound profile exponent; lower = fuller, more spherical (0.5 = half ellipsoid)
+BUST_SIDE = 0.4           # share of the mound that also bulges outward (front view fullness)
+BUST_EDGE_SOFTNESS = 0.2  # how gradually the mound edge blends into the chest; 0 = sharp crease under the bust
 UPPER_CHEST_FORWARD = ((0.64, 0.0), (0.8, 0.3), (0.91, 0.0))  # (t, share of BUST_FORWARD) for the upper-chest rings
 WAIST_DEPTH = 0.15
 HIP_DEPTH = 0.198
@@ -106,7 +115,9 @@ HEAD_OFFSET_Y = 0.025     # skull centre relative to the body axis (-Y = toward 
 # Head shape (face outline only, no eyes / nose / mouth)
 # ===========================================================================
 
-HEAD_EQUATOR = 0.48           # widest point of the head, as a fraction of HEAD_HEIGHT above the chin
+HEAD_EQUATOR = 0.52           # widest point of the head, as a fraction of HEAD_HEIGHT above the chin
+UPPER_HEAD_FULLNESS = 0.7     # <1 rounds out the skull above the widest point, 1 = plain sphere (egg-shaped top)
+FOREHEAD_FULLNESS = 1.25      # same as UPPER_HEAD_FULLNESS but for the front of the crown; higher = forehead top recedes
 LOWER_FACE_FULLNESS = 0.65    # <1 keeps the lower face (cheeks) wide, 1 = plain sphere
 CHIN_ROUNDNESS = 0.9          # <1 flattens the chin bottom into a U shape, 1 = round/pointed
 JAW_TAPER = 0.42              # 0 = no taper, higher = narrower chin
@@ -118,6 +129,16 @@ CHEEK_SPREAD = 0.6            # cheek centre distance from the face centre line 
 CHEEK_SIZE = 0.32             # cheek bulge radius on the unit sphere
 FACE_FLATNESS = 0.10          # flattens the front of the face
 BACK_OF_HEAD_FULLNESS = 0.06  # rounder back of the skull
+# Front-view face outline below the eyes. Replaces the jaw formula above up to FACE_OUTLINE_TOP.
+# Fitted to the concept face close-up (eye spacing 0.216 m as the scale), face width at height above chin:
+# 0.207 m @ 3.2 cm, 0.25 m @ 5 cm, 0.29 m @ 8 cm, 0.31 m @ 12 cm, 0.335 m @ 15.5 cm.
+FACE_OUTLINE_TOP = 0.19       # height above the chin (m) where the outline hands over to the skull
+FACE_WIDTH_AT_TOP = 0.37     # face width (m) at FACE_OUTLINE_TOP (eye level)
+JAW_ROUNDNESS = 2.2           # higher = fuller cheeks and a rounder jaw line
+CHIN_TAPER = 0.35             # narrows only the tip of the chin (0 = fully round chin)
+CHIN_TAPER_CURVE = 8.0        # higher keeps the taper closer to the chin tip
+FACE_OUTLINE_BLEND = 0.035    # height range (m) below FACE_OUTLINE_TOP that blends into the skull
+JAW_LIFT = 0.0                # the jaw rises at the sides toward the ears (fraction of HEAD_HEIGHT); chin stays lowest
 
 
 # ===========================================================================
@@ -131,11 +152,12 @@ MATERIAL_NAME = "MG_Skin_Blockout"
 SKIN_COLOR = (1.0, 0.87, 0.80)  # sRGB
 
 RING_SEGMENTS = 16
-HEAD_SEGMENTS = 24
-HEAD_RINGS = 16
+HEAD_SEGMENTS = 32
+HEAD_RINGS = 24
 SUBDIV_LEVELS = 2
+SCULPT_DETAIL_LEVELS = 2  # subdivision levels baked into sculpted parts (bust) before sculpting; higher = smoother mounds
 
-AUTO_FIT_HEIGHT = True    # rescale uniformly so the subdivided result is exactly CHARACTER_HEIGHT
+AUTO_FIT_HEIGHT = True    # rescale uniformly so the subdivided result is exactly CHARACTER_HEIGHT - CROWN_HAIR_SPACE
 HEIGHT_TOLERANCE = 0.01
 
 
@@ -265,6 +287,13 @@ def mirror_x(verts):
 def head_shape(x, y, w):
     """Map a unit-sphere point (y < 0 is the face) to the head surface."""
     lower = max(0.0, -w)
+    if w > 0.0:
+        # Superellipse upper half: a round, full skull instead of an egg-shaped top.
+        s = math.hypot(x, y)
+        if s > 0.0:
+            front_share = max(0.0, -y / s) ** 2
+            k = s ** (UPPER_HEAD_FULLNESS + (FOREHEAD_FULLNESS - UPPER_HEAD_FULLNESS) * front_share) / s
+            x, y = x * k, y * k
     if w < 0.0:
         # Superellipse lower half: wider cheeks and a flatter, U-shaped chin.
         s = math.hypot(x, y)
@@ -276,7 +305,7 @@ def head_shape(x, y, w):
 
     px = x * HEAD_WIDTH / 2.0
     py = y * HEAD_DEPTH / 2.0
-    pz = w * HEAD_HEIGHT * ((1.0 - HEAD_EQUATOR) if w >= 0.0 else HEAD_EQUATOR)
+    pz = w * (HEAD_HEIGHT * (1.0 - HEAD_EQUATOR) - CROWN_HAIR_SPACE if w >= 0.0 else HEAD_HEIGHT * HEAD_EQUATOR)
 
     px *= 1.0 - JAW_TAPER * lower ** JAW_CURVE
     if y > 0.0:
@@ -291,8 +320,36 @@ def head_shape(x, y, w):
 
     py -= CHIN_FORWARD * HEAD_DEPTH * lower ** 2
 
+    if lower > 0.0:
+        px, pz = fit_face_outline(x, y, px, pz, lower)
+
     center_z = CHARACTER_HEIGHT - HEAD_HEIGHT * (1.0 - HEAD_EQUATOR)
     return Vector((px, HEAD_OFFSET_Y + py, center_z + pz))
+
+
+def outline_width(h):
+    """Front-view face width at height h above the chin: rounded jaw curve with a slightly narrower chin tip."""
+    q = min(1.0, max(0.0, (FACE_OUTLINE_TOP - h) / FACE_OUTLINE_TOP))
+    return FACE_WIDTH_AT_TOP * max(0.0, 1.0 - q ** JAW_ROUNDNESS) ** 0.5 * (1.0 - CHIN_TAPER * q ** CHIN_TAPER_CURVE)
+
+
+def fit_face_outline(x, y, px, pz, lower):
+    """Lower face: lift the sides of the jaw toward the ears, then give each height the FACE_OUTLINE width."""
+    ring = math.hypot(x, y)
+    if ring == 0.0:
+        return px, pz
+    # Sides only: the chin (front) stays lowest and the underside at the neck (back) keeps its height.
+    sideness = 1.0 - abs(y / ring)
+    pz += JAW_LIFT * HEAD_HEIGHT * lower ** 2 * sideness
+    h = HEAD_HEIGHT * HEAD_EQUATOR + pz
+    fitted = (x / ring) * outline_width(h) / 2.0
+    blend = smoothstep(FACE_OUTLINE_TOP - FACE_OUTLINE_BLEND, FACE_OUTLINE_TOP, h)
+    return fitted + (px - fitted) * blend, pz
+
+
+def smoothstep(edge0, edge1, value):
+    t = min(1.0, max(0.0, (value - edge0) / (edge1 - edge0)))
+    return t * t * (3.0 - 2.0 * t)
 
 
 def build_head():
@@ -329,19 +386,19 @@ def build_neck():
     flare_top_z = min(shoulder_z + NECK_FLARE_HEIGHT, chin_z - 0.01)
     top_z = chin_z + NECK_HEAD_INSET
     r = NECK_RADIUS
-    # The neck leans from the torso axis (Y = 0) toward the head centre so it meets the head under the skull.
+    # The neck leans from NECK_BACK_OFFSET toward the head centre so it meets the head under the skull.
     top_y = HEAD_OFFSET_Y + NECK_TOP_OFFSET_Y
-    # (z, radius, fraction of top_y): wide trapezius base so only a short neck shows under the chin.
+    # (z, radius, fraction of top_y): a slim, even neck that is very slightly thinner at the base.
     profile = [
-        (base_z, r * 1.6, 0.0),
-        (shoulder_z, r * 1.4, 0.15),
-        (flare_top_z, r * 1.08, 0.4),
-        ((flare_top_z + chin_z) / 2.0, r, 0.6),
+        (base_z, r * 0.94, 0.0),
+        (shoulder_z, r * 0.95, 0.15),
+        (flare_top_z, r * 0.97, 0.4),
+        ((flare_top_z + chin_z) / 2.0, r * 0.99, 0.6),
         (chin_z, r, 0.8),
         (top_z, r * 0.95, 1.0),
     ]
     rings = [
-        horizontal_ring(z, radius, radius * 1.05, radius * 1.05, center_y=top_y * k)
+        horizontal_ring(z, radius, radius * 1.05, radius * 1.05, center_y=top_y * k + NECK_BACK_OFFSET)
         for z, radius, k in profile
     ]
     verts, faces = loft(rings, RING_SEGMENTS, 0.5, 0.5)
@@ -364,10 +421,13 @@ def build_torso():
         (0.64, CHEST_WIDTH / 2.0 * 1.02, half_cd, half_cd),
         (0.8, SHOULDER_WIDTH / 2.0 - 0.01, half_cd * 0.85, half_cd * 0.9),
         (0.91, SHOULDER_WIDTH / 2.0 * 0.8, half_cd * 0.65, half_cd * 0.7),
-        (1.0, NECK_RADIUS * 1.6, half_cd * 0.4, half_cd * 0.45),
+        (0.95, TORSO_TOP_HALF_WIDTH, half_cd * 0.4, half_cd * 0.45),
     ]
+    # The top rings follow the neck backward so the neck flows into the upper back.
+    neck_follow = {0.91: 0.3, 0.95: 0.7}
     rings = [
-        horizontal_ring(waist_z + TORSO_LENGTH * t, hw, front + BUST_FORWARD * upper_chest(t), back)
+        horizontal_ring(waist_z + TORSO_LENGTH * t, hw, front + BUST_FORWARD * upper_chest(t), back,
+                        center_y=NECK_BACK_OFFSET * neck_follow.get(t, 0.0))
         for t, hw, front, back in profile
     ]
     verts, faces = loft(rings, RING_SEGMENTS, 0.5, 0.3)
@@ -383,16 +443,24 @@ def upper_chest(t):
 
 
 def sculpt_bust(v):
-    """Two round elliptical bust mounds (left/right) instead of one ridge down the middle of the chest."""
+    """Two full, rounded bust mounds: a long gentle upper slope and a round underside."""
     if v.y >= 0.0:
         return
     waist_z = landmarks()["waist"]
     bust_z = waist_z + TORSO_LENGTH * BUST_CENTER
-    d2 = ((abs(v.x) - BUST_SPACING) / BUST_RADIUS) ** 2 + ((v.z - bust_z) / BUST_HEIGHT) ** 2
-    if d2 < 1.0:
-        # Only add what the upper-chest ring has not already pushed forward.
-        mound = (1.0 - d2) ** BUST_ROUNDNESS - upper_chest((v.z - waist_z) / TORSO_LENGTH)
-        v.y -= BUST_FORWARD * max(0.0, mound)
+    dx = (abs(v.x) - BUST_SPACING) / (BUST_RADIUS if abs(v.x) > BUST_SPACING else BUST_INNER_RADIUS)
+    dz = (v.z - bust_z) / (BUST_TOP if v.z > bust_z else BUST_BOTTOM)
+    d2 = dx * dx + dz * dz
+    if d2 >= 1.0:
+        return
+    # Only add what the upper-chest ring has not already pushed forward.
+    edge = smoothstep(0.0, BUST_EDGE_SOFTNESS, 1.0 - d2) if BUST_EDGE_SOFTNESS > 0.0 else 1.0
+    mound = (1.0 - d2) ** BUST_ROUNDNESS * edge - upper_chest((v.z - waist_z) / TORSO_LENGTH)
+    # Fade out toward the flanks so the mound never steps at the side of the torso.
+    facing = smoothstep(0.0, 0.45, -v.y / math.hypot(v.x, v.y))
+    push = BUST_FORWARD * max(0.0, mound) * facing
+    v.y -= push
+    v.x += math.copysign(push * BUST_SIDE * min(1.0, max(0.0, dx)), v.x)
 
 
 def build_pelvis():
@@ -423,7 +491,7 @@ def build_pelvis():
 
 def arm_joints():
     lm = landmarks()
-    shoulder = Vector((SHOULDER_WIDTH / 2.0 - UPPER_ARM_RADIUS, ARM_ROOT_OFFSET_Y, lm["shoulder_top"] - 0.045))
+    shoulder = Vector((SHOULDER_WIDTH / 2.0 - UPPER_ARM_RADIUS, ARM_ROOT_OFFSET_Y, lm["shoulder_top"] - SHOULDER_JOINT_DROP))
     swing = math.tan(math.radians(ARM_SWING_BACK_DEG))
 
     def hanging(angle_deg):
@@ -443,7 +511,7 @@ def build_arm():
     shoulder, elbow, wrist, _ = arm_joints()
     d = LIMB_DEPTH_SCALE
     profile = [
-        (-0.15, UPPER_ARM_RADIUS * 1.05),
+        (-0.15, UPPER_ARM_RADIUS * ARM_ROOT_SCALE),
         (0.0, UPPER_ARM_RADIUS * 1.1),
         (0.4, UPPER_ARM_RADIUS),
         (0.85, UPPER_ARM_RADIUS * 0.85),
@@ -634,12 +702,12 @@ def create_part(name, verts, faces, pivot, collection, material, sculpt=None):
 
 
 def presubdivide(obj, modifier, sculpt):
-    """Bake one subdivision level into the cage, then sculpt the denser cage.
+    """Bake SCULPT_DETAIL_LEVELS subdivision levels into the cage, then sculpt the denser cage.
 
     Without the limit-surface projection the baked cage has the same limit surface,
-    so un-sculpted areas end up identical to the plain SUBDIV_LEVELS result.
+    so un-sculpted areas keep the shape of the plain SUBDIV_LEVELS result.
     """
-    modifier.levels = 1
+    modifier.levels = SCULPT_DETAIL_LEVELS
     modifier.use_limit_surface = False
     bpy.context.view_layer.update()
     old_mesh = obj.data
@@ -647,8 +715,8 @@ def presubdivide(obj, modifier, sculpt):
     baked.name = old_mesh.name
     obj.data = baked
     bpy.data.meshes.remove(old_mesh)
-    modifier.levels = SUBDIV_LEVELS - 1
-    modifier.render_levels = SUBDIV_LEVELS - 1
+    modifier.levels = max(1, SUBDIV_LEVELS - SCULPT_DETAIL_LEVELS)
+    modifier.render_levels = modifier.levels
     modifier.use_limit_surface = True
     pivot = obj.location
     for vert in baked.vertices:
@@ -676,9 +744,13 @@ def evaluated_bounds(objects):
     return lo, hi
 
 
+def bare_height():
+    return CHARACTER_HEIGHT - CROWN_HAIR_SPACE
+
+
 def fit_height(objects):
     lo, hi = evaluated_bounds(objects)
-    scale = CHARACTER_HEIGHT / (hi.z - lo.z)
+    scale = bare_height() / (hi.z - lo.z)
     for obj in objects:
         obj.data.transform(Matrix.Scale(scale, 4))
         obj.location = (obj.location - Vector((0.0, 0.0, lo.z))) * scale
@@ -941,7 +1013,7 @@ def report(objects, head, fit_scale, before_metrics, after_metrics):
     head_lo, head_hi = evaluated_bounds([head])
     head_height = head_hi.z - head_lo.z
     problems = []
-    if abs(height - CHARACTER_HEIGHT) > HEIGHT_TOLERANCE or abs(lo.z) > HEIGHT_TOLERANCE:
+    if abs(height - bare_height()) > HEIGHT_TOLERANCE or abs(lo.z) > HEIGHT_TOLERANCE:
         problems.append(f"키·발바닥 오차가 {HEIGHT_TOLERANCE} m 초과")
     if after_metrics and after_metrics.get("shoulder_overlap"):
         problems.append("머리와 어깨·팔이 겹침")
@@ -951,9 +1023,10 @@ def report(objects, head, fit_scale, before_metrics, after_metrics):
 
     result = "결과: 정상" if ok else f"결과: 확인 필요 ({', '.join(problems)})"
     overview = [
-        f"전체 키: {height:.4f} m (목표 {CHARACTER_HEIGHT:.2f} m, 차이 {height - CHARACTER_HEIGHT:+.4f})",
+        f"헤어 제외 키: {height:.4f} m (목표 {bare_height():.3f} m, 차이 {height - bare_height():+.4f})",
+        f"헤어 포함 기준 키: {CHARACTER_HEIGHT:.2f} m (정수리 위 헤어 공간 {CROWN_HAIR_SPACE:.3f} m)",
         f"발바닥 Z: {lo.z:.4f} / 머리 꼭대기 Z: {hi.z:.4f}",
-        f"머리 높이: {head_height:.3f} m -> {height / head_height:.2f}등신",
+        f"머리 높이: {head_height:.3f} m -> {CHARACTER_HEIGHT / HEAD_HEIGHT:.2f}등신 (헤어 포함 기준)",
     ]
     body = body_lines(before_metrics, after_metrics)
     lines = [

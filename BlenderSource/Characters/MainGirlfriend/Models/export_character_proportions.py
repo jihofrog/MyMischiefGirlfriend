@@ -98,7 +98,8 @@ def derived_landmarks(params):
         "waist_z": round(waist, 4),
         "shoulder_top_z": round(shoulder_top, 4),
         "chin_z": round(chin, 4),
-        "head_top_z": params["CHARACTER_HEIGHT"],
+        "head_top_z": round(params["CHARACTER_HEIGHT"] - params.get("CROWN_HAIR_SPACE", 0.0), 4),
+        "hair_top_z": params["CHARACTER_HEIGHT"],
         "chin_to_shoulder_top": round(chin - shoulder_top, 4),
         "heads_tall": round(params["CHARACTER_HEIGHT"] / params["HEAD_HEIGHT"], 3),
     }
@@ -131,8 +132,8 @@ def export(version=DEFAULT_VERSION, force=False):
         "tool_settings": settings,
         "notes": [
             "Derived values come from the parameters. The built mesh is rescaled by AUTO_FIT_HEIGHT "
-            "(about 0.1%) so the subdivided result is exactly CHARACTER_HEIGHT.",
-            "HEAD_HEIGHT excludes hair; the head top of the blockout sits at CHARACTER_HEIGHT.",
+            "(about 0.1%) so the subdivided result is exactly CHARACTER_HEIGHT - CROWN_HAIR_SPACE.",
+            "CHARACTER_HEIGHT includes the hair on the crown; the bare skull top sits CROWN_HAIR_SPACE lower.",
         ],
     }
 

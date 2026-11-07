@@ -1,0 +1,280 @@
+{
+  "character": "MainGirlfriend",
+  "version": "Body_Blockout_v1",
+  "exported_at": "2026-11-07T07:43:32+00:00",
+  "source_script": "create_character_blockout.py",
+  "source_sha256": "8a085810fed21244c737c5d45f01d3c96e89c111d0b1e5e4fbf9aa211bc6898a",
+  "units": "metres, degrees",
+  "conventions": {
+    "front": "-Y",
+    "up": "+Z",
+    "soles_z": 0.0,
+    "character_left": "+X"
+  },
+  "proportions": {
+    "Main proportions (metres)": {
+      "CHARACTER_HEIGHT": 1.65,
+      "HEAD_HEIGHT": 0.55,
+      "HEAD_WIDTH": 0.486,
+      "HEAD_DEPTH": 0.48,
+      "SHOULDER_WIDTH": 0.28,
+      "TORSO_LENGTH": 0.22,
+      "HIP_WIDTH": 0.342,
+      "LEG_LENGTH": 0.64,
+      "ARM_LENGTH": 0.32
+    },
+    "Secondary proportions, front view (measured from References/Front.png)": {
+      "PELVIS_HEIGHT": 0.21,
+      "WAIST_WIDTH": 0.19,
+      "CHEST_WIDTH": 0.23,
+      "NECK_RADIUS": 0.04,
+      "NECK_FLARE_HEIGHT": 0.035,
+      "TORSO_TOP_HALF_WIDTH": 0.072,
+      "NECK_HEAD_INSET": 0.09,
+      "NECK_TOP_OFFSET_Y": -0.035,
+      "NECK_BACK_OFFSET": 0.028,
+      "ARM_ANGLE_DEG": 52.0,
+      "FOREARM_ANGLE_DEG": 55.0,
+      "ELBOW_BEND_DEG": 2.0,
+      "UPPER_ARM_RATIO": 0.55,
+      "UPPER_ARM_RADIUS": 0.038,
+      "FOREARM_RADIUS": 0.031,
+      "WRIST_RADIUS": 0.026,
+      "HAND_LENGTH": 0.138,
+      "HAND_WIDTH": 0.075,
+      "HAND_THICKNESS": 0.032,
+      "LEG_SPACING": 0.08,
+      "ANKLE_SPACING": 0.072,
+      "KNEE_HEIGHT": 0.43,
+      "ANKLE_HEIGHT": 0.08,
+      "THIGH_RADIUS": 0.1,
+      "KNEE_RADIUS": 0.055,
+      "CALF_RADIUS": 0.06,
+      "ANKLE_RADIUS": 0.036,
+      "FOOT_LENGTH": 0.212,
+      "FOOT_WIDTH": 0.092,
+      "FOOT_HEIGHT": 0.08,
+      "HEEL_BACK": 0.046
+    },
+    "Depth, side view. These cannot be derived reliably from the 2D sheet; tune by eye.": {
+      "CHEST_DEPTH": 0.18,
+      "BUST_FORWARD": 0.072,
+      "BUST_CENTER": 0.47,
+      "BUST_SPACING": 0.045,
+      "BUST_RADIUS": 0.065,
+      "BUST_HEIGHT": 0.065,
+      "BUST_ROUNDNESS": 0.75,
+      "UPPER_CHEST_FORWARD": [
+        [
+          0.64,
+          0.0
+        ],
+        [
+          0.8,
+          0.3
+        ],
+        [
+          0.91,
+          0.0
+        ]
+      ],
+      "WAIST_DEPTH": 0.15,
+      "HIP_DEPTH": 0.198,
+      "BUTT_BACK": 0.047,
+      "LIMB_DEPTH_SCALE": 1.0,
+      "THIGH_DEPTH": 0.22,
+      "THIGH_FORWARD": -0.008,
+      "THIGH_OUTWARD": 0.016,
+      "KNEE_DEPTH": 0.13,
+      "CALF_DEPTH": 0.155,
+      "CALF_BACK": 0.022,
+      "CALF_PEAK": 1.22,
+      "ANKLE_DEPTH": 0.075,
+      "ARM_ROOT_OFFSET_Y": 0.04,
+      "ARM_SWING_BACK_DEG": 6.0,
+      "HEAD_OFFSET_Y": 0.025
+    },
+    "Head shape (face outline only, no eyes / nose / mouth)": {
+      "HEAD_EQUATOR": 0.48,
+      "LOWER_FACE_FULLNESS": 0.65,
+      "CHIN_ROUNDNESS": 0.9,
+      "JAW_TAPER": 0.42,
+      "JAW_CURVE": 2.5,
+      "CHIN_FORWARD": 0.1,
+      "CHEEK_PUFF": 0.12,
+      "CHEEK_LEVEL": -0.45,
+      "CHEEK_SPREAD": 0.6,
+      "CHEEK_SIZE": 0.32,
+      "FACE_FLATNESS": 0.1,
+      "BACK_OF_HEAD_FULLNESS": 0.06
+    }
+  },
+  "derived": {
+    "crotch_z": 0.64,
+    "waist_z": 0.85,
+    "shoulder_top_z": 1.07,
+    "chin_z": 1.1,
+    "head_top_z": 1.65,
+    "chin_to_shoulder_top": 0.03,
+    "heads_tall": 3.0
+  },
+  "tool_settings": {
+    "Output": {
+      "COLLECTION_NAME": "MainGirlfriend_Blockout",
+      "PROTECTED_COLLECTION_NAME": "Reference_Images",
+      "OBJECT_PREFIX": "Blockout_",
+      "MATERIAL_NAME": "MG_Skin_Blockout",
+      "SKIN_COLOR": [
+        1.0,
+        0.87,
+        0.8
+      ],
+      "RING_SEGMENTS": 16,
+      "HEAD_SEGMENTS": 24,
+      "HEAD_RINGS": 16,
+      "SUBDIV_LEVELS": 2,
+      "AUTO_FIT_HEIGHT": true,
+      "HEIGHT_TOLERANCE": 0.01,
+      "PART_TAG": "mg_blockout_part",
+      "SEPARATE_PAIRS": [
+        [
+          "Leg.L",
+          "Leg.R"
+        ],
+        [
+          "Hand.L",
+          "Pelvis"
+        ],
+        [
+          "Hand.L",
+          "Leg.L"
+        ],
+        [
+          "Hand.L",
+          "Torso"
+        ],
+        [
+          "Arm.L",
+          "Pelvis"
+        ],
+        [
+          "Foot.L",
+          "Foot.R"
+        ]
+      ],
+      "NECK_LINE_NAMES": {
+        "front": "앞",
+        "side": "옆",
+        "back": "뒤"
+      },
+      "BODY_METRICS": [
+        [
+          "가슴 앞쪽 돌출 (몸 중심 기준)",
+          "chest_front",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "가슴 너비",
+          "chest_width",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "힙 너비",
+          "hip_width",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "힙 깊이",
+          "hip_depth",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "힙 뒤쪽 돌출 (몸 중심 기준)",
+          "hip_back",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "힙 볼륨 (m³)",
+          "hip_volume",
+          "{:.5f}",
+          true
+        ],
+        [
+          "허벅지 상단 너비",
+          "thigh_width",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "허벅지 상단 앞뒤 두께",
+          "thigh_depth",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "무릎 (가장 가는 지점) Z",
+          "knee_z",
+          "{:.3f} m",
+          false
+        ],
+        [
+          "종아리 최대 앞뒤 두께",
+          "calf_max_depth",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "종아리 최대 두께 위치 Z",
+          "calf_max_z",
+          "{:.3f} m",
+          false
+        ],
+        [
+          "종아리 뒤쪽 돌출 (몸 중심 기준)",
+          "calf_back",
+          "{:+.3f} m",
+          false
+        ],
+        [
+          "손 길이 (손목→손끝)",
+          "hand_length",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "손 너비 (엄지 포함)",
+          "hand_width",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "발 길이",
+          "foot_length",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "발 너비",
+          "foot_width",
+          "{:.3f} m",
+          true
+        ],
+        [
+          "발바닥 Z",
+          "foot_bottom_z",
+          "{:.3f} m",
+          false
+        ]
+      ]
+    }
+  },
+  "notes": [
+    "Derived values come from the parameters. The built mesh is rescaled by AUTO_FIT_HEIGHT (about 0.1%) so the subdivided result is exactly CHARACTER_HEIGHT.",
+    "HEAD_HEIGHT excludes hair; the head top of the blockout sits at CHARACTER_HEIGHT."
+  ]
+}
