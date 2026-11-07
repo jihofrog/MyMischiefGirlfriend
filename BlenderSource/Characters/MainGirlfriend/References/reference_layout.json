@@ -1,0 +1,51 @@
+{
+  "source_image": "MainGirlfriend_Reference.png",
+  "character_height_px": 321,
+  "views": {
+    "Front": {
+      "file": "Front.png",
+      "width": 184,
+      "height": 353,
+      "head_top_px": 16,
+      "sole_px": 337,
+      "center_x_px": 92.0,
+      "source_box": [
+        400,
+        52,
+        551,
+        370
+      ],
+      "scale": 1.009434
+    },
+    "Side": {
+      "file": "Side.png",
+      "width": 152,
+      "height": 353,
+      "head_top_px": 16,
+      "sole_px": 337,
+      "center_x_px": 76.0,
+      "source_box": [
+        739,
+        48,
+        859,
+        369
+      ],
+      "scale": 1.0
+    },
+    "Back": {
+      "file": "Back.png",
+      "width": 185,
+      "height": 353,
+      "head_top_px": 16,
+      "sole_px": 337,
+      "center_x_px": 92.5,
+      "source_box": [
+        1026,
+        48,
+        1179,
+        369
+      ],
+      "scale": 1.0
+    }
+  }
+}

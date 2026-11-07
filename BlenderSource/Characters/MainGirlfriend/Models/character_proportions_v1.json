@@ -1,0 +1,113 @@
+{
+  "character": "MainGirlfriend",
+  "version": "v1",
+  "exported_at": "2026-11-07T02:57:58+00:00",
+  "source_script": "create_character_blockout.py",
+  "source_sha256": "7ef1929412952da039760f4574e11b45ea60302ecc789ab22a1b30a7fe7d7601",
+  "units": "metres, degrees",
+  "conventions": {
+    "front": "-Y",
+    "up": "+Z",
+    "soles_z": 0.0,
+    "character_left": "+X"
+  },
+  "proportions": {
+    "Main proportions (metres)": {
+      "CHARACTER_HEIGHT": 1.65,
+      "HEAD_HEIGHT": 0.55,
+      "HEAD_WIDTH": 0.486,
+      "HEAD_DEPTH": 0.48,
+      "SHOULDER_WIDTH": 0.28,
+      "TORSO_LENGTH": 0.22,
+      "HIP_WIDTH": 0.32,
+      "LEG_LENGTH": 0.64,
+      "ARM_LENGTH": 0.32
+    },
+    "Secondary proportions, front view (measured from References/Front.png)": {
+      "PELVIS_HEIGHT": 0.21,
+      "WAIST_WIDTH": 0.19,
+      "CHEST_WIDTH": 0.23,
+      "NECK_RADIUS": 0.045,
+      "NECK_FLARE_HEIGHT": 0.035,
+      "NECK_HEAD_INSET": 0.09,
+      "ARM_ANGLE_DEG": 52.0,
+      "ELBOW_BEND_DEG": 8.0,
+      "UPPER_ARM_RATIO": 0.5,
+      "UPPER_ARM_RADIUS": 0.038,
+      "FOREARM_RADIUS": 0.031,
+      "WRIST_RADIUS": 0.024,
+      "HAND_LENGTH": 0.12,
+      "HAND_WIDTH": 0.065,
+      "HAND_THICKNESS": 0.028,
+      "LEG_SPACING": 0.08,
+      "ANKLE_SPACING": 0.072,
+      "KNEE_HEIGHT": 0.4,
+      "ANKLE_HEIGHT": 0.08,
+      "THIGH_RADIUS": 0.082,
+      "KNEE_RADIUS": 0.055,
+      "CALF_RADIUS": 0.06,
+      "ANKLE_RADIUS": 0.036,
+      "FOOT_LENGTH": 0.2,
+      "FOOT_WIDTH": 0.085,
+      "FOOT_HEIGHT": 0.075,
+      "HEEL_BACK": 0.045
+    },
+    "Depth, side view. These cannot be derived reliably from the 2D sheet; tune by eye.": {
+      "CHEST_DEPTH": 0.18,
+      "BUST_FORWARD": 0.035,
+      "WAIST_DEPTH": 0.15,
+      "HIP_DEPTH": 0.19,
+      "BUTT_BACK": 0.025,
+      "LIMB_DEPTH_SCALE": 1.0,
+      "CALF_BACK": 0.012,
+      "HEAD_OFFSET_Y": 0.015
+    },
+    "Head shape (face outline only, no eyes / nose / mouth)": {
+      "HEAD_EQUATOR": 0.48,
+      "LOWER_FACE_FULLNESS": 0.65,
+      "CHIN_ROUNDNESS": 0.9,
+      "JAW_TAPER": 0.42,
+      "JAW_CURVE": 2.5,
+      "CHIN_FORWARD": 0.1,
+      "CHEEK_PUFF": 0.12,
+      "CHEEK_LEVEL": -0.45,
+      "CHEEK_SPREAD": 0.6,
+      "CHEEK_SIZE": 0.32,
+      "FACE_FLATNESS": 0.1,
+      "BACK_OF_HEAD_FULLNESS": 0.06
+    }
+  },
+  "derived": {
+    "crotch_z": 0.64,
+    "waist_z": 0.85,
+    "shoulder_top_z": 1.07,
+    "chin_z": 1.1,
+    "head_top_z": 1.65,
+    "chin_to_shoulder_top": 0.03,
+    "heads_tall": 3.0
+  },
+  "tool_settings": {
+    "Output": {
+      "COLLECTION_NAME": "MainGirlfriend_Blockout",
+      "PROTECTED_COLLECTION_NAME": "Reference_Images",
+      "OBJECT_PREFIX": "Blockout_",
+      "MATERIAL_NAME": "MG_Skin_Blockout",
+      "SKIN_COLOR": [
+        1.0,
+        0.87,
+        0.8
+      ],
+      "RING_SEGMENTS": 16,
+      "HEAD_SEGMENTS": 24,
+      "HEAD_RINGS": 16,
+      "SUBDIV_LEVELS": 2,
+      "AUTO_FIT_HEIGHT": true,
+      "HEIGHT_TOLERANCE": 0.01,
+      "PART_TAG": "mg_blockout_part"
+    }
+  },
+  "notes": [
+    "Derived values come from the parameters. The built mesh is rescaled by AUTO_FIT_HEIGHT (about 0.1%) so the subdivided result is exactly CHARACTER_HEIGHT.",
+    "HEAD_HEIGHT excludes hair; the head top of the blockout sits at CHARACTER_HEIGHT."
+  ]
+}
