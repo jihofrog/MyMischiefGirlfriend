@@ -40,8 +40,8 @@ from mathutils.bvhtree import BVHTree
 # ===========================================================================
 
 EYE_CENTER_HEIGHT = 0.3536 # eye centre above the chin, fraction of head height (Front.png: Z 1.29 m)
-EYE_SPACING = 0.4044       # distance between the two eye centres, fraction of head height (Front.png: 0.216 m)
-EYE_WIDTH = 0.1790         # eye opening width, fraction of head height (0.096 m)
+EYE_SPACING = 0.426        # distance between the two eye centres, fraction of head height (Front.png: 0.228 m)
+EYE_WIDTH = 0.2206         # eye opening width, fraction of head height (Front.png: 0.118 m)
 EYE_HEIGHT = 0.1542        # eye opening height, fraction of head height
 EYE_TILT = 2.0             # degrees; positive lifts the outer corner and lowers the inner corner
 

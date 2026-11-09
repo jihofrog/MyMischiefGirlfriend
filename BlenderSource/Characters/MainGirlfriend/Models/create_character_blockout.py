@@ -29,9 +29,9 @@ HEAD_HEIGHT = 0.55        # chin to CHARACTER_HEIGHT. Grows downward from the he
 CROWN_HAIR_SPACE = 0.015  # the bare skull top sits this far below CHARACTER_HEIGHT; the hair fills the gap later
 HEAD_WIDTH = 0.42         # skull width at its widest (temples), front view. Hair volume is added later
 HEAD_DEPTH = 0.48         # skull depth, side view; face front matches Side.png skin, skull stays inside the hair
-SHOULDER_WIDTH = 0.28     # outer shoulder to outer shoulder
-TORSO_LENGTH = 0.22       # waist to shoulder top
-HIP_WIDTH = 0.342         # widest point of the hips
+SHOULDER_WIDTH = 0.30     # outer shoulder to outer shoulder
+TORSO_LENGTH = 0.185      # waist to shoulder top
+HIP_WIDTH = 0.325         # widest point of the hips
 LEG_LENGTH = 0.64         # floor to crotch
 ARM_LENGTH = 0.32         # shoulder joint to wrist
 
@@ -40,7 +40,7 @@ ARM_LENGTH = 0.32         # shoulder joint to wrist
 # Secondary proportions, front view (measured from References/Front.png)
 # ===========================================================================
 
-PELVIS_HEIGHT = 0.21      # crotch to waist
+PELVIS_HEIGHT = 0.245     # crotch to waist
 WAIST_WIDTH = 0.19
 CHEST_WIDTH = 0.23
 NECK_RADIUS = 0.04        # neck radius just under the chin; the base is a few percent thinner
@@ -52,7 +52,7 @@ NECK_BACK_OFFSET = 0.028  # moves the whole neck toward the back of the head / u
 
 SHOULDER_JOINT_DROP = 0.055  # shoulder joint below the shoulder line; larger = the arm top sinks to the trapezius slope
 ARM_ROOT_SCALE = 0.8      # size of the arm end hidden in the torso; smaller = no ball rising above the shoulder
-ARM_ANGLE_DEG = 52.0      # A-pose: upper arm angle below horizontal (front view)
+ARM_ANGLE_DEG = 48.0      # A-pose: upper arm angle below horizontal (front view)
 FOREARM_ANGLE_DEG = 55.0  # forearm angle below horizontal (front view)
 ELBOW_BEND_DEG = 2.0      # forearm bends forward (-Y)
 UPPER_ARM_RATIO = 0.55    # upper arm share of ARM_LENGTH
@@ -67,7 +67,7 @@ LEG_SPACING = 0.08        # hip joint X
 ANKLE_SPACING = 0.072     # ankle X
 KNEE_HEIGHT = 0.43
 ANKLE_HEIGHT = 0.08
-THIGH_RADIUS = 0.1        # upper thigh half width (front view)
+THIGH_RADIUS = 0.086      # upper thigh half width (front view)
 KNEE_RADIUS = 0.055
 CALF_RADIUS = 0.06
 ANKLE_RADIUS = 0.036
@@ -83,8 +83,8 @@ HEEL_BACK = 0.046         # heel extends this far behind the ankle (+Y)
 # ===========================================================================
 
 CHEST_DEPTH = 0.18
-BUST_FORWARD = 0.09       # extra chest depth on the front side only (bare body, blouse excluded)
-BUST_CENTER = 0.47        # height of the fullest point, as a fraction of TORSO_LENGTH above the waist
+BUST_FORWARD = 0.072      # extra chest depth on the front side only (bare body, blouse excluded)
+BUST_CENTER = 0.30        # height of the fullest point, as a fraction of TORSO_LENGTH above the waist
 BUST_SPACING = 0.062      # distance of each bust mound's centre from the body centre line (X)
 BUST_RADIUS = 0.078       # outward radius of each mound (toward the arm)
 BUST_INNER_RADIUS = 0.066 # inward radius of each mound; smaller = deeper cleavage, separately rounded undersides
@@ -98,13 +98,13 @@ WAIST_DEPTH = 0.15
 HIP_DEPTH = 0.198
 BUTT_BACK = 0.047         # extra hip depth on the back side only
 LIMB_DEPTH_SCALE = 1.0    # front/back thickness of the arms relative to their width
-THIGH_DEPTH = 0.22        # front-back thickness of the upper thigh (bare leg, socks excluded)
+THIGH_DEPTH = 0.245       # front-back thickness of the upper thigh (bare leg, socks excluded)
 THIGH_FORWARD = -0.008    # front/back bias of the thigh volume; negative keeps the front of the upper thigh flat
-THIGH_OUTWARD = 0.016     # upper thigh volume shifted outward (+X on .L) to keep the inner thighs apart
-KNEE_DEPTH = 0.13
-CALF_DEPTH = 0.155
+THIGH_OUTWARD = 0.010     # upper thigh volume shifted outward (+X on .L) to keep the inner thighs apart
+KNEE_DEPTH = 0.155
+CALF_DEPTH = 0.172
 CALF_BACK = 0.022         # calf bulge on the back of the shin
-CALF_PEAK = 1.22          # fullest calf point on the leg path (1 = knee, 2 = ankle); lower = higher on the shin
+CALF_PEAK = 1.28          # fullest calf point on the leg path (1 = knee, 2 = ankle); lower = higher on the shin
 ANKLE_DEPTH = 0.075
 ARM_ROOT_OFFSET_Y = 0.04  # shoulder joint behind the body axis (+Y), as in Side.png
 ARM_SWING_BACK_DEG = 6.0  # arms hang slightly backward in the side view
@@ -129,16 +129,26 @@ CHEEK_SPREAD = 0.6            # cheek centre distance from the face centre line 
 CHEEK_SIZE = 0.32             # cheek bulge radius on the unit sphere
 FACE_FLATNESS = 0.10          # flattens the front of the face
 BACK_OF_HEAD_FULLNESS = 0.06  # rounder back of the skull
+BACK_OF_HEAD_DEPTH = 0.85     # scales only the back half of the skull (+Y); the face front stays on Side.png
 # Front-view face outline below the eyes. Replaces the jaw formula above up to FACE_OUTLINE_TOP.
-# Fitted to the concept face close-up (eye spacing 0.216 m as the scale), face width at height above chin:
-# 0.207 m @ 3.2 cm, 0.25 m @ 5 cm, 0.29 m @ 8 cm, 0.31 m @ 12 cm, 0.335 m @ 15.5 cm.
+# Fitted to the Front.png skin width at height above chin:
+# 0.14 m @ 3.1 cm, 0.259 m @ 6.2 cm, 0.291 m @ 7.7 cm, 0.337 m @ 9.3 cm, 0.363 m @ 10.8 cm, 0.389 m @ 15.4 cm.
 FACE_OUTLINE_TOP = 0.19       # height above the chin (m) where the outline hands over to the skull
-FACE_WIDTH_AT_TOP = 0.37     # face width (m) at FACE_OUTLINE_TOP (eye level)
-JAW_ROUNDNESS = 2.2           # higher = fuller cheeks and a rounder jaw line
-CHIN_TAPER = 0.35             # narrows only the tip of the chin (0 = fully round chin)
-CHIN_TAPER_CURVE = 8.0        # higher keeps the taper closer to the chin tip
+FACE_WIDTH_AT_TOP = 0.39      # face width (m) at FACE_OUTLINE_TOP (eye level)
+JAW_ROUNDNESS = 2.7           # higher = fuller cheeks and a rounder jaw line
+CHIN_TAPER = 0.775            # narrows only the tip of the chin (0 = fully round chin)
+CHIN_TAPER_CURVE = 3.75       # higher keeps the taper closer to the chin tip
 FACE_OUTLINE_BLEND = 0.035    # height range (m) below FACE_OUTLINE_TOP that blends into the skull
 JAW_LIFT = 0.0                # the jaw rises at the sides toward the ears (fraction of HEAD_HEIGHT); chin stays lowest
+# Side-view face profile, measured on Side.png: (height above the chin m, how far the face moves back m; - = forward).
+# Forehead and eyes sit back, the cheeks / mouth area is the most forward part, so the face is not a flat front.
+# Only the front of the face moves (fades out toward the sides), so the front-view outline stays the same.
+FACE_PROFILE = (
+    (0.0, 0.0), (0.02, -0.006), (0.05, -0.004), (0.08, -0.008), (0.10, -0.009), (0.115, -0.006),
+    (0.13, 0.006), (0.15, 0.016), (0.17, 0.021), (0.19, 0.024), (0.23, 0.028), (0.27, 0.031),
+    (0.33, 0.028), (0.40, 0.015), (0.47, 0.0),
+)
+FACE_PROFILE_SPREAD = (0.15, 0.75)  # front share (0 = side .. 1 = front centre) where the profile fades in
 
 
 # ===========================================================================
@@ -309,7 +319,7 @@ def head_shape(x, y, w):
 
     px *= 1.0 - JAW_TAPER * lower ** JAW_CURVE
     if y > 0.0:
-        py *= 1.0 + BACK_OF_HEAD_FULLNESS * (1.0 - lower)
+        py *= (1.0 + BACK_OF_HEAD_FULLNESS * (1.0 - lower)) * BACK_OF_HEAD_DEPTH
     py *= 1.0 - FACE_FLATNESS * front
 
     for side in (-1.0, 1.0):
@@ -322,6 +332,11 @@ def head_shape(x, y, w):
 
     if lower > 0.0:
         px, pz = fit_face_outline(x, y, px, pz, lower)
+
+    ring = math.hypot(x, y)
+    if ring > 0.0 and y < 0.0:
+        weight = smoothstep(*FACE_PROFILE_SPREAD, -y / ring)
+        py += face_profile(HEAD_HEIGHT * HEAD_EQUATOR + pz) * weight
 
     center_z = CHARACTER_HEIGHT - HEAD_HEIGHT * (1.0 - HEAD_EQUATOR)
     return Vector((px, HEAD_OFFSET_Y + py, center_z + pz))
@@ -345,6 +360,21 @@ def fit_face_outline(x, y, px, pz, lower):
     fitted = (x / ring) * outline_width(h) / 2.0
     blend = smoothstep(FACE_OUTLINE_TOP - FACE_OUTLINE_BLEND, FACE_OUTLINE_TOP, h)
     return fitted + (px - fitted) * blend, pz
+
+
+def face_profile(h):
+    """FACE_PROFILE at height h above the chin, smoothly interpolated (Catmull-Rom, clamped at both ends)."""
+    table = FACE_PROFILE
+    if h <= table[0][0]:
+        return table[0][1]
+    if h >= table[-1][0]:
+        return table[-1][1]
+    i = next(k for k in range(len(table) - 1) if table[k][0] <= h <= table[k + 1][0])
+    (h1, v1), (h2, v2) = table[i], table[i + 1]
+    v0 = table[i - 1][1] if i > 0 else v1
+    v3 = table[i + 2][1] if i + 2 < len(table) else v2
+    t = (h - h1) / (h2 - h1)
+    return 0.5 * (2 * v1 + (-v0 + v2) * t + (2 * v0 - 5 * v1 + 4 * v2 - v3) * t * t + (-v0 + 3 * v1 - 3 * v2 + v3) * t ** 3)
 
 
 def smoothstep(edge0, edge1, value):
@@ -861,7 +891,8 @@ def body_metrics(parts, depsgraph):
     if "Torso" in meshes:
         verts = meshes["Torso"][0]
         lm = landmarks()
-        bust = [v for v in verts if lm["waist"] + TORSO_LENGTH * 0.35 < v.z < lm["waist"] + TORSO_LENGTH * 0.6]
+        bust_z = lm["waist"] + TORSO_LENGTH * BUST_CENTER
+        bust = [v for v in verts if abs(v.z - bust_z) < TORSO_LENGTH * 0.125]
         if bust:
             m["chest_front"] = -min(v.y for v in bust)
             m["chest_width"] = extent(bust, 0)
