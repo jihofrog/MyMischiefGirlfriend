@@ -1,0 +1,19 @@
+# Unity generated
+/[Ll]ibrary/
+/[Tt]emp/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Blender
+*.blend1
+/BlenderSource/**/Backups/
+
+# Live2D working sources (large, kept outside the repository)
+/Live2DSource/
