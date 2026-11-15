@@ -1,0 +1,89 @@
+{
+ "mode": "v1",
+ "states": 630,
+ "lid_ball_violations": 9601,
+ "lid_ball_worst_mm": null,
+ "lash_lid_violations": 11276,
+ "lash_lid_worst_mm": null,
+ "worst": {
+  "lash_lid_L": {
+   "state": {
+    "eyesmile": 1.0,
+    "blink": 1.0,
+    "gaze": 0.0
+   },
+   "yaw": 0,
+   "mm": -2.366
+  },
+  "lid_ball_L": {
+   "state": {
+    "v1surprise": 1.0,
+    "blink": 0.5,
+    "gaze": 0.25
+   },
+   "yaw": -45,
+   "mm": -0.206,
+   "base_mm": 0.099
+  },
+  "lash_lid_R": {
+   "state": {
+    "eyesmile": 1.0,
+    "blink": 1.0,
+    "gaze": 0.0
+   },
+   "yaw": 0,
+   "mm": -2.435
+  },
+  "lid_ball_R": {
+   "state": {
+    "v1surprise": 1.0,
+    "blink": 0.5,
+    "gaze": -0.25
+   },
+   "yaw": 35,
+   "mm": -0.175,
+   "base_mm": 0.1
+  }
+ },
+ "by_yaw": {
+  "0": [
+   1476,
+   1569
+  ],
+  "35": [
+   1292,
+   1551
+  ],
+  "45": [
+   1282,
+   1561
+  ],
+  "60": [
+   1480,
+   1680
+  ],
+  "-35": [
+   1292,
+   1575
+  ],
+  "-45": [
+   1278,
+   1619
+  ],
+  "-60": [
+   1501,
+   1721
+  ]
+ },
+ "states_with_new_violations": {
+  "{\"eyesmile\": 0.5}": 100,
+  "{\"eyesmile\": 1.0}": 126,
+  "{\"v1surprise\": 0.5}": 98,
+  "{\"v1surprise\": 1.0}": 110,
+  "{\"eyesmile\": 0.5, \"smile\": 1.0}": 100
+ },
+ "lid_ball_min_mm_L": -0.206,
+ "lash_lid_min_mm_L": -2.366,
+ "lid_ball_min_mm_R": -0.175,
+ "lash_lid_min_mm_R": -2.435
+}

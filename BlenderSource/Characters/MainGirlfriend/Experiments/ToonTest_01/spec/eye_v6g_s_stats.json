@@ -1,0 +1,37 @@
+{
+ "step_mm": 3.5,
+ "step_from_iris_radius": 1.02,
+ "eyeball_subdivided": true,
+ "eyeball_faces_L": [
+  481,
+  1924
+ ],
+ "eyeball_faces_R": [
+  453,
+  1812
+ ],
+ "lid_lift_for_blends": [
+  {
+   "side": "L",
+   "verts": 85,
+   "max_mm": 2.01
+  },
+  {
+   "side": "R",
+   "verts": 76,
+   "max_mm": 1.99
+  }
+ ],
+ "lash_lift_for_blends": [
+  {
+   "side": "L",
+   "verts": 15,
+   "max_mm": 1.44
+  },
+  {
+   "side": "R",
+   "verts": 11,
+   "max_mm": 1.17
+  }
+ ]
+}

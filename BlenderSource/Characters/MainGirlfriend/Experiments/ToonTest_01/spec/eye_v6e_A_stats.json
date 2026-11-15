@@ -1,0 +1,15 @@
+{
+ "beta": 1.0,
+ "psi": 20.0,
+ "b": false,
+ "A_head_forward_mm_max": 7.99,
+ "hair_penetration_face_band": {
+  "Volume": 0,
+  "Bangs": 0,
+  "Side_L": 0,
+  "Side_R": 0,
+  "Back": 0,
+  "TempleLink_L": 0,
+  "TempleLink_R": 0
+ }
+}

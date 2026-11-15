@@ -1,0 +1,79 @@
+{
+ "tag": "v6g_s",
+ "L": {
+  "Neutral": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "Blink50": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "Blink": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "EyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "SmileEyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "Surprise": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  }
+ },
+ "R": {
+  "Neutral": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "Blink50": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "Blink": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "EyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "SmileEyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "Surprise": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  }
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "v6f_A_R_35": {
+  "abnormal_px": 2034,
+  "white_ball_px": 66698
+ },
+ "v6f_A_L_-35": {
+  "abnormal_px": 2394,
+  "white_ball_px": 76063
+ },
+ "v6f_A_R_45": {
+  "abnormal_px": 797,
+  "white_ball_px": 37029
+ },
+ "v6f_A_L_-45": {
+  "abnormal_px": 785,
+  "white_ball_px": 45620
+ },
+ "v6g_h3.0_R_35": {
+  "abnormal_px": 3395,
+  "white_ball_px": 62181
+ },
+ "v6g_h3.0_L_-35": {
+  "abnormal_px": 3480,
+  "white_ball_px": 71693
+ },
+ "v6g_h3.0_R_45": {
+  "abnormal_px": 500,
+  "white_ball_px": 35895
+ },
+ "v6g_h3.0_L_-45": {
+  "abnormal_px": 412,
+  "white_ball_px": 44181
+ },
+ "v6g_h4.5_R_35": {
+  "abnormal_px": 3545,
+  "white_ball_px": 61012
+ },
+ "v6g_h4.5_L_-35": {
+  "abnormal_px": 3472,
+  "white_ball_px": 70184
+ },
+ "v6g_h4.5_R_45": {
+  "abnormal_px": 397,
+  "white_ball_px": 35655
+ },
+ "v6g_h4.5_L_-45": {
+  "abnormal_px": 374,
+  "white_ball_px": 43910
+ }
+}

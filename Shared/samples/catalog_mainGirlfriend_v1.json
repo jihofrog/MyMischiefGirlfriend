@@ -1,0 +1,120 @@
+{
+  "$comment": "Sample catalog for the current MainGirlfriend content (05 document). Common ids carry no color names (U7); the existing Cubism ids are linked by the Cubism renderer mapping (05 document 9-2). Color values are sample values, not calibrated against the art.",
+  "schemaVersion": 1,
+  "catalogVersion": 1,
+  "rules": {
+    "rulesVersion": 1,
+    "accessoryMaxCount": null,
+    "exclusive": [],
+    "hairFormRequirements": [
+      { "ruleId": "hat_needs_under_hat", "tag": "hat", "hairForm": "under_hat" }
+    ]
+  },
+  "bodyTypes": ["standard"],
+  "slots": [
+    { "slotId": "hair", "acceptsKinds": ["hair"], "statGroup": "Hair", "required": true, "layer": 60, "order": 0 },
+    { "slotId": "top", "acceptsKinds": ["top", "onepiece"], "statGroup": "Top", "required": true, "layer": 30, "order": 1 },
+    { "slotId": "bottom", "acceptsKinds": ["bottom", "onepiece"], "statGroup": "Bottom", "required": true, "layer": 20, "order": 2 },
+    { "slotId": "legwear", "acceptsKinds": ["legwear"], "statGroup": null, "required": false, "layer": 10, "order": 3 },
+    { "slotId": "shoes", "acceptsKinds": ["shoes"], "statGroup": "Footwear", "required": true, "layer": 40, "order": 4 },
+    { "slotId": "acc.head", "acceptsKinds": ["accessory"], "statGroup": "Accessory", "required": false, "layer": 50, "order": 5 },
+    { "slotId": "acc.ear", "acceptsKinds": ["accessory"], "statGroup": "Accessory", "required": false, "layer": 50, "order": 6 },
+    { "slotId": "acc.neck", "acceptsKinds": ["accessory"], "statGroup": "Accessory", "required": false, "layer": 50, "order": 7 },
+    { "slotId": "acc.hand", "acceptsKinds": ["accessory"], "statGroup": "Accessory", "required": false, "layer": 50, "order": 8 },
+    { "slotId": "acc.back", "acceptsKinds": ["accessory"], "statGroup": "Accessory", "required": false, "layer": 50, "order": 9 }
+  ],
+  "colors": [
+    { "colorId": "skin_light_01", "category": "skin", "base": "#FBDDCB", "shade": "#EDB9A0", "highlight": "#FFF1E8", "unlock": "free" },
+    { "colorId": "skin_fair_01", "category": "skin", "base": "#FFE8DC", "shade": "#F2C7B2", "highlight": "#FFF7F2", "unlock": "free" },
+    { "colorId": "skin_tan_01", "category": "skin", "base": "#E2B08C", "shade": "#C48A66", "highlight": "#F3D2B8", "unlock": "free" },
+    { "colorId": "haircolor_brown_01", "category": "hair", "base": "#7A4A3A", "shade": "#4A2A22", "highlight": "#B07A64", "unlock": "free" },
+    { "colorId": "haircolor_black_01", "category": "hair", "base": "#2E2628", "shade": "#151012", "highlight": "#5E5258", "unlock": "free" },
+    { "colorId": "haircolor_blonde_01", "category": "hair", "base": "#E6C27A", "shade": "#B8914E", "highlight": "#F8E6B8", "unlock": "free" },
+    { "colorId": "eyecolor_brown_01", "category": "eye", "base": "#8A4A30", "shade": "#4E2414", "highlight": "#D09A70", "unlock": "free" },
+    { "colorId": "eyecolor_blue_01", "category": "eye", "base": "#4A78C0", "shade": "#243E78", "highlight": "#A6C4F0", "unlock": "free" },
+    { "colorId": "eyecolor_green_01", "category": "eye", "base": "#4E9A62", "shade": "#245032", "highlight": "#A8DAB2", "unlock": "free" }
+  ],
+  "faceStyles": [
+    { "styleId": "eye_round_01", "feature": "eye" },
+    { "styleId": "nose_dot_01", "feature": "nose" },
+    { "styleId": "mouth_basic_01", "feature": "mouth" },
+    { "styleId": "ear_basic_01", "feature": "ear" },
+    { "styleId": "brow_basic_01", "feature": "brow" }
+  ],
+  "bodyPresets": [
+    {
+      "bodyPresetId": "body_base_01",
+      "bodyType": "standard",
+      "headBaseId": "head_base_01",
+      "regions": ["HeadTop", "Ear_L", "Ear_R", "Neck", "Chest", "Torso", "UpperArm_L", "UpperArm_R", "Forearm_L", "Forearm_R", "Hand_L", "Hand_R", "Hips", "Thigh_L", "Thigh_R", "Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"]
+    }
+  ],
+  "items": [
+    {
+      "itemId": "hair_bob_01", "kind": "hair", "occupies": ["hair"], "tags": [], "covers": [],
+      "hairForms": ["default"], "fitsBodyTypes": ["standard"], "rarity": "common", "nameKey": "item.hair_bob_01",
+      "setId": null, "defaultVariantId": "hair_bob_01.default", "isActive": true
+    },
+    {
+      "itemId": "top_blouse_01", "kind": "top", "occupies": ["top"], "tags": [], "covers": ["Chest", "Torso", "UpperArm_L", "UpperArm_R"],
+      "hairForms": [], "fitsBodyTypes": ["standard"], "rarity": "common", "nameKey": "item.top_blouse_01",
+      "setId": null, "defaultVariantId": "top_blouse_01.cream", "isActive": true
+    },
+    {
+      "itemId": "bottom_pleatskirt_01", "kind": "bottom", "occupies": ["bottom"], "tags": [], "covers": ["Hips"],
+      "hairForms": [], "fitsBodyTypes": ["standard"], "rarity": "common", "nameKey": "item.bottom_pleatskirt_01",
+      "setId": null, "defaultVariantId": "bottom_pleatskirt_01.navy", "isActive": true
+    },
+    {
+      "itemId": "legwear_thighhigh_01", "kind": "legwear", "occupies": ["legwear"], "tags": ["thighhigh"],
+      "covers": ["Thigh_L", "Thigh_R", "Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"],
+      "hairForms": [], "fitsBodyTypes": ["standard"], "rarity": "common", "nameKey": "item.legwear_thighhigh_01",
+      "setId": null, "defaultVariantId": "legwear_thighhigh_01.black", "isActive": true
+    },
+    {
+      "itemId": "shoes_ankleboot_01", "kind": "shoes", "occupies": ["shoes"], "tags": [], "covers": ["Foot_L", "Foot_R"],
+      "hairForms": [], "fitsBodyTypes": ["standard"], "rarity": "common", "nameKey": "item.shoes_ankleboot_01",
+      "setId": null, "defaultVariantId": "shoes_ankleboot_01.black", "isActive": true
+    },
+    {
+      "itemId": "acc_head_hairclip_x_01", "kind": "accessory", "occupies": ["acc.head"], "tags": [], "covers": [],
+      "hairForms": [], "fitsBodyTypes": ["standard"], "rarity": "common", "nameKey": "item.acc_head_hairclip_x_01",
+      "setId": null, "defaultVariantId": "acc_head_hairclip_x_01.white", "isActive": true
+    }
+  ],
+  "variants": [
+    { "variantId": "hair_bob_01.default", "itemId": "hair_bob_01", "colors": [], "isActive": true },
+    { "variantId": "top_blouse_01.cream", "itemId": "top_blouse_01", "colors": [{ "channel": "primary", "rgb": "#F6EEE2" }], "isActive": true },
+    { "variantId": "bottom_pleatskirt_01.navy", "itemId": "bottom_pleatskirt_01", "colors": [{ "channel": "primary", "rgb": "#2C3550" }], "isActive": true },
+    { "variantId": "legwear_thighhigh_01.black", "itemId": "legwear_thighhigh_01", "colors": [{ "channel": "primary", "rgb": "#1E1C22" }], "isActive": true },
+    { "variantId": "shoes_ankleboot_01.black", "itemId": "shoes_ankleboot_01", "colors": [{ "channel": "primary", "rgb": "#2A2226" }, { "channel": "accent", "rgb": "#C8B07A" }], "isActive": true },
+    { "variantId": "acc_head_hairclip_x_01.white", "itemId": "acc_head_hairclip_x_01", "colors": [{ "channel": "primary", "rgb": "#FAFAFA" }], "isActive": true }
+  ],
+  "characters": [
+    {
+      "characterDefId": "chr_mainGirlfriend_01",
+      "nameKey": "character.mainGirlfriend",
+      "allowedBodyPresetIds": ["body_base_01"],
+      "defaultBodyPresetId": "body_base_01",
+      "defaultAppearance": {
+        "face": { "eye": "eye_round_01", "nose": "nose_dot_01", "mouth": "mouth_basic_01", "ear": "ear_basic_01", "brow": "brow_basic_01" },
+        "skinColorId": "skin_light_01",
+        "hairColorId": "haircolor_brown_01",
+        "eyeColorId": "eyecolor_brown_01",
+        "browColorMode": "followHair",
+        "browColorId": null,
+        "version": 1
+      },
+      "defaultEquipment": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+      ],
+      "allowedFaceStyleIds": ["eye_round_01", "nose_dot_01", "mouth_basic_01", "ear_basic_01", "brow_basic_01"],
+      "allowedColorIds": ["skin_light_01", "skin_fair_01", "skin_tan_01", "haircolor_brown_01", "haircolor_black_01", "haircolor_blonde_01", "eyecolor_brown_01", "eyecolor_blue_01", "eyecolor_green_01"]
+    }
+  ]
+}

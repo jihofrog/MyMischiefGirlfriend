@@ -1,0 +1,14 @@
+{
+ "back_mm": 0.0,
+ "flat": 0.0,
+ "lids": true,
+ "mat": false,
+ "lid_shift_mm_L": {
+  "upper_max": 0.35,
+  "lower_outer_max": 0.45
+ },
+ "lid_shift_mm_R": {
+  "upper_max": 0.35,
+  "lower_outer_max": 0.45
+ }
+}

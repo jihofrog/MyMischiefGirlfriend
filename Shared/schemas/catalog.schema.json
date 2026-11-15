@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mmg/catalog.schema.json",
+  "title": "MMG common character and item catalog (05 document, chapter 4)",
+  "description": "Renderer-neutral data only: no Cubism ArtMesh ids, sprite names or mesh names. Reference checks (ids that must exist) are done by MMG.Data.Validation.CatalogValidator.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "catalogVersion", "rules", "bodyTypes", "slots", "colors", "faceStyles", "bodyPresets", "items", "variants", "characters"],
+  "properties": {
+    "$comment": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "catalogVersion": { "type": "integer", "minimum": 1 },
+    "rules": { "$ref": "#/$defs/rules" },
+    "bodyTypes": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/token" } },
+    "slots": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slot" } },
+    "colors": { "type": "array", "items": { "$ref": "#/$defs/color" } },
+    "faceStyles": { "type": "array", "items": { "$ref": "#/$defs/faceStyle" } },
+    "bodyPresets": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/bodyPreset" } },
+    "items": { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    "variants": { "type": "array", "items": { "$ref": "#/$defs/variant" } },
+    "characters": { "type": "array", "items": { "$ref": "#/$defs/character" } }
+  },
+  "$defs": {
+    "token": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+    "rgb": { "type": "string", "pattern": "^#[0-9A-F]{6}$" },
+    "slotId": { "type": "string", "pattern": "^[a-z]+(\\.[a-z]+)?$" },
+    "itemKind": { "enum": ["hair", "top", "bottom", "onepiece", "legwear", "shoes", "accessory"] },
+    "bodyRegion": {
+      "enum": ["HeadTop", "Ear_L", "Ear_R", "Neck", "Chest", "Torso", "UpperArm_L", "UpperArm_R", "Forearm_L", "Forearm_R",
+        "Hand_L", "Hand_R", "Hips", "Thigh_L", "Thigh_R", "Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"]
+    },
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rulesVersion", "accessoryMaxCount", "exclusive", "hairFormRequirements"],
+      "properties": {
+        "rulesVersion": { "type": "integer", "minimum": 1 },
+        "accessoryMaxCount": { "type": ["integer", "null"], "minimum": 1 },
+        "exclusive": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["ruleId", "tagA", "tagB"],
+            "properties": { "ruleId": { "$ref": "#/$defs/token" }, "tagA": { "$ref": "#/$defs/token" }, "tagB": { "$ref": "#/$defs/token" } }
+          }
+        },
+        "hairFormRequirements": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["ruleId", "tag", "hairForm"],
+            "properties": { "ruleId": { "$ref": "#/$defs/token" }, "tag": { "$ref": "#/$defs/token" }, "hairForm": { "$ref": "#/$defs/token" } }
+          }
+        }
+      }
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slotId", "acceptsKinds", "statGroup", "required", "layer", "order"],
+      "properties": {
+        "slotId": { "$ref": "#/$defs/slotId" },
+        "acceptsKinds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/itemKind" } },
+        "statGroup": { "enum": ["Hair", "Top", "Bottom", "Footwear", "Accessory", null] },
+        "required": { "type": "boolean" },
+        "layer": { "type": "integer" },
+        "order": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "color": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["colorId", "category", "base", "shade", "highlight", "unlock"],
+      "properties": {
+        "colorId": { "type": "string", "pattern": "^(skin|haircolor|eyecolor)_[a-z0-9]+(_[a-z0-9]+)*_[0-9]{2}$" },
+        "category": { "enum": ["skin", "hair", "eye"] },
+        "base": { "$ref": "#/$defs/rgb" },
+        "shade": { "$ref": "#/$defs/rgb" },
+        "highlight": { "$ref": "#/$defs/rgb" },
+        "unlock": { "enum": ["free", "item", "achievement"] }
+      }
+    },
+    "faceStyle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["styleId", "feature"],
+      "properties": {
+        "styleId": { "type": "string", "pattern": "^(eye|nose|mouth|ear|brow)_[a-z0-9]+(_[a-z0-9]+)*_[0-9]{2}$" },
+        "feature": { "enum": ["eye", "nose", "mouth", "ear", "brow"] }
+      }
+    },
+    "bodyPreset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bodyPresetId", "bodyType", "headBaseId", "regions"],
+      "properties": {
+        "bodyPresetId": { "$ref": "#/$defs/token" },
+        "bodyType": { "$ref": "#/$defs/token" },
+        "headBaseId": { "$ref": "#/$defs/token" },
+        "regions": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/bodyRegion" } }
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["itemId", "kind", "occupies", "tags", "covers", "hairForms", "fitsBodyTypes", "rarity", "nameKey", "setId", "defaultVariantId", "isActive"],
+      "properties": {
+        "itemId": { "type": "string", "pattern": "^(hair|top|bottom|onepiece|legwear|shoes|acc_[a-z]+)_[a-z0-9]+(_[a-z0-9]+)*_[0-9]{2}$" },
+        "kind": { "$ref": "#/$defs/itemKind" },
+        "occupies": { "type": "array", "minItems": 1, "maxItems": 2, "uniqueItems": true, "items": { "$ref": "#/$defs/slotId" } },
+        "tags": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/token" } },
+        "covers": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/bodyRegion" } },
+        "hairForms": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/token" } },
+        "fitsBodyTypes": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/token" } },
+        "rarity": { "$ref": "#/$defs/token" },
+        "nameKey": { "type": "string" },
+        "setId": { "type": ["string", "null"] },
+        "defaultVariantId": { "type": "string" },
+        "isActive": { "type": "boolean" }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["variantId", "itemId", "colors", "isActive"],
+      "properties": {
+        "variantId": { "type": "string", "pattern": "^[a-z0-9_]+\\.[a-z0-9_]+$" },
+        "itemId": { "type": "string" },
+        "colors": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["channel", "rgb"],
+            "properties": { "channel": { "enum": ["primary", "secondary", "accent"] }, "rgb": { "$ref": "#/$defs/rgb" } }
+          }
+        },
+        "isActive": { "type": "boolean" }
+      }
+    },
+    "equipmentEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slotId", "itemId", "variantId"],
+      "properties": { "slotId": { "$ref": "#/$defs/slotId" }, "itemId": { "type": "string" }, "variantId": { "type": "string" } }
+    },
+    "appearance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["face", "skinColorId", "hairColorId", "eyeColorId", "browColorMode", "browColorId", "version"],
+      "properties": {
+        "face": {
+          "type": "object", "additionalProperties": false, "required": ["eye", "nose", "mouth", "ear", "brow"],
+          "properties": { "eye": { "type": "string" }, "nose": { "type": "string" }, "mouth": { "type": "string" }, "ear": { "type": "string" }, "brow": { "type": "string" } }
+        },
+        "skinColorId": { "type": "string" },
+        "hairColorId": { "type": "string" },
+        "eyeColorId": { "type": "string" },
+        "browColorMode": { "enum": ["followHair", "explicit"] },
+        "browColorId": { "type": ["string", "null"] },
+        "version": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "character": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["characterDefId", "nameKey", "allowedBodyPresetIds", "defaultBodyPresetId", "defaultAppearance", "defaultEquipment", "allowedFaceStyleIds", "allowedColorIds"],
+      "properties": {
+        "characterDefId": { "type": "string", "pattern": "^chr_[A-Za-z0-9]+(_[A-Za-z0-9]+)*_[0-9]{2}$" },
+        "nameKey": { "type": "string" },
+        "allowedBodyPresetIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "defaultBodyPresetId": { "type": "string" },
+        "defaultAppearance": { "$ref": "#/$defs/appearance" },
+        "defaultEquipment": { "type": "array", "items": { "$ref": "#/$defs/equipmentEntry" } },
+        "allowedFaceStyleIds": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "allowedColorIds": { "type": "array", "uniqueItems": true, "items": { "type": "string" } }
+      }
+    }
+  }
+}

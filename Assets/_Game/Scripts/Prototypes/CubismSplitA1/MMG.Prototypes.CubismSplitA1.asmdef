@@ -1,0 +1,17 @@
+{
+    "name": "MMG.Prototypes.CubismSplitA1",
+    "rootNamespace": "MMG.Prototypes.CubismSplitA1",
+    "references": [
+        "Live2D.Cubism",
+        "MMG.Prototypes.CubismSplit"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

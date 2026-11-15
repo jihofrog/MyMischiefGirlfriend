@@ -1,0 +1,13 @@
+{
+ "mode": "v3b",
+ "states": 5922,
+ "lid_ball_violations": 0,
+ "lid_ball_worst_mm": null,
+ "lash_lid_violations": 0,
+ "lash_lid_worst_mm": null,
+ "worst": {},
+ "lid_ball_min_mm_L": 1000.0,
+ "lash_lid_min_mm_L": 1000.0,
+ "lid_ball_min_mm_R": 1000.0,
+ "lash_lid_min_mm_R": 1000.0
+}

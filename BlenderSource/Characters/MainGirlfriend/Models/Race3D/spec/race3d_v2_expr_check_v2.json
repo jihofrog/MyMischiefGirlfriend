@@ -1,0 +1,36 @@
+{
+ "mode": "v2",
+ "states": 3600,
+ "lid_ball_violations": 0,
+ "lid_ball_worst_mm": null,
+ "lash_lid_violations": 8,
+ "lash_lid_worst_mm": null,
+ "worst": {
+  "lash_lid_L": {
+   "state": {
+    "happy": 0.625,
+    "blink": 0.0,
+    "gaze": 0.0
+   },
+   "yaw": -45,
+   "mm": 0.186
+  },
+  "lash_lid_R": {
+   "state": {
+    "happy": 0.125,
+    "blink": 0.0,
+    "gaze": 0.0
+   },
+   "yaw": 45,
+   "mm": 0.266
+  }
+ },
+ "states_with_new_violations": {
+  "{\"happy\": 0.625}": 2,
+  "{\"happy\": 0.125}": 2
+ },
+ "lid_ball_min_mm_L": 1000.0,
+ "lash_lid_min_mm_L": 0.186,
+ "lid_ball_min_mm_R": 1000.0,
+ "lash_lid_min_mm_R": 0.266
+}

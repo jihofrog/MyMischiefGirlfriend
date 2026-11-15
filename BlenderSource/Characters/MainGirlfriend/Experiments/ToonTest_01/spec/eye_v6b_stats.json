@@ -1,0 +1,103 @@
+{
+ "params": {
+  "CUTS": 2,
+  "D": 0.004,
+  "T_UP": 0.003,
+  "T_LO": 0.002,
+  "DIVE_UP": 0.003,
+  "DIVE_LO": 0.0021,
+  "F": 0.01,
+  "DEEP": 0.0025,
+  "GAP_UP": 0.0015,
+  "GAP_LO": 0.0015,
+  "BAND_IN": 0.0022,
+  "BAND_OUT": 0.0004,
+  "SKIRT": 0.0011
+ },
+ "head_verts": [
+  12034,
+  16724
+ ],
+ "eyeball_L": {
+  "centre": [
+   0.02516,
+   -0.0492,
+   1.39717
+  ],
+  "R": 0.09248,
+  "C": 0.13283,
+  "fit_mm": {
+   "med": 0.23,
+   "p10": -2.94,
+   "p90": 2.83
+  },
+  "behind_skin_mm": {
+   "min": -0.37,
+   "med": 4.98
+  },
+  "tris": 962
+ },
+ "eyeball_R": {
+  "centre": [
+   -0.02088,
+   -0.04648,
+   1.40126
+  ],
+  "R": 0.09717,
+  "C": 0.14534,
+  "fit_mm": {
+   "med": 0.3,
+   "p10": -3.41,
+   "p90": 3.09
+  },
+  "behind_skin_mm": {
+   "min": -0.24,
+   "med": 5.17
+  },
+  "tris": 906
+ },
+ "socket_L": {
+  "verts_socket": 926,
+  "verts_rim": 702,
+  "rim_moved_back_mm_max": 8.98,
+  "rim_moved_forward_mm_max": 4.86
+ },
+ "socket_R": {
+  "verts_socket": 965,
+  "verts_rim": 728,
+  "rim_moved_back_mm_max": 9.63,
+  "rim_moved_forward_mm_max": 4.9
+ },
+ "Eye_Lids.L_normal_y": -0.1,
+ "Eye_Lash.L_normal_y": -0.626,
+ "lids_L": {
+  "tris": 1824,
+  "lash_tris": 998
+ },
+ "Eye_Lids.R_normal_y": -0.839,
+ "Eye_Lash.R_normal_y": -0.379,
+ "lids_R": {
+  "tris": 1800,
+  "lash_tris": 962
+ },
+ "baked": [
+  "Face_Brow.L",
+  "Face_Brow.R",
+  "Face_Mouth_Smile_Inside",
+  "Face_Mouth_Smile_Teeth",
+  "Face_Mouth_Smile_Tongue",
+  "Face_Mouth_Smile_Line",
+  "Face_Blush.L",
+  "Face_Blush.R",
+  "TT_Mouth_Closed"
+ ],
+ "tris": {
+  "Eye_Ball.L": 962,
+  "Eye_Ball.R": 906,
+  "Eye_Lids.L": 1824,
+  "Eye_Lash.L": 998,
+  "Eye_Lids.R": 1800,
+  "Eye_Lash.R": 962,
+  "Blockout_Head": 33444
+ }
+}

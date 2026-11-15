@@ -1,0 +1,283 @@
+{
+ "tag": "v6a",
+ "method": "A",
+ "L": {
+  "eye_vs_face": {
+   "min": 0.62,
+   "med": 1.47,
+   "max": 3.43
+  },
+  "eye_below_ring": {
+   "min": -15.39,
+   "med": -4.31,
+   "max": 0.98
+  },
+  "iris_sagitta_mm": 5.67,
+  "iris_over_face": {
+   "min": 1.03,
+   "med": 1.66,
+   "max": 2.77
+  },
+  "iris_over_white_mm": {
+   "min": 0.18,
+   "med": 0.25,
+   "max": 0.32
+  },
+  "upper_lid_edge": {
+   "min": -1.23,
+   "med": 1.13,
+   "max": 1.38
+  },
+  "lower_lid_step": {
+   "min": -3.93,
+   "med": -2.37,
+   "max": -1.03
+  },
+  "lower_lash_gap": {
+   "min": 0.19,
+   "med": 0.2,
+   "max": 0.23
+  }
+ },
+ "R": {
+  "eye_vs_face": {
+   "min": 0.76,
+   "med": 1.57,
+   "max": 3.71
+  },
+  "eye_below_ring": {
+   "min": -16.58,
+   "med": -3.77,
+   "max": 0.63
+  },
+  "iris_sagitta_mm": 5.85,
+  "iris_over_face": {
+   "min": 1.04,
+   "med": 1.77,
+   "max": 2.95
+  },
+  "iris_over_white_mm": {
+   "min": 0.19,
+   "med": 0.25,
+   "max": 0.33
+  },
+  "upper_lid_edge": {
+   "min": -1.48,
+   "med": -1.21,
+   "max": -1.14
+  },
+  "lower_lid_step": {
+   "min": -4.22,
+   "med": -2.6,
+   "max": -1.31
+  },
+  "lower_lash_gap": {
+   "min": 0.19,
+   "med": 0.2,
+   "max": 0.23
+  }
+ },
+ "head_tris": 24064,
+ "eye_cost": {
+  "objects": 18,
+  "tris": 20824,
+  "draws": 18,
+  "detail": {
+   "Eye_Iris.L": {
+    "tris": 1216,
+    "verts": 641,
+    "mats": 1
+   },
+   "Eye_Iris.R": {
+    "tris": 1216,
+    "verts": 641,
+    "mats": 1
+   },
+   "Eye_LowerLid.L": {
+    "tris": 3676,
+    "verts": 1860,
+    "mats": 1
+   },
+   "Eye_LowerLid.R": {
+    "tris": 3676,
+    "verts": 1860,
+    "mats": 1
+   },
+   "Eye_OuterLine.L": {
+    "tris": 92,
+    "verts": 72,
+    "mats": 1
+   },
+   "Eye_OuterLine.R": {
+    "tris": 92,
+    "verts": 72,
+    "mats": 1
+   },
+   "Eye_UpperCrease.L": {
+    "tris": 2876,
+    "verts": 1460,
+    "mats": 1
+   },
+   "Eye_UpperCrease.R": {
+    "tris": 2876,
+    "verts": 1460,
+    "mats": 1
+   },
+   "Eye_UpperLashes.L": {
+    "tris": 72,
+    "verts": 63,
+    "mats": 1
+   },
+   "Eye_UpperLashes.R": {
+    "tris": 72,
+    "verts": 63,
+    "mats": 1
+   },
+   "Eye_UpperLid.L": {
+    "tris": 1156,
+    "verts": 582,
+    "mats": 1
+   },
+   "Eye_UpperLid.R": {
+    "tris": 1156,
+    "verts": 582,
+    "mats": 1
+   },
+   "Eye_White.L": {
+    "tris": 1216,
+    "verts": 641,
+    "mats": 1
+   },
+   "Eye_White.R": {
+    "tris": 1216,
+    "verts": 641,
+    "mats": 1
+   },
+   "Face_LowerLashes.L": {
+    "tris": 36,
+    "verts": 36,
+    "mats": 1
+   },
+   "Face_LowerLashes.R": {
+    "tris": 36,
+    "verts": 36,
+    "mats": 1
+   },
+   "Face_UpperLashes.L": {
+    "tris": 72,
+    "verts": 63,
+    "mats": 1
+   },
+   "Face_UpperLashes.R": {
+    "tris": 72,
+    "verts": 63,
+    "mats": 1
+   }
+  }
+ },
+ "shape_keys": {
+  "Eye_Iris.L": [
+   "Blink",
+   "Smile",
+   "EyeSmile",
+   "Surprise"
+  ],
+  "Eye_Iris.R": [
+   "Blink",
+   "Smile",
+   "EyeSmile",
+   "Surprise"
+  ],
+  "Eye_LowerLid.L": [
+   "EyeSmile",
+   "Smile"
+  ],
+  "Eye_LowerLid.R": [
+   "EyeSmile",
+   "Smile"
+  ],
+  "Eye_OuterLine.L": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Eye_OuterLine.R": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Eye_UpperLashes.L": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Eye_UpperLashes.R": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Eye_UpperLid.L": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Eye_UpperLid.R": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Eye_White.L": [
+   "Blink",
+   "Smile",
+   "EyeSmile",
+   "Surprise"
+  ],
+  "Eye_White.R": [
+   "Blink",
+   "Smile",
+   "EyeSmile",
+   "Surprise"
+  ],
+  "Face_Brow.L": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Face_Brow.R": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Face_LowerLashes.L": [
+   "EyeSmile",
+   "Smile"
+  ],
+  "Face_LowerLashes.R": [
+   "EyeSmile",
+   "Smile"
+  ],
+  "Face_UpperLashes.L": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "Face_UpperLashes.R": [
+   "Blink",
+   "EyeSmile",
+   "Smile",
+   "Surprise"
+  ],
+  "TT_Mouth_Closed": [
+   "Smile"
+  ]
+ }
+}

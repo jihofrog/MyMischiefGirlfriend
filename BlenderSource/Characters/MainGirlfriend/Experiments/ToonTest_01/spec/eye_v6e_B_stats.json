@@ -1,0 +1,17 @@
+{
+ "beta": 0.0,
+ "psi": 20.0,
+ "b": true,
+ "B_socket_verts_L": 1045,
+ "B_socket_verts_R": 1086,
+ "B_eyeball_outer_back_mm": 1.5,
+ "hair_penetration_face_band": {
+  "Volume": 0,
+  "Bangs": 0,
+  "Side_L": 0,
+  "Side_R": 0,
+  "Back": 0,
+  "TempleLink_L": 0,
+  "TempleLink_R": 0
+ }
+}

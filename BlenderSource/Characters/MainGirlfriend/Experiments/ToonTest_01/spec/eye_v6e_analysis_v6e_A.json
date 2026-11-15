@@ -1,0 +1,265 @@
+{
+ "tag": "v6e_A",
+ "L": {
+  "iris_centre": [
+   0.0644,
+   -0.1312,
+   1.3871
+  ],
+  "yaw_eyeball_at_iris": 25.7,
+  "yaw_lid_plane": 30.2,
+  "yaw_skin_ring": 29.1,
+  "yaw_skin_outer_corner": 50.9,
+  "spread_vs_front": {
+   "0": {
+    "opening": 1.0,
+    "iris": 1.0,
+    "flat_front_eye": 1.0
+   },
+   "35": {
+    "opening": 1.243,
+    "iris": 1.09,
+    "flat_front_eye": 0.819
+   },
+   "45": {
+    "opening": 1.23,
+    "iris": 1.043,
+    "flat_front_eye": 0.707
+   },
+   "60": {
+    "opening": 1.141,
+    "iris": 0.912,
+    "flat_front_eye": 0.5
+   },
+   "90": {
+    "opening": 0.755,
+    "iris": 0.482,
+    "flat_front_eye": 0.0
+   }
+  },
+  "bulge": {
+   "35": {
+    "bulge_over_chord_mm": 3.59,
+    "visible_eyeball_mm": 71.0,
+    "eyeball_vs_skin_behind_mm": 2.19
+   },
+   "45": {
+    "bulge_over_chord_mm": 3.47,
+    "visible_eyeball_mm": 68.0,
+    "eyeball_vs_skin_behind_mm": 2.27
+   },
+   "60": {
+    "bulge_over_chord_mm": 4.15,
+    "visible_eyeball_mm": 58.5,
+    "eyeball_vs_skin_behind_mm": 2.56
+   }
+  },
+  "profile_x_y_yaw": [
+   [
+    0.0,
+    -145.1,
+    0.3
+   ],
+   [
+    0.01,
+    -145.0,
+    1.0
+   ],
+   [
+    0.02,
+    -144.7,
+    1.9
+   ],
+   [
+    0.03,
+    -143.9,
+    7.0
+   ],
+   [
+    0.04,
+    -136.9,
+    9.1
+   ],
+   [
+    0.05,
+    -134.6,
+    16.4
+   ],
+   [
+    0.06,
+    -131.1,
+    22.3
+   ],
+   [
+    0.07,
+    -126.1,
+    29.9
+   ],
+   [
+    0.08,
+    -119.4,
+    37.3
+   ],
+   [
+    0.09,
+    -112.2,
+    29.2
+   ],
+   [
+    0.1,
+    -104.8,
+    54.4
+   ],
+   [
+    0.11,
+    -92.5,
+    58.8
+   ],
+   [
+    0.12,
+    -78.6,
+    62.5
+   ],
+   [
+    0.13,
+    -52.9,
+    73.5
+   ]
+  ],
+  "opening_x": [
+   0.0367,
+   0.1046
+  ]
+ },
+ "R": {
+  "iris_centre": [
+   -0.0655,
+   -0.1305,
+   1.3827
+  ],
+  "yaw_eyeball_at_iris": 28.1,
+  "yaw_lid_plane": 33.5,
+  "yaw_skin_ring": 29.2,
+  "yaw_skin_outer_corner": 40.4,
+  "spread_vs_front": {
+   "0": {
+    "opening": 1.0,
+    "iris": 1.0,
+    "flat_front_eye": 1.0
+   },
+   "35": {
+    "opening": 1.305,
+    "iris": 1.096,
+    "flat_front_eye": 0.819
+   },
+   "45": {
+    "opening": 1.306,
+    "iris": 1.049,
+    "flat_front_eye": 0.707
+   },
+   "60": {
+    "opening": 1.233,
+    "iris": 0.925,
+    "flat_front_eye": 0.5
+   },
+   "90": {
+    "opening": 0.864,
+    "iris": 0.505,
+    "flat_front_eye": 0.0
+   }
+  },
+  "bulge": {
+   "35": {
+    "bulge_over_chord_mm": 3.25,
+    "visible_eyeball_mm": 70.0,
+    "eyeball_vs_skin_behind_mm": 2.32
+   },
+   "45": {
+    "bulge_over_chord_mm": 3.23,
+    "visible_eyeball_mm": 67.0,
+    "eyeball_vs_skin_behind_mm": 2.42
+   },
+   "60": {
+    "bulge_over_chord_mm": 3.34,
+    "visible_eyeball_mm": 59.0,
+    "eyeball_vs_skin_behind_mm": 2.65
+   }
+  },
+  "profile_x_y_yaw": [
+   [
+    0.0,
+    -145.6,
+    0.3
+   ],
+   [
+    0.01,
+    -145.5,
+    1.0
+   ],
+   [
+    0.02,
+    -145.2,
+    2.7
+   ],
+   [
+    0.03,
+    -144.6,
+    3.4
+   ],
+   [
+    0.04,
+    -137.6,
+    12.1
+   ],
+   [
+    0.05,
+    -134.9,
+    17.6
+   ],
+   [
+    0.06,
+    -131.0,
+    24.5
+   ],
+   [
+    0.07,
+    -125.7,
+    31.6
+   ],
+   [
+    0.08,
+    -118.8,
+    35.6
+   ],
+   [
+    0.09,
+    -113.4,
+    26.0
+   ],
+   [
+    0.1,
+    -104.0,
+    61.0
+   ],
+   [
+    0.11,
+    -90.1,
+    -72.4
+   ],
+   [
+    0.12,
+    -75.1,
+    63.6
+   ],
+   [
+    0.13,
+    -44.9,
+    79.1
+   ]
+  ],
+  "opening_x": [
+   -0.1063,
+   -0.0394
+  ]
+ }
+}

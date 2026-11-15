@@ -1,0 +1,45 @@
+{
+ "tag": "v6e_C",
+ "L": {
+  "dome_mm": {
+   "max": 3.28,
+   "p90": 1.35,
+   "med": -0.27
+  },
+  "below_ring_mm_med": 3.73,
+  "apex_curvature_per_m": {
+   "horizontal": 15.036,
+   "vertical": 4.997
+  },
+  "lid_or_skirt_behind_eyeball": {
+   "Neutral": 0,
+   "Blink50": 0,
+   "Blink": 0,
+   "EyeSmile": 0,
+   "SmileEyeSmile": 0,
+   "Surprise": 0
+  },
+  "eyeball_in_front_of_skin_outside_socket": 0
+ },
+ "R": {
+  "dome_mm": {
+   "max": 4.26,
+   "p90": 2.06,
+   "med": -0.1
+  },
+  "below_ring_mm_med": 3.61,
+  "apex_curvature_per_m": {
+   "horizontal": 12.902,
+   "vertical": 2.851
+  },
+  "lid_or_skirt_behind_eyeball": {
+   "Neutral": 0,
+   "Blink50": 0,
+   "Blink": 0,
+   "EyeSmile": 0,
+   "SmileEyeSmile": 0,
+   "Surprise": 0
+  },
+  "eyeball_in_front_of_skin_outside_socket": 0
+ }
+}

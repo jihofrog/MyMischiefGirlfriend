@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mmg/testcases.schema.json",
+  "title": "Shared appearance rule test cases (C# and server TypeScript)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "catalog", "cases"],
+  "properties": {
+    "$comment": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "catalog": { "type": "string" },
+    "fixtures": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "context": { "$ref": "#/$defs/context" },
+        "ownership": { "type": "object", "additionalProperties": { "$ref": "ownership.schema.json" } },
+        "states": { "type": "object", "additionalProperties": { "$ref": "equipment-state.schema.json" } }
+      }
+    },
+    "cases": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/case" } }
+  },
+  "$defs": {
+    "context": {
+      "type": "object", "additionalProperties": false, "required": ["characterDefId", "bodyPresetId"],
+      "properties": { "characterDefId": { "type": "string" }, "bodyPresetId": { "type": "string" } }
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caseId", "scope", "description", "operation", "expected"],
+      "properties": {
+        "caseId": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "scope": { "enum": ["gameplay", "client"] },
+        "description": { "type": "string" },
+        "ownership": { "type": "string" },
+        "state": { "oneOf": [{ "type": "string" }, { "$ref": "equipment-state.schema.json" }] },
+        "context": { "$ref": "#/$defs/context" },
+        "appearance": { "$ref": "catalog.schema.json#/$defs/appearance" },
+        "operation": {
+          "type": "object",
+          "required": ["op"],
+          "properties": { "op": { "enum": ["equip", "unequip", "validate", "statSources", "normalizeOnePiece", "resolve"] } }
+        },
+        "expected": { "type": ["object", "null"] }
+      }
+    }
+  }
+}

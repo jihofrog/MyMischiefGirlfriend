@@ -1,0 +1,127 @@
+{
+ "penetration": {
+  "hair_bob_01__Volume": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__Bangs": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__Side_L": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__Side_R": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__Back": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__TempleLink_L": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__TempleLink_R": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  }
+ },
+ "ends_forward_min_y": 0.009,
+ "ends_lowest_z": 1.1608,
+ "ear_visible": {
+  "front": {
+   "with_hair": 752,
+   "no_hair": 1346,
+   "visible_share": 0.559
+  },
+  "side_L": {
+   "with_hair": 157,
+   "no_hair": 1347,
+   "visible_share": 0.117
+  },
+  "side_R": {
+   "with_hair": 291,
+   "no_hair": 1349,
+   "visible_share": 0.216
+  },
+  "34_L": {
+   "with_hair": 750,
+   "no_hair": 1305,
+   "visible_share": 0.575
+  },
+  "34_R": {
+   "with_hair": 430,
+   "no_hair": 1305,
+   "visible_share": 0.33
+  }
+ },
+ "head_skin_34_px": {
+  "34_L": 25487,
+  "34_R": 21543
+ },
+ "eye_visible": {
+  "front": {
+   "with_hair": 7577,
+   "no_hair": 7613,
+   "visible_share": 0.995
+  },
+  "side_L": {
+   "with_hair": 1370,
+   "no_hair": 2414,
+   "visible_share": 0.568
+  },
+  "side_R": {
+   "with_hair": 1094,
+   "no_hair": 2763,
+   "visible_share": 0.396
+  },
+  "34_L": {
+   "with_hair": 5645,
+   "no_hair": 6031,
+   "visible_share": 0.936
+  },
+  "34_R": {
+   "with_hair": 5646,
+   "no_hair": 6373,
+   "visible_share": 0.886
+  }
+ },
+ "temple_cover": {
+  "front_L": 0.966,
+  "front_L_upper": 1.0,
+  "34_L": 0.748,
+  "34_L_upper": 0.959,
+  "side_L": 0.815,
+  "side_L_upper": 0.909,
+  "front_R": 0.974,
+  "front_R_upper": 1.0,
+  "34_R": 1.0,
+  "34_R_upper": 1.0,
+  "side_R": 1.0,
+  "side_R_upper": 1.0
+ }
+}

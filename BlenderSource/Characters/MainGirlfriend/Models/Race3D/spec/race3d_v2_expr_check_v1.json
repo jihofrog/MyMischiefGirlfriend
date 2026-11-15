@@ -1,0 +1,50 @@
+{
+ "mode": "v1",
+ "states": 540,
+ "lid_ball_violations": 6680,
+ "lid_ball_worst_mm": null,
+ "lash_lid_violations": 8500,
+ "lash_lid_worst_mm": null,
+ "worst": {
+  "lid_ball_L": {
+   "state": {
+    "v1surprise": 1.0,
+    "blink": 0.5,
+    "gaze": 0.25
+   },
+   "yaw": -45,
+   "mm": -0.206
+  },
+  "lash_lid_L": {
+   "state": {
+    "eyesmile": 1.0,
+    "blink": 1.0,
+    "gaze": 0.0
+   },
+   "yaw": 0,
+   "mm": -2.366
+  },
+  "lid_ball_R": {
+   "state": {
+    "v1surprise": 1.0,
+    "blink": 0.5,
+    "gaze": -0.25
+   },
+   "yaw": 35,
+   "mm": -0.175
+  },
+  "lash_lid_R": {
+   "state": {
+    "eyesmile": 1.0,
+    "blink": 1.0,
+    "gaze": 0.0
+   },
+   "yaw": 0,
+   "mm": -2.435
+  }
+ },
+ "lid_ball_min_mm_L": -0.206,
+ "lash_lid_min_mm_L": -2.366,
+ "lid_ball_min_mm_R": -0.175,
+ "lash_lid_min_mm_R": -2.435
+}

@@ -1,0 +1,26 @@
+{
+ "front": {
+  "blender_v6c": 0.827,
+  "blender_v6d_3": 0.818,
+  "unity_v6c": 0.843,
+  "unity_v6d_3": 0.839
+ },
+ "34_L": {
+  "blender_v6c": 0.834,
+  "blender_v6d_3": 0.807,
+  "unity_v6c": 0.816,
+  "unity_v6d_3": 0.797
+ },
+ "60_L": {
+  "blender_v6c": 0.843,
+  "blender_v6d_3": 0.794,
+  "unity_v6c": 0.806,
+  "unity_v6d_3": 0.771
+ },
+ "side_L": {
+  "blender_v6c": 0.827,
+  "blender_v6d_3": 0.781,
+  "unity_v6c": 0.794,
+  "unity_v6d_3": 0.757
+ }
+}

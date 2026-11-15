@@ -1,0 +1,210 @@
+{
+ "diag": {
+  "v6b_full": {
+   "holes_px": 5133,
+   "smudge_px": 0
+  },
+  "v6b_no_lash": {
+   "holes_px": 53490,
+   "smudge_px": 0
+  },
+  "v6b_no_skirt": {
+   "holes_px": 5308,
+   "smudge_px": 0
+  },
+  "v6b_no_lids": {
+   "holes_px": 3991,
+   "smudge_px": 0
+  },
+  "v6b_no_outline": {
+   "holes_px": 5133,
+   "smudge_px": 0
+  },
+  "v6b_lash_flat": {
+   "holes_px": 5202,
+   "smudge_px": 0
+  },
+  "v6b_lash_blend": {
+   "holes_px": 5170,
+   "smudge_px": 0
+  },
+  "v6b_ball_flat": {
+   "holes_px": 5315,
+   "smudge_px": 0
+  },
+  "v6b_lash_fwd": {
+   "holes_px": 3010,
+   "smudge_px": 0
+  },
+  "v6c_full": {
+   "holes_px": 823,
+   "smudge_px": 0
+  },
+  "v6c_no_lash": {
+   "holes_px": 53490,
+   "smudge_px": 0
+  },
+  "v6c_no_skirt": {
+   "holes_px": 825,
+   "smudge_px": 0
+  },
+  "v6c_no_lids": {
+   "holes_px": 814,
+   "smudge_px": 0
+  },
+  "v6c_no_outline": {
+   "holes_px": 823,
+   "smudge_px": 0
+  },
+  "v6c_lash_flat": {
+   "holes_px": 821,
+   "smudge_px": 0
+  },
+  "v6c_lash_blend": {
+   "holes_px": 823,
+   "smudge_px": 0
+  },
+  "v6c_ball_flat": {
+   "holes_px": 830,
+   "smudge_px": 0
+  },
+  "v6c_lash_fwd": {
+   "holes_px": 823,
+   "smudge_px": 0
+  },
+  "v6a_with_hair": {
+   "holes_px": 21913,
+   "smudge_px": 34303
+  },
+  "v6b_with_hair": {
+   "holes_px": 5133,
+   "smudge_px": 30084
+  },
+  "v6c_with_hair": {
+   "holes_px": 823,
+   "smudge_px": 30052
+  },
+  "unity_v6b": {
+   "holes_px": 8268,
+   "smudge_px": 29804
+  },
+  "unity_v6c": {
+   "holes_px": 3577,
+   "smudge_px": 29804
+  }
+ },
+ "shimmer_unity": {
+  "v6b": {
+   "coverage_cv": 0.0041,
+   "isolated_dark_px_per_frame": 16.6,
+   "mean_frame_change": 0.0094
+  },
+  "v6c": {
+   "coverage_cv": 0.0032,
+   "isolated_dark_px_per_frame": 0.4,
+   "mean_frame_change": 0.0064
+  }
+ },
+ "iou": {
+  "v6b": {
+   "R_opening": 0.908,
+   "R_iris": 0.931,
+   "R_lash": 0.879,
+   "L_opening": 0.921,
+   "L_iris": 0.932,
+   "L_lash": 0.877
+  },
+  "v6c": {
+   "R_opening": 0.914,
+   "R_iris": 0.932,
+   "R_lash": 0.909,
+   "L_opening": 0.922,
+   "L_iris": 0.932,
+   "L_lash": 0.922
+  }
+ },
+ "v6c_stats": {
+  "depth_fix_L": {
+   "band_front_shift_mm_max": 3.02,
+   "lid_vertex_moves_all_keys": 735,
+   "band_vertex_moves_all_keys": 2015
+  },
+  "poses_L": {
+   "Neutral": {
+    "crease_over_lash_px_min": 2.36,
+    "crease_width_px": 4.66,
+    "band_below_lid_edge_px_min": 0.1
+   },
+   "Blink50": {
+    "crease_over_lash_px_min": 35.22,
+    "crease_width_px": 2.33,
+    "band_below_lid_edge_px_min": 0.19
+   },
+   "Blink": {
+    "crease_over_lash_px_min": 65.33,
+    "crease_width_px": 0.0,
+    "band_below_lid_edge_px_min": 0.27
+   },
+   "EyeSmile": {
+    "crease_over_lash_px_min": 10.42,
+    "crease_width_px": 3.96,
+    "band_below_lid_edge_px_min": 0.13
+   },
+   "Smile+EyeSmile": {
+    "crease_over_lash_px_min": 10.42,
+    "crease_width_px": 3.96,
+    "band_below_lid_edge_px_min": 0.13
+   },
+   "Surprise": {
+    "crease_over_lash_px_min": 1.02,
+    "crease_width_px": 5.13,
+    "band_below_lid_edge_px_min": 0.07
+   }
+  },
+  "tris_L": {
+   "lash": 1174,
+   "crease_added": 176
+  },
+  "depth_fix_R": {
+   "band_front_shift_mm_max": 3.1,
+   "lid_vertex_moves_all_keys": 754,
+   "band_vertex_moves_all_keys": 1883
+  },
+  "poses_R": {
+   "Neutral": {
+    "crease_over_lash_px_min": 0.56,
+    "crease_width_px": 4.66,
+    "band_below_lid_edge_px_min": 1.02
+   },
+   "Blink50": {
+    "crease_over_lash_px_min": 33.29,
+    "crease_width_px": 2.33,
+    "band_below_lid_edge_px_min": 3.11
+   },
+   "Blink": {
+    "crease_over_lash_px_min": 63.99,
+    "crease_width_px": 0.0,
+    "band_below_lid_edge_px_min": 5.2
+   },
+   "EyeSmile": {
+    "crease_over_lash_px_min": 8.2,
+    "crease_width_px": 3.96,
+    "band_below_lid_edge_px_min": 1.72
+   },
+   "Smile+EyeSmile": {
+    "crease_over_lash_px_min": 8.2,
+    "crease_width_px": 3.96,
+    "band_below_lid_edge_px_min": 1.72
+   },
+   "Surprise": {
+    "crease_over_lash_px_min": -0.69,
+    "crease_width_px": 5.13,
+    "band_below_lid_edge_px_min": 0.86
+   }
+  },
+  "tris_R": {
+   "lash": 1130,
+   "crease_added": 168
+  }
+ }
+}

@@ -1,0 +1,139 @@
+{
+  "$comment": "Client cases (scope client): AppearanceResolver output. Renderer-neutral: no ArtMesh, sprite or mesh names. The server does not need to run these.",
+  "schemaVersion": 1,
+  "catalog": "catalog_rules_test.json",
+  "cases": [
+    {
+      "caseId": "resolve_default_outfit", "scope": "client",
+      "description": "MainGirlfriend default look. Stocking feet are occluded by the ankle boots (higher layer); brow color follows hair (U6).",
+      "context": { "characterDefId": "chr_mainGirlfriend_01", "bodyPresetId": "body_base_01" },
+      "appearance": {
+        "face": { "eye": "eye_round_01", "nose": "nose_dot_01", "mouth": "mouth_basic_01", "ear": "ear_basic_01", "brow": "brow_basic_01" },
+        "skinColorId": "skin_light_01", "hairColorId": "haircolor_brown_01", "eyeColorId": "eyecolor_brown_01",
+        "browColorMode": "followHair", "browColorId": null, "version": 1
+      },
+      "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" }
+      ] },
+      "operation": { "op": "resolve" },
+      "expected": {
+        "characterDefId": "chr_mainGirlfriend_01", "bodyPresetId": "body_base_01", "bodyType": "standard", "headBaseId": "head_base_01",
+        "face": { "eye": "eye_round_01", "nose": "nose_dot_01", "mouth": "mouth_basic_01", "ear": "ear_basic_01", "brow": "brow_basic_01" },
+        "colors": {
+          "skin": { "colorId": "skin_light_01", "rgb": "#FBDDCB" },
+          "hair": { "colorId": "haircolor_brown_01", "rgb": "#7A4A3A" },
+          "eye": { "colorId": "eyecolor_brown_01", "rgb": "#8A4A30" },
+          "brow": { "colorId": "haircolor_brown_01", "rgb": "#7A4A3A" },
+          "browFollowsHair": true
+        },
+        "items": [
+          { "slotIds": ["hair"], "itemId": "hair_bob_01", "variantId": "hair_bob_01.default", "kind": "hair", "layer": 60, "tags": [], "covers": [], "colors": [], "occludedRegions": [] },
+          { "slotIds": ["top"], "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream", "kind": "top", "layer": 30, "tags": [],
+            "covers": ["Chest", "Torso", "UpperArm_L", "UpperArm_R"], "colors": [{ "channel": "primary", "rgb": "#F6EEE2" }], "occludedRegions": [] },
+          { "slotIds": ["bottom"], "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy", "kind": "bottom", "layer": 20, "tags": [],
+            "covers": ["Hips"], "colors": [{ "channel": "primary", "rgb": "#2C3550" }], "occludedRegions": [] },
+          { "slotIds": ["legwear"], "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black", "kind": "legwear", "layer": 10, "tags": ["thighhigh"],
+            "covers": ["Thigh_L", "Thigh_R", "Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"], "colors": [{ "channel": "primary", "rgb": "#1E1C22" }],
+            "occludedRegions": ["Foot_L", "Foot_R"] },
+          { "slotIds": ["shoes"], "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black", "kind": "shoes", "layer": 40, "tags": [],
+            "covers": ["Foot_L", "Foot_R"], "colors": [{ "channel": "accent", "rgb": "#C8B07A" }, { "channel": "primary", "rgb": "#2A2226" }], "occludedRegions": [] },
+          { "slotIds": ["acc.head"], "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white", "kind": "accessory", "layer": 50, "tags": [],
+            "covers": [], "colors": [{ "channel": "primary", "rgb": "#FAFAFA" }], "occludedRegions": [] }
+        ],
+        "coveredRegions": ["Chest", "Torso", "UpperArm_L", "UpperArm_R", "Hips", "Thigh_L", "Thigh_R", "Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"],
+        "intents": [],
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "resolve_hat_and_long_boots", "scope": "client",
+      "description": "Beret gives the hairForm under_hat intent; long boots occlude the stocking knees, calves and feet. Free colors (U4).",
+      "context": { "characterDefId": "chr_mainGirlfriend_01", "bodyPresetId": "body_base_01" },
+      "appearance": {
+        "face": { "eye": "eye_sharp_01", "nose": "nose_dot_01", "mouth": "mouth_basic_01", "ear": "ear_basic_01", "brow": "brow_basic_01" },
+        "skinColorId": "skin_tan_01", "hairColorId": "haircolor_blonde_01", "eyeColorId": "eyecolor_blue_01",
+        "browColorMode": "followHair", "browColorId": null, "version": 3
+      },
+      "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_long_01", "variantId": "hair_long_01.default" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_longboot_01", "variantId": "shoes_longboot_01.brown" },
+        { "slotId": "acc.head", "itemId": "acc_head_beret_01", "variantId": "acc_head_beret_01.red" }
+      ] },
+      "operation": { "op": "resolve" },
+      "expected": {
+        "characterDefId": "chr_mainGirlfriend_01", "bodyPresetId": "body_base_01", "bodyType": "standard", "headBaseId": "head_base_01",
+        "face": { "eye": "eye_sharp_01", "nose": "nose_dot_01", "mouth": "mouth_basic_01", "ear": "ear_basic_01", "brow": "brow_basic_01" },
+        "colors": {
+          "skin": { "colorId": "skin_tan_01", "rgb": "#E2B08C" },
+          "hair": { "colorId": "haircolor_blonde_01", "rgb": "#E6C27A" },
+          "eye": { "colorId": "eyecolor_blue_01", "rgb": "#4A78C0" },
+          "brow": { "colorId": "haircolor_blonde_01", "rgb": "#E6C27A" },
+          "browFollowsHair": true
+        },
+        "items": [
+          { "slotIds": ["hair"], "itemId": "hair_long_01", "variantId": "hair_long_01.default", "kind": "hair", "layer": 60, "tags": [], "covers": [], "colors": [], "occludedRegions": [] },
+          { "slotIds": ["top"], "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream", "kind": "top", "layer": 30, "tags": [],
+            "covers": ["Chest", "Torso", "UpperArm_L", "UpperArm_R"], "colors": [{ "channel": "primary", "rgb": "#F6EEE2" }], "occludedRegions": [] },
+          { "slotIds": ["bottom"], "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy", "kind": "bottom", "layer": 20, "tags": [],
+            "covers": ["Hips"], "colors": [{ "channel": "primary", "rgb": "#2C3550" }], "occludedRegions": [] },
+          { "slotIds": ["legwear"], "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black", "kind": "legwear", "layer": 10, "tags": ["thighhigh"],
+            "covers": ["Thigh_L", "Thigh_R", "Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"], "colors": [{ "channel": "primary", "rgb": "#1E1C22" }],
+            "occludedRegions": ["Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"] },
+          { "slotIds": ["shoes"], "itemId": "shoes_longboot_01", "variantId": "shoes_longboot_01.brown", "kind": "shoes", "layer": 40, "tags": ["long_boots"],
+            "covers": ["Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"], "colors": [{ "channel": "primary", "rgb": "#5A3A2A" }], "occludedRegions": [] },
+          { "slotIds": ["acc.head"], "itemId": "acc_head_beret_01", "variantId": "acc_head_beret_01.red", "kind": "accessory", "layer": 50, "tags": ["hat"],
+            "covers": ["HeadTop"], "colors": [{ "channel": "primary", "rgb": "#B02A36" }], "occludedRegions": [] }
+        ],
+        "coveredRegions": ["HeadTop", "Chest", "Torso", "UpperArm_L", "UpperArm_R", "Hips", "Thigh_L", "Thigh_R", "Knee_L", "Knee_R", "Calf_L", "Calf_R", "Foot_L", "Foot_R"],
+        "intents": [{ "kind": "hairForm", "value": "under_hat", "causeItemId": "acc_head_beret_01" }],
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "resolve_fallbacks", "scope": "client",
+      "description": "Bad input never breaks the screen: unknown face style, wrong-category skin color, unknown accessory and missing shoes fall back with warnings. Explicit brow color (later feature).",
+      "context": { "characterDefId": "chr_mainGirlfriend_01", "bodyPresetId": "body_base_01" },
+      "appearance": {
+        "face": { "eye": "eye_unknown_01", "nose": "nose_dot_01", "mouth": "mouth_basic_01", "ear": "ear_basic_01", "brow": "brow_basic_01" },
+        "skinColorId": "haircolor_brown_01", "hairColorId": "haircolor_brown_01", "eyeColorId": "eyecolor_brown_01",
+        "browColorMode": "explicit", "browColorId": "haircolor_blonde_01", "version": 2
+      },
+      "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white" },
+        { "slotId": "bottom", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white" },
+        { "slotId": "acc.head", "itemId": "acc_head_nothing_01", "variantId": "acc_head_nothing_01.x" }
+      ] },
+      "operation": { "op": "resolve" },
+      "expected": {
+        "characterDefId": "chr_mainGirlfriend_01", "bodyPresetId": "body_base_01", "bodyType": "standard", "headBaseId": "head_base_01",
+        "face": { "eye": "eye_round_01", "nose": "nose_dot_01", "mouth": "mouth_basic_01", "ear": "ear_basic_01", "brow": "brow_basic_01" },
+        "colors": {
+          "skin": { "colorId": "skin_light_01", "rgb": "#FBDDCB" },
+          "hair": { "colorId": "haircolor_brown_01", "rgb": "#7A4A3A" },
+          "eye": { "colorId": "eyecolor_brown_01", "rgb": "#8A4A30" },
+          "brow": { "colorId": "haircolor_blonde_01", "rgb": "#E6C27A" },
+          "browFollowsHair": false
+        },
+        "items": [
+          { "slotIds": ["hair"], "itemId": "hair_bob_01", "variantId": "hair_bob_01.default", "kind": "hair", "layer": 60, "tags": [], "covers": [], "colors": [], "occludedRegions": [] },
+          { "slotIds": ["top", "bottom"], "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white", "kind": "onepiece", "layer": 30, "tags": [],
+            "covers": ["Chest", "Torso", "Hips", "Thigh_L", "Thigh_R"], "colors": [{ "channel": "primary", "rgb": "#FAF6EE" }], "occludedRegions": [] },
+          { "slotIds": ["shoes"], "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black", "kind": "shoes", "layer": 40, "tags": [],
+            "covers": ["Foot_L", "Foot_R"], "colors": [{ "channel": "accent", "rgb": "#C8B07A" }, { "channel": "primary", "rgb": "#2A2226" }], "occludedRegions": [] }
+        ],
+        "coveredRegions": ["Chest", "Torso", "Hips", "Thigh_L", "Thigh_R", "Foot_L", "Foot_R"],
+        "intents": [],
+        "warnings": ["colorFallback:skin", "entryIgnored:acc.head", "faceStyleFallback:eye", "requiredSlotDefaulted:shoes"]
+      }
+    }
+  ]
+}

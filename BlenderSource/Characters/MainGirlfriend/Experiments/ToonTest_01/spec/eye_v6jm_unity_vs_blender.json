@@ -1,0 +1,14 @@
+{
+ "unity_v6j": {
+  "mean_diff": 0.0131,
+  "strong_diff_px": 193604
+ },
+ "unity_v6jm": {
+  "mean_diff": 0.0088,
+  "strong_diff_px": 57247,
+  "front_vs_unityA": {
+   "L": 0.0051,
+   "R": 0.0062
+  }
+ }
+}

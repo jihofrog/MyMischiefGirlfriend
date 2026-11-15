@@ -1,0 +1,99 @@
+{
+ "strands": 38,
+ "by_group": {
+  "Crown": 3,
+  "Bangs": 10,
+  "Side_L": 5,
+  "Side_R": 5,
+  "Back": 12,
+  "Flyaway": 3
+ },
+ "objects": {
+  "hair_bob_01__Crown": {
+   "verts": 546,
+   "tris": 1080,
+   "materials": [
+    "M_hair_bob_01_01",
+    "TT_Line_Hair"
+   ]
+  },
+  "hair_bob_01__Bangs": {
+   "verts": 1820,
+   "tris": 3600,
+   "materials": [
+    "M_hair_bob_01_01",
+    "TT_Line_Hair"
+   ]
+  },
+  "hair_bob_01__Side_L": {
+   "verts": 910,
+   "tris": 1800,
+   "materials": [
+    "M_hair_bob_01_01",
+    "TT_Line_Hair"
+   ]
+  },
+  "hair_bob_01__Side_R": {
+   "verts": 910,
+   "tris": 1800,
+   "materials": [
+    "M_hair_bob_01_01",
+    "TT_Line_Hair"
+   ]
+  },
+  "hair_bob_01__Back": {
+   "verts": 2184,
+   "tris": 4320,
+   "materials": [
+    "M_hair_bob_01_01",
+    "TT_Line_Hair"
+   ]
+  },
+  "hair_bob_01__Flyaway": {
+   "verts": 258,
+   "tris": 504,
+   "materials": [
+    "M_hair_bob_01_01",
+    "TT_Line_Hair"
+   ]
+  },
+  "hair_bob_01__Scalp": {
+   "verts": 491,
+   "tris": 924,
+   "materials": [
+    "M_hair_bob_01_02"
+   ]
+  },
+  "acc_head_hairclip_x_01": {
+   "verts": 64,
+   "tris": 120,
+   "materials": [
+    "M_acc_head_hairclip_x_01_01",
+    "TT_Line_Hair"
+   ]
+  }
+ },
+ "old_helmet": {
+  "Hair_Main": {
+   "verts": 5202,
+   "tris": 10400
+  },
+  "Hair_Clip_X": {
+   "verts": 52,
+   "tris": 96
+  }
+ },
+ "clip": {
+  "location": [
+   0.143,
+   -0.0934,
+   1.4898
+  ],
+  "normal": [
+   0.712,
+   -0.682,
+   0.169
+  ],
+  "bar_length": 0.0675
+ }
+}

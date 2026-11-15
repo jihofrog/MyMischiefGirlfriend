@@ -1,0 +1,84 @@
+{
+ "depth_fix_L": {
+  "band_front_shift_mm_max": 3.02,
+  "lid_vertex_moves_all_keys": 735,
+  "band_vertex_moves_all_keys": 2015
+ },
+ "poses_L": {
+  "Neutral": {
+   "crease_over_lash_px_min": 2.36,
+   "crease_width_px": 4.66,
+   "band_below_lid_edge_px_min": 0.1
+  },
+  "Blink50": {
+   "crease_over_lash_px_min": 35.22,
+   "crease_width_px": 2.33,
+   "band_below_lid_edge_px_min": 0.19
+  },
+  "Blink": {
+   "crease_over_lash_px_min": 65.33,
+   "crease_width_px": 0.0,
+   "band_below_lid_edge_px_min": 0.27
+  },
+  "EyeSmile": {
+   "crease_over_lash_px_min": 10.42,
+   "crease_width_px": 3.96,
+   "band_below_lid_edge_px_min": 0.13
+  },
+  "Smile+EyeSmile": {
+   "crease_over_lash_px_min": 10.42,
+   "crease_width_px": 3.96,
+   "band_below_lid_edge_px_min": 0.13
+  },
+  "Surprise": {
+   "crease_over_lash_px_min": 1.02,
+   "crease_width_px": 5.13,
+   "band_below_lid_edge_px_min": 0.07
+  }
+ },
+ "tris_L": {
+  "lash": 1174,
+  "crease_added": 176
+ },
+ "depth_fix_R": {
+  "band_front_shift_mm_max": 3.1,
+  "lid_vertex_moves_all_keys": 754,
+  "band_vertex_moves_all_keys": 1883
+ },
+ "poses_R": {
+  "Neutral": {
+   "crease_over_lash_px_min": 0.56,
+   "crease_width_px": 4.66,
+   "band_below_lid_edge_px_min": 1.02
+  },
+  "Blink50": {
+   "crease_over_lash_px_min": 33.29,
+   "crease_width_px": 2.33,
+   "band_below_lid_edge_px_min": 3.11
+  },
+  "Blink": {
+   "crease_over_lash_px_min": 63.99,
+   "crease_width_px": 0.0,
+   "band_below_lid_edge_px_min": 5.2
+  },
+  "EyeSmile": {
+   "crease_over_lash_px_min": 8.2,
+   "crease_width_px": 3.96,
+   "band_below_lid_edge_px_min": 1.72
+  },
+  "Smile+EyeSmile": {
+   "crease_over_lash_px_min": 8.2,
+   "crease_width_px": 3.96,
+   "band_below_lid_edge_px_min": 1.72
+  },
+  "Surprise": {
+   "crease_over_lash_px_min": -0.69,
+   "crease_width_px": 5.13,
+   "band_below_lid_edge_px_min": 0.86
+  }
+ },
+ "tris_R": {
+  "lash": 1130,
+  "crease_added": 168
+ }
+}

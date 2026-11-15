@@ -1,0 +1,15 @@
+{
+ "step_mm": 3.0,
+ "lid_lift_for_blends": [
+  {
+   "side": "L",
+   "verts": 82,
+   "max_mm": 1.53
+  },
+  {
+   "side": "R",
+   "verts": 79,
+   "max_mm": 1.45
+  }
+ ]
+}

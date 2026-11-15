@@ -7,6 +7,10 @@
 # OS
 .DS_Store
 
+# Editor / local tooling
+.cursor/
+.utmp/
+
 # Python
 __pycache__/
 *.pyc
@@ -14,6 +18,17 @@ __pycache__/
 # Blender
 *.blend1
 /BlenderSource/**/Backups/
+# large local render dumps (reports/sheets kept; re-render from scripts)
+/BlenderSource/**/Experiments/**/renders/
+/BlenderSource/**/Models/Race3D/experiments/renders/
+/BlenderSource/**/Models/Race3D/experiments/renders_v3/
+/BlenderSource/**/Models/Race3D/experiments/renders_v3b/
+/BlenderSource/**/Models/Race3D/experiments/unity_v3b/
+/BlenderSource/**/Models/Race3D/experiments/unity_v3/
+
+# Android build side-products
+/Assets/AddressableAssetsData/Android/
+/ProjectSettings/ScriptableBuildPipeline.json
 
 # Live2D working sources (large, kept outside the repository)
 /Live2DSource/

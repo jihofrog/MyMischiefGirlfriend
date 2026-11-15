@@ -1,0 +1,1194 @@
+{
+ "objects": {
+  "Eye_Root.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "EMPTY",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": []
+  },
+  "Eye_White.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_White"
+   ],
+   "verts": 641,
+   "faces": 640,
+   "shape_keys": [
+    "Basis",
+    "Blink",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     0.0404,
+     -0.1452,
+     1.3548
+    ],
+    [
+     0.114,
+     -0.101,
+     1.4178
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.53,
+    "median": 4.27,
+    "max": 7.12
+   },
+   "flatness": 0.179,
+   "side_protrusion_mm_max": -1.02
+  },
+  "Eye_UpperLid.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_UpperLid"
+   ],
+   "verts": 291,
+   "faces": 224,
+   "shape_keys": [
+    "Basis",
+    "Blink"
+   ],
+   "bounds": [
+    [
+     0.0364,
+     -0.1437,
+     1.3968
+    ],
+    [
+     0.1235,
+     -0.0898,
+     1.4242
+    ]
+   ],
+   "depth_mm": {
+    "min": 1.14,
+    "median": 1.83,
+    "max": 3.87
+   },
+   "flatness": 0.0749,
+   "side_protrusion_mm_max": -0.06
+  },
+  "Eye_UpperLashes.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_Lash"
+   ],
+   "verts": 63,
+   "faces": 36,
+   "shape_keys": [
+    "Basis",
+    "Blink"
+   ],
+   "bounds": [
+    [
+     0.0816,
+     -0.1273,
+     1.4006
+    ],
+    [
+     0.1225,
+     -0.0924,
+     1.4279
+    ]
+   ],
+   "depth_mm": {
+    "min": 1.39,
+    "median": 1.98,
+    "max": 4.29
+   },
+   "flatness": 0.0398,
+   "side_protrusion_mm_max": -14.36
+  },
+  "Eye_UpperCrease.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "CURVE",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_Crease"
+   ]
+  },
+  "Eye_OuterLine.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_OuterLine"
+   ],
+   "verts": 72,
+   "faces": 46,
+   "shape_keys": [
+    "Basis",
+    "Blink"
+   ],
+   "bounds": [
+    [
+     0.1031,
+     -0.1081,
+     1.3679
+    ],
+    [
+     0.1167,
+     -0.0989,
+     1.3999
+    ]
+   ],
+   "depth_mm": {
+    "min": 3.42,
+    "median": 5.72,
+    "max": 7.51
+   },
+   "flatness": 0.0161,
+   "side_protrusion_mm_max": -39.86
+  },
+  "Eye_LowerLid.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "CURVE",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_LowerLid"
+   ]
+  },
+  "Eye_Gaze.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "EMPTY",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": []
+  },
+  "Eye_Iris.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Eye_White.L"
+    ]
+   ],
+   "materials": [
+    "TT_Eye_Iris"
+   ],
+   "verts": 641,
+   "faces": 640,
+   "shape_keys": [
+    "Basis",
+    "Blink",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     0.0427,
+     -0.1454,
+     1.3587
+    ],
+    [
+     0.0924,
+     -0.1254,
+     1.4176
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.81,
+    "median": 3.97,
+    "max": 6.42
+   },
+   "flatness": 0.1215,
+   "side_protrusion_mm_max": -0.68
+  },
+  "Eye_Pupil.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": true,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Eye_White.L"
+    ]
+   ],
+   "materials": [
+    "MG_Eye_Pupil"
+   ],
+   "verts": 641,
+   "faces": 640,
+   "shape_keys": [
+    "Basis",
+    "Blink",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     0.0581,
+     -0.1438,
+     1.3736
+    ],
+    [
+     0.0749,
+     -0.138,
+     1.3999
+    ]
+   ],
+   "depth_mm": {
+    "min": 3.67,
+    "median": 4.49,
+    "max": 5.43
+   },
+   "flatness": 0.0382,
+   "side_protrusion_mm_max": -1.73
+  },
+  "Eye_Highlight.L": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": true,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Eye_White.L"
+    ]
+   ],
+   "materials": [
+    "MG_Eye_Highlight"
+   ],
+   "verts": 1282,
+   "faces": 1280,
+   "shape_keys": [
+    "Basis",
+    "Blink",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     0.0447,
+     -0.1443,
+     1.3917
+    ],
+    [
+     0.0712,
+     -0.1365,
+     1.4097
+    ]
+   ],
+   "depth_mm": {
+    "min": 2.26,
+    "median": 3.04,
+    "max": 3.99
+   },
+   "flatness": 0.0283,
+   "side_protrusion_mm_max": -0.19
+  },
+  "Eye_Root.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "EMPTY",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": []
+  },
+  "Eye_White.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_White"
+   ],
+   "verts": 641,
+   "faces": 640,
+   "shape_keys": [
+    "Basis",
+    "Blink",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     -0.114,
+     -0.1452,
+     1.3548
+    ],
+    [
+     -0.0404,
+     -0.101,
+     1.4178
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.53,
+    "median": 4.29,
+    "max": 7.15
+   },
+   "flatness": 0.179,
+   "side_protrusion_mm_max": -1.02
+  },
+  "Eye_UpperLid.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_UpperLid"
+   ],
+   "verts": 291,
+   "faces": 224,
+   "shape_keys": [
+    "Basis",
+    "Blink"
+   ],
+   "bounds": [
+    [
+     -0.1235,
+     -0.1437,
+     1.3968
+    ],
+    [
+     -0.0364,
+     -0.0898,
+     1.4242
+    ]
+   ],
+   "depth_mm": {
+    "min": 1.14,
+    "median": 1.82,
+    "max": 3.88
+   },
+   "flatness": 0.0749,
+   "side_protrusion_mm_max": -0.06
+  },
+  "Eye_UpperLashes.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_Lash"
+   ],
+   "verts": 63,
+   "faces": 36,
+   "shape_keys": [
+    "Basis",
+    "Blink"
+   ],
+   "bounds": [
+    [
+     -0.1225,
+     -0.1273,
+     1.4006
+    ],
+    [
+     -0.0816,
+     -0.0924,
+     1.4279
+    ]
+   ],
+   "depth_mm": {
+    "min": 1.39,
+    "median": 1.98,
+    "max": 4.3
+   },
+   "flatness": 0.0398,
+   "side_protrusion_mm_max": -14.36
+  },
+  "Eye_UpperCrease.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "CURVE",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_Crease"
+   ]
+  },
+  "Eye_OuterLine.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_OuterLine"
+   ],
+   "verts": 72,
+   "faces": 46,
+   "shape_keys": [
+    "Basis",
+    "Blink"
+   ],
+   "bounds": [
+    [
+     -0.1167,
+     -0.1081,
+     1.3679
+    ],
+    [
+     -0.1031,
+     -0.0989,
+     1.3999
+    ]
+   ],
+   "depth_mm": {
+    "min": 3.45,
+    "median": 5.74,
+    "max": 7.52
+   },
+   "flatness": 0.0161,
+   "side_protrusion_mm_max": -39.86
+  },
+  "Eye_LowerLid.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "CURVE",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Eye_LowerLid"
+   ]
+  },
+  "Eye_Gaze.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "EMPTY",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": []
+  },
+  "Eye_Iris.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Eye_White.R"
+    ]
+   ],
+   "materials": [
+    "TT_Eye_Iris"
+   ],
+   "verts": 641,
+   "faces": 640,
+   "shape_keys": [
+    "Basis",
+    "Blink",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     -0.0924,
+     -0.1454,
+     1.3587
+    ],
+    [
+     -0.0427,
+     -0.1254,
+     1.4176
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.81,
+    "median": 3.97,
+    "max": 6.43
+   },
+   "flatness": 0.1215,
+   "side_protrusion_mm_max": -0.68
+  },
+  "Eye_Pupil.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": true,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Eye_White.R"
+    ]
+   ],
+   "materials": [
+    "MG_Eye_Pupil"
+   ],
+   "verts": 641,
+   "faces": 640,
+   "shape_keys": [
+    "Basis",
+    "Blink",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     -0.0749,
+     -0.1438,
+     1.3736
+    ],
+    [
+     -0.0581,
+     -0.138,
+     1.3999
+    ]
+   ],
+   "depth_mm": {
+    "min": 3.67,
+    "median": 4.5,
+    "max": 5.44
+   },
+   "flatness": 0.0382,
+   "side_protrusion_mm_max": -1.73
+  },
+  "Eye_Highlight.R": {
+   "collection": "MainGirlfriend_Eyes",
+   "type": "MESH",
+   "hide_render": true,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Eye_White.R"
+    ]
+   ],
+   "materials": [
+    "MG_Eye_Highlight"
+   ],
+   "verts": 1282,
+   "faces": 1280,
+   "shape_keys": [
+    "Basis",
+    "Blink",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     -0.0712,
+     -0.1443,
+     1.3917
+    ],
+    [
+     -0.0447,
+     -0.1365,
+     1.4097
+    ]
+   ],
+   "depth_mm": {
+    "min": 2.26,
+    "median": 3.03,
+    "max": 3.99
+   },
+   "flatness": 0.0283,
+   "side_protrusion_mm_max": -0.19
+  },
+  "Face_Brow_Root.L": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "EMPTY",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": []
+  },
+  "Face_Brow.L": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_MG_Face_Brow"
+   ],
+   "verts": 72,
+   "faces": 46,
+   "shape_keys": [],
+   "bounds": [
+    [
+     0.0547,
+     -0.1318,
+     1.4541
+    ],
+    [
+     0.0998,
+     -0.1079,
+     1.4616
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.28,
+    "median": 0.3,
+    "max": 0.32
+   },
+   "flatness": 0.0297,
+   "side_protrusion_mm_max": -7.76
+  },
+  "Face_Brow_Root.R": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "EMPTY",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": []
+  },
+  "Face_Brow.R": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_MG_Face_Brow"
+   ],
+   "verts": 72,
+   "faces": 46,
+   "shape_keys": [],
+   "bounds": [
+    [
+     -0.0998,
+     -0.1318,
+     1.4541
+    ],
+    [
+     -0.0547,
+     -0.1079,
+     1.4616
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.27,
+    "median": 0.29,
+    "max": 0.3
+   },
+   "flatness": 0.0296,
+   "side_protrusion_mm_max": -7.77
+  },
+  "Face_Nose": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_Nose_Dot"
+   ],
+   "verts": 285,
+   "faces": 252,
+   "shape_keys": [],
+   "bounds": [
+    [
+     -0.0036,
+     -0.1616,
+     1.3428
+    ],
+    [
+     0.0036,
+     -0.154,
+     1.3559
+    ]
+   ],
+   "depth_mm": {
+    "min": 2.78,
+    "median": 3.11,
+    "max": 7.87
+   },
+   "flatness": 0.1681,
+   "side_protrusion_mm_max": 6.35
+  },
+  "Face_Mouth_Root": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "EMPTY",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": []
+  },
+  "Face_Mouth_Smile": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "EMPTY",
+   "hide_render": true,
+   "modifiers": [],
+   "materials": []
+  },
+  "Face_Mouth_Smile_Inside": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": true,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_MG_Face_MouthInside"
+   ],
+   "verts": 163,
+   "faces": 144,
+   "shape_keys": [
+    "Basis",
+    "MouthOpen"
+   ],
+   "bounds": [
+    [
+     -0.0159,
+     -0.1587,
+     1.3099
+    ],
+    [
+     0.016,
+     -0.1578,
+     1.3123
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.27,
+    "median": 0.29,
+    "max": 0.31
+   },
+   "flatness": 0.0209,
+   "side_protrusion_mm_max": 0.32
+  },
+  "Face_Mouth_Smile_Teeth": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": true,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_MG_Face_Teeth"
+   ],
+   "verts": 46,
+   "faces": 36,
+   "shape_keys": [
+    "Basis",
+    "MouthOpen"
+   ],
+   "bounds": [
+    [
+     -0.0109,
+     -0.1603,
+     1.3244
+    ],
+    [
+     0.0109,
+     -0.1598,
+     1.3257
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.5,
+    "median": 0.51,
+    "max": 0.52
+   },
+   "flatness": 0.0055,
+   "side_protrusion_mm_max": 0.64
+  },
+  "Face_Mouth_Smile_Tongue": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": true,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_MG_Face_Tongue"
+   ],
+   "verts": 79,
+   "faces": 72,
+   "shape_keys": [
+    "Basis",
+    "MouthOpen"
+   ],
+   "bounds": [
+    [
+     -0.01,
+     -0.1555,
+     1.3013
+    ],
+    [
+     0.01,
+     -0.1549,
+     1.302
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.5,
+    "median": 0.51,
+    "max": 0.52
+   },
+   "flatness": 0.0236,
+   "side_protrusion_mm_max": 0.62
+  },
+  "Face_Mouth_Smile_Line": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": true,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_MG_Face_LipLine"
+   ],
+   "verts": 75,
+   "faces": 48,
+   "shape_keys": [
+    "Basis",
+    "MouthOpen"
+   ],
+   "bounds": [
+    [
+     -0.0166,
+     -0.1602,
+     1.3267
+    ],
+    [
+     0.0166,
+     -0.1592,
+     1.3287
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.72,
+    "median": 0.73,
+    "max": 0.74
+   },
+   "flatness": 0.0018,
+   "side_protrusion_mm_max": 0.84
+  },
+  "Face_UpperLashes.L": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Face_Lash"
+   ],
+   "verts": 63,
+   "faces": 36,
+   "shape_keys": [
+    "Basis",
+    "Blink"
+   ],
+   "bounds": [
+    [
+     0.0935,
+     -0.1203,
+     1.4012
+    ],
+    [
+     0.1249,
+     -0.0895,
+     1.4234
+    ]
+   ],
+   "depth_mm": {
+    "min": 1.49,
+    "median": 2.17,
+    "max": 3.42
+   },
+   "flatness": 0.0352,
+   "side_protrusion_mm_max": -21.72
+  },
+  "Face_UpperLashes.R": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Face_Lash"
+   ],
+   "verts": 63,
+   "faces": 36,
+   "shape_keys": [
+    "Basis",
+    "Blink"
+   ],
+   "bounds": [
+    [
+     -0.1249,
+     -0.1203,
+     1.4012
+    ],
+    [
+     -0.0935,
+     -0.0895,
+     1.4234
+    ]
+   ],
+   "depth_mm": {
+    "min": 1.5,
+    "median": 2.19,
+    "max": 3.43
+   },
+   "flatness": 0.0352,
+   "side_protrusion_mm_max": -21.72
+  },
+  "Face_LowerLashes.L": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Face_LowerLash"
+   ],
+   "verts": 36,
+   "faces": 18,
+   "shape_keys": [],
+   "bounds": [
+    [
+     0.0935,
+     -0.1187,
+     1.3559
+    ],
+    [
+     0.1103,
+     -0.0979,
+     1.369
+    ]
+   ],
+   "depth_mm": {
+    "min": 7.33,
+    "median": 7.89,
+    "max": 8.45
+   },
+   "flatness": 0.0104,
+   "side_protrusion_mm_max": -31.58
+  },
+  "Face_LowerLashes.R": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [],
+   "materials": [
+    "TT_MG_Face_LowerLash"
+   ],
+   "verts": 36,
+   "faces": 18,
+   "shape_keys": [],
+   "bounds": [
+    [
+     -0.1103,
+     -0.1187,
+     1.3559
+    ],
+    [
+     -0.0935,
+     -0.0979,
+     1.369
+    ]
+   ],
+   "depth_mm": {
+    "min": 7.33,
+    "median": 7.9,
+    "max": 8.46
+   },
+   "flatness": 0.0104,
+   "side_protrusion_mm_max": -31.58
+  },
+  "Face_Ear.L": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SUBSURF",
+     null
+    ]
+   ],
+   "materials": [
+    "TT_Skin",
+    "TT_Line_Skin"
+   ],
+   "verts": 130,
+   "faces": 144,
+   "shape_keys": [],
+   "bounds": [
+    [
+     0.1252,
+     0.0042,
+     1.3296
+    ],
+    [
+     0.1472,
+     0.0456,
+     1.395
+    ]
+   ],
+   "depth_mm": {
+    "min": -9.46,
+    "median": 4.89,
+    "max": 19.93
+   },
+   "flatness": 0.1588,
+   "side_protrusion_mm_max": -155.08
+  },
+  "Face_Ear.R": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SUBSURF",
+     null
+    ]
+   ],
+   "materials": [
+    "TT_Skin",
+    "TT_Line_Skin"
+   ],
+   "verts": 130,
+   "faces": 144,
+   "shape_keys": [],
+   "bounds": [
+    [
+     -0.1472,
+     0.0042,
+     1.3296
+    ],
+    [
+     -0.1252,
+     0.0456,
+     1.395
+    ]
+   ],
+   "depth_mm": {
+    "min": -9.51,
+    "median": 4.88,
+    "max": 19.93
+   },
+   "flatness": 0.1588,
+   "side_protrusion_mm_max": -155.08
+  },
+  "Face_Blush.L": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_Blush_Radial"
+   ],
+   "verts": 117,
+   "faces": 96,
+   "shape_keys": [],
+   "bounds": [
+    [
+     0.0587,
+     -0.1447,
+     1.3243
+    ],
+    [
+     0.1083,
+     -0.0495,
+     1.3574
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.19,
+    "median": 0.22,
+    "max": 0.22
+   },
+   "flatness": 0.1018,
+   "side_protrusion_mm_max": -9.97
+  },
+  "Face_Blush.R": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_Blush_Radial"
+   ],
+   "verts": 117,
+   "faces": 96,
+   "shape_keys": [],
+   "bounds": [
+    [
+     -0.1084,
+     -0.1447,
+     1.3244
+    ],
+    [
+     -0.0587,
+     -0.0495,
+     1.3574
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.22,
+    "median": 0.22,
+    "max": 0.25
+   },
+   "flatness": 0.1018,
+   "side_protrusion_mm_max": -9.95
+  },
+  "TT_Mouth_Closed": {
+   "collection": "MainGirlfriend_FaceDetails",
+   "type": "MESH",
+   "hide_render": false,
+   "modifiers": [
+    [
+     "SHRINKWRAP",
+     "Blockout_Head"
+    ]
+   ],
+   "materials": [
+    "TT_Mouth_Line"
+   ],
+   "verts": 26,
+   "faces": 12,
+   "shape_keys": [
+    "Basis",
+    "Smile"
+   ],
+   "bounds": [
+    [
+     -0.0118,
+     -0.1589,
+     1.3092
+    ],
+    [
+     0.0118,
+     -0.1583,
+     1.3116
+    ]
+   ],
+   "depth_mm": {
+    "min": 0.75,
+    "median": 0.77,
+    "max": 0.78
+   },
+   "flatness": 0.0228,
+   "side_protrusion_mm_max": 0.84
+  }
+ },
+ "eye_L_centre": [
+  0.0774,
+  1.3869
+ ],
+ "section_parts": [
+  "Eye_Iris.L",
+  "Eye_UpperLid.L",
+  "Eye_White.L",
+  "Face_Blush.L"
+ ]
+}

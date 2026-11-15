@@ -1,0 +1,254 @@
+{
+ "35": {
+  "Neutral": {
+   "off": 1186,
+   "on": 832,
+   "unity": 800
+  },
+  "Happy060": {
+   "off": 822,
+   "on": 744,
+   "unity": 729
+  },
+  "Angry100": {
+   "off": 912,
+   "on": 524,
+   "unity": 504
+  },
+  "Sad100": {
+   "off": 1264,
+   "on": 960,
+   "unity": 915
+  },
+  "Cry100": {
+   "off": 1390,
+   "on": 1355,
+   "unity": 1288
+  },
+  "Surprise100": {
+   "off": 2268,
+   "on": 1921,
+   "unity": 2044
+  },
+  "Surprise100_gR": {
+   "off": 6614,
+   "on": 6561,
+   "unity": 6596
+  },
+  "Angry100_b05": {
+   "off": 431,
+   "on": 263,
+   "unity": 247
+  }
+ },
+ "-35": {
+  "Neutral": {
+   "off": 1607,
+   "on": 1198,
+   "unity": 1163
+  },
+  "Happy060": {
+   "off": 1155,
+   "on": 1057,
+   "unity": 997
+  },
+  "Angry100": {
+   "off": 1260,
+   "on": 855,
+   "unity": 791
+  },
+  "Sad100": {
+   "off": 1657,
+   "on": 1307,
+   "unity": 1259
+  },
+  "Cry100": {
+   "off": 1868,
+   "on": 1781,
+   "unity": 1690
+  },
+  "Surprise100": {
+   "off": 1939,
+   "on": 1586,
+   "unity": 2037
+  },
+  "Surprise100_gR": {
+   "off": 2711,
+   "on": 2173,
+   "unity": 2327
+  },
+  "Angry100_b05": {
+   "off": 588,
+   "on": 398,
+   "unity": 329
+  }
+ },
+ "45": {
+  "Neutral": {
+   "off": 497,
+   "on": 451,
+   "unity": 428
+  },
+  "Happy060": {
+   "off": 433,
+   "on": 424,
+   "unity": 360
+  },
+  "Angry100": {
+   "off": 349,
+   "on": 311,
+   "unity": 285
+  },
+  "Sad100": {
+   "off": 593,
+   "on": 549,
+   "unity": 542
+  },
+  "Cry100": {
+   "off": 785,
+   "on": 818,
+   "unity": 782
+  },
+  "Surprise100": {
+   "off": 1019,
+   "on": 983,
+   "unity": 1000
+  },
+  "Surprise100_gR": {
+   "off": 4245,
+   "on": 4238,
+   "unity": 4244
+  },
+  "Angry100_b05": {
+   "off": 247,
+   "on": 225,
+   "unity": 212
+  }
+ },
+ "-45": {
+  "Neutral": {
+   "off": 772,
+   "on": 727,
+   "unity": 744
+  },
+  "Happy060": {
+   "off": 645,
+   "on": 638,
+   "unity": 640
+  },
+  "Angry100": {
+   "off": 573,
+   "on": 531,
+   "unity": 518
+  },
+  "Sad100": {
+   "off": 884,
+   "on": 843,
+   "unity": 858
+  },
+  "Cry100": {
+   "off": 1094,
+   "on": 1142,
+   "unity": 1132
+  },
+  "Surprise100": {
+   "off": 966,
+   "on": 920,
+   "unity": 1050
+  },
+  "Surprise100_gR": {
+   "off": 1475,
+   "on": 1352,
+   "unity": 1452
+  },
+  "Angry100_b05": {
+   "off": 335,
+   "on": 321,
+   "unity": 288
+  }
+ },
+ "60": {
+  "Neutral": {
+   "off": 253,
+   "on": 196,
+   "unity": 176
+  },
+  "Happy060": {
+   "off": 230,
+   "on": 211,
+   "unity": 184
+  },
+  "Angry100": {
+   "off": 227,
+   "on": 185,
+   "unity": 151
+  },
+  "Sad100": {
+   "off": 252,
+   "on": 199,
+   "unity": 165
+  },
+  "Cry100": {
+   "off": 268,
+   "on": 199,
+   "unity": 169
+  },
+  "Surprise100": {
+   "off": 267,
+   "on": 221,
+   "unity": 198
+  },
+  "Surprise100_gR": {
+   "off": 847,
+   "on": 636,
+   "unity": 577
+  },
+  "Angry100_b05": {
+   "off": 197,
+   "on": 179,
+   "unity": 145
+  }
+ },
+ "-60": {
+  "Neutral": {
+   "off": 269,
+   "on": 190,
+   "unity": 165
+  },
+  "Happy060": {
+   "off": 267,
+   "on": 188,
+   "unity": 170
+  },
+  "Angry100": {
+   "off": 224,
+   "on": 168,
+   "unity": 144
+  },
+  "Sad100": {
+   "off": 287,
+   "on": 188,
+   "unity": 161
+  },
+  "Cry100": {
+   "off": 328,
+   "on": 216,
+   "unity": 180
+  },
+  "Surprise100": {
+   "off": 372,
+   "on": 246,
+   "unity": 232
+  },
+  "Surprise100_gR": {
+   "off": 286,
+   "on": 209,
+   "unity": 187
+  },
+  "Angry100_b05": {
+   "off": 190,
+   "on": 157,
+   "unity": 131
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mmg/ownership.schema.json",
+  "title": "Owned items and variants as the equipment rules see them (DB player_items + player_item_variants)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["itemId", "variants"],
+        "properties": {
+          "itemId": { "type": "string" },
+          "variants": { "type": "array", "uniqueItems": true, "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

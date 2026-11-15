@@ -1,0 +1,13 @@
+[2.1s f1] START device samsung SM-S921U, OS Android OS 14 / API-34 (UP1A.231005.007/S921USQS3AXI1), GPU Adreno (TM) 750 (Vulkan), RAM 7118 MB, screen 1080x2340, URP Mobile_RPAsset msaa 1 rs 0.80, hostcapture True, phases [quality,isolation,perf,soak], soakSec 780
+[2.2s f2] actor0 pull 0.030 m mats 25
+[2.2s f3] quality C_msaa4_rs080: msaa 4, rs 0.80
+[26.2s f2864] quality done
+[26.2s f2867] ISOLATION ok=True
+[27.0s f2959] perf1 C_msaa4_rs080: msaa 4, rs 0.80
+[41.0s f4641] PERF 1char_C_short12s: frames 1441, fps 120.0, frame ms avg 8.33 p95 8.75, cpu main avg 3.21 p95 3.86, gpu avg 2.90 p95 3.07, expr avg 76.7 us, alloc 74.5 MB
+[41.0s f4642] perf12 C_msaa4_rs080: msaa 4, rs 0.80
+[55.0s f6313] PERF 12char_C_short12s: frames 1440, fps 119.9, frame ms avg 8.34 p95 8.76, cpu main avg 4.53 p95 5.76, gpu avg 6.48 p95 7.25, expr avg 375.5 us, alloc 77.2 MB
+[55.5s f6365] SOAK start C_msaa4_rs080: msaa 4, rs 0.80 duration 780s
+[837.5s f100130] PERF 12char_C_soak: frames 93524, fps 119.9, frame ms avg 8.34 p95 8.70, cpu main avg 4.53 p95 5.66, gpu avg 6.77 p95 7.36, expr avg 369.1 us, alloc 77.8 MB
+[838.3s f100221] SOAK done
+[838.3s f100221] ALL_DONE

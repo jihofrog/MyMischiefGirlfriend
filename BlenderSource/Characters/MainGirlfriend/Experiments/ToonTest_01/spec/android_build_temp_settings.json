@@ -1,0 +1,39 @@
+{
+  "activeBuildTarget_before": "StandaloneOSX",
+  "applicationIdentifier_Android": "com.UnityTechnologies.com.unity.template.urpblank",
+  "productName": "MyMischiefGirlfriend",
+  "enableFrameTimingStats": false,
+  "buildAppBundle": false,
+  "development": false,
+  "during_build": {
+    "activeBuildTarget": "Android",
+    "applicationIdentifier_Android": "com.mmg.eyeviewtest",
+    "enableFrameTimingStats": true,
+    "development": true,
+    "scenes": "BuildPlayerOptions only: Assets/_Experiments/ToonTest_01/AndroidTest/EyeViewAndroidTest.unity (EditorBuildSettings untouched)",
+    "output": "/Users/jjeong/UnityProjects/EyeViewTestBuild/eyeviewtest.apk (outside the project)"
+  },
+  "written_by_build_and_restored": [
+    "ProjectSettings/GraphicsSettings.asset (git checkout)",
+    "ProjectSettings/UnityConnectSettings.asset (git checkout, m_Enabled 0 -> 1 by build)",
+    "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset (git checkout, m_RuntimeSettings list filled by build)",
+    "Assets/Settings/Mobile_RPAsset.asset (copied back from the pre-build backup, shader prefilter fields changed by build)",
+    "Assets/_Game/Fonts/NotoSansKR-VariableFont_wght SDF.asset (git checkout, dynamic atlas cleared by build)",
+    "Assets/AddressableAssetsData/Android/, Android.meta, ProfileDataSourceSettings.asset(.meta) (created by build, deleted)",
+    "ProjectSettings/ScriptableBuildPipeline.json (created by build, deleted)"
+  ],
+  "restored_check_2026-11-13": {
+    "activeBuildTarget": "StandaloneOSX",
+    "applicationIdentifier_Android": "com.UnityTechnologies.com.unity.template.urpblank",
+    "enableFrameTimingStats": false,
+    "development": false,
+    "buildAppBundle": false,
+    "Mobile_RPAsset msaa / renderScale": "1 / 0.8",
+    "ProjectSettings.asset, Mobile_RPAsset.asset, EditorBuildSettings.asset md5": "same as the pre-build backup",
+    "runInBackground override": "off"
+  },
+  "untouched_pre_existing_changes": [
+    "Assets/Settings/Mobile_RPAsset.asset (renderer list etc., before this work)",
+    "Assets/Settings/PC_RPAsset.asset (modified 2026-11-10)"
+  ]
+}

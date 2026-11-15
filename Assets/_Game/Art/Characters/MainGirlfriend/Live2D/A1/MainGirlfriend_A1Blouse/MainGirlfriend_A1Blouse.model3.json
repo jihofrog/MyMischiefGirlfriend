@@ -1,0 +1,18 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "MainGirlfriend_A1Blouse.moc3",
+		"Textures": [
+			"MainGirlfriend_A1Blouse.2048/texture_00.png"
+		],
+		"Physics": "MainGirlfriend_A1Blouse.physics3.json",
+		"DisplayInfo": "MainGirlfriend_A1Blouse.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

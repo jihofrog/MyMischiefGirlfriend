@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mmg/equipment-state.schema.json",
+  "title": "Equipment state of one player character (DB equipment_states, 05 document 4-7)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["characterId", "entries", "version", "rulesVersion"],
+  "properties": {
+    "characterId": { "type": "string" },
+    "entries": { "type": "array", "items": { "$ref": "catalog.schema.json#/$defs/equipmentEntry" } },
+    "version": { "type": "integer", "minimum": 0 },
+    "rulesVersion": { "type": "integer", "minimum": 1 }
+  }
+}

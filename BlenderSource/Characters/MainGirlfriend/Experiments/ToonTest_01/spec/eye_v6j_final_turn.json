@@ -1,0 +1,22 @@
+{
+ "face_turn": {
+  "frames": 481,
+  "deg_per_frame": 0.5,
+  "max_step_A": 0.0329,
+  "max_step_v6j": 0.034,
+  "max_excess": 0.0013,
+  "at_yaw": 46.0,
+  "max_excess_15_45": 0.0012,
+  "far_weight_max_step": 0.037
+ },
+ "eye_turn": {
+  "frames": 481,
+  "deg_per_frame": 0.5,
+  "max_step_A": 0.0345,
+  "max_step_v6j": 0.035,
+  "max_excess": 0.0017,
+  "at_yaw": 38.0,
+  "max_excess_15_45": 0.0017,
+  "far_weight_max_step": 0.035
+ }
+}

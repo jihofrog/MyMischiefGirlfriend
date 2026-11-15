@@ -1,0 +1,132 @@
+{
+ "L_0": {
+  "far": false,
+  "visible_eyeball": 41371,
+  "past_outline": 0
+ },
+ "R_0": {
+  "far": false,
+  "visible_eyeball": 39465,
+  "past_outline": 0
+ },
+ "L_15": {
+  "far": false,
+  "visible_eyeball": 46203,
+  "past_outline": 0
+ },
+ "R_15": {
+  "far": true,
+  "visible_eyeball": 31392,
+  "past_outline": 0
+ },
+ "L_-15": {
+  "far": true,
+  "visible_eyeball": 33540,
+  "past_outline": 0
+ },
+ "R_-15": {
+  "far": false,
+  "visible_eyeball": 44734,
+  "past_outline": 0
+ },
+ "L_25": {
+  "far": false,
+  "visible_eyeball": 47676,
+  "past_outline": 0
+ },
+ "R_25": {
+  "far": true,
+  "visible_eyeball": 23752,
+  "past_outline": 0
+ },
+ "L_-25": {
+  "far": true,
+  "visible_eyeball": 26066,
+  "past_outline": 0
+ },
+ "R_-25": {
+  "far": false,
+  "visible_eyeball": 46538,
+  "past_outline": 0
+ },
+ "L_35": {
+  "far": false,
+  "visible_eyeball": 47682,
+  "past_outline": 0
+ },
+ "R_35": {
+  "far": true,
+  "visible_eyeball": 15205,
+  "past_outline": 0
+ },
+ "L_-35": {
+  "far": true,
+  "visible_eyeball": 17429,
+  "past_outline": 0
+ },
+ "R_-35": {
+  "far": false,
+  "visible_eyeball": 46931,
+  "past_outline": 0
+ },
+ "L_45": {
+  "far": false,
+  "visible_eyeball": 46241,
+  "past_outline": 0
+ },
+ "R_45": {
+  "far": true,
+  "visible_eyeball": 9127,
+  "past_outline": 0
+ },
+ "L_-45": {
+  "far": true,
+  "visible_eyeball": 11230,
+  "past_outline": 0
+ },
+ "R_-45": {
+  "far": false,
+  "visible_eyeball": 45892,
+  "past_outline": 0
+ },
+ "L_60": {
+  "far": false,
+  "visible_eyeball": 41470,
+  "past_outline": 0
+ },
+ "R_60": {
+  "far": true,
+  "visible_eyeball": 631,
+  "past_outline": 110
+ },
+ "L_-60": {
+  "far": true,
+  "visible_eyeball": 1095,
+  "past_outline": 33
+ },
+ "R_-60": {
+  "far": false,
+  "visible_eyeball": 41736,
+  "past_outline": 0
+ },
+ "L_90": {
+  "far": false,
+  "visible_eyeball": 23850,
+  "past_outline": 0
+ },
+ "R_90": {
+  "far": true,
+  "visible_eyeball": 0,
+  "past_outline": 0
+ },
+ "L_-90": {
+  "far": true,
+  "visible_eyeball": 0,
+  "past_outline": 0
+ },
+ "R_-90": {
+  "far": false,
+  "visible_eyeball": 25264,
+  "past_outline": 0
+ }
+}

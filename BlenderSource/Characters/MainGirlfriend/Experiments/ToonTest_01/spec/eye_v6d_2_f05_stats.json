@@ -1,0 +1,12 @@
+{
+ "back_mm": 0.8,
+ "flat": 0.05,
+ "lids": false,
+ "mat": false,
+ "head_socket_verts_moved_L": 926,
+ "dome_max_before_mm_L": 6.98,
+ "dome_lowered_max_mm_L": 0.35,
+ "head_socket_verts_moved_R": 965,
+ "dome_max_before_mm_R": 7.05,
+ "dome_lowered_max_mm_R": 0.35
+}

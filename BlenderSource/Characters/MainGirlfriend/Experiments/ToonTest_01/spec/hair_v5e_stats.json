@@ -1,0 +1,23 @@
+{
+ "volume_vertices_moved": 820,
+ "volume_max_shift_m": 0.1647,
+ "volume_faces_cut": 388,
+ "objects": {
+  "hair_bob_01__Volume": {
+   "verts": 5068,
+   "tris": 10088
+  },
+  "hair_bob_01__Bangs": {
+   "verts": 2080,
+   "tris": 4140
+  },
+  "hair_bob_01__Side_L": {
+   "verts": 1200,
+   "tris": 2392
+  },
+  "hair_bob_01__Side_R": {
+   "verts": 1200,
+   "tris": 2392
+  }
+ }
+}

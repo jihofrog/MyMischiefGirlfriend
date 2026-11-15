@@ -1,0 +1,41 @@
+{
+ "k": 0.7,
+ "offset_mm": 0.12000000000000001,
+ "tuck_mm": 1.0,
+ "piece_L": {
+  "verts": 470,
+  "faces": 414,
+  "rows": 47,
+  "in_front_of_head_skin": 0
+ },
+ "piece_R": {
+  "verts": 480,
+  "faces": 423,
+  "rows": 48,
+  "in_front_of_head_skin": 0
+ },
+ "lid_lift_for_blends": [
+  {
+   "side": "L",
+   "verts": 38,
+   "max_mm": 0.12
+  },
+  {
+   "side": "R",
+   "verts": 33,
+   "max_mm": 0.12
+  }
+ ],
+ "lash_lift_for_blends": [
+  {
+   "side": "L",
+   "verts": 0,
+   "max_mm": 0.0
+  },
+  {
+   "side": "R",
+   "verts": 0,
+   "max_mm": 0.0
+  }
+ ]
+}

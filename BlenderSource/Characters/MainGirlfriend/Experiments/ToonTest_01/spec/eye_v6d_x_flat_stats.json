@@ -1,0 +1,10 @@
+{
+ "back_mm": 0.0,
+ "flat": 0.1,
+ "lids": false,
+ "mat": false,
+ "dome_max_before_mm_L": 6.98,
+ "dome_lowered_max_mm_L": 0.7,
+ "dome_max_before_mm_R": 7.05,
+ "dome_lowered_max_mm_R": 0.71
+}

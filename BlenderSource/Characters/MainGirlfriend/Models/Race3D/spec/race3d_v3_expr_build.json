@@ -1,0 +1,295 @@
+{
+ "source": "/Users/jjeong/UnityProjects/MyMischiefGirlfriend/BlenderSource/Characters/MainGirlfriend/Models/MainGirlfriend_Race3D_v1.blend",
+ "eyes": {
+  "L": {
+   "sphere": {
+    "centre": [
+     0.0238,
+     -0.04625,
+     1.39784
+    ],
+    "R": 0.09464,
+    "C": 0.13931
+   },
+   "sphere_fit_res_mm": 0.533,
+   "poses": {
+    "ExHappyB": {
+     "cu": [
+      0.613,
+      1.35
+     ],
+     "cl": [
+      0.527,
+      1.604
+     ],
+     "lid_lift_verts": 98,
+     "lid_lift_max_mm": 0.78,
+     "lash_push_verts": 34,
+     "lash_push_max_mm": 0.511
+    },
+    "ExHappyA": {
+     "cu": [
+      0.147,
+      0.982
+     ],
+     "cl": [
+      0.041,
+      0.623
+     ],
+     "lid_lift_verts": 0,
+     "lid_lift_max_mm": 0.0,
+     "lash_push_verts": 2,
+     "lash_push_max_mm": 0.104
+    },
+    "ExAngry": {
+     "cu": [
+      0.031,
+      0.548
+     ],
+     "cl": [
+      0.006,
+      0.135
+     ],
+     "lid_lift_verts": 0,
+     "lid_lift_max_mm": 0.0,
+     "lash_push_verts": 3,
+     "lash_push_max_mm": 0.161
+    },
+    "ExSad": {
+     "cu": [
+      -0.08,
+      0.36
+     ],
+     "cl": [
+      0.009,
+      0.18
+     ],
+     "lid_lift_verts": 70,
+     "lid_lift_max_mm": 0.919,
+     "lash_push_verts": 0,
+     "lash_push_max_mm": 0.0
+    },
+    "ExCry": {
+     "cu": [
+      0.049,
+      0.12
+     ],
+     "cl": [
+      0.02,
+      0.4
+     ],
+     "lid_lift_verts": 0,
+     "lid_lift_max_mm": 0.0,
+     "lash_push_verts": 2,
+     "lash_push_max_mm": 0.047
+    },
+    "ExSurprise": "v1 Surprise key x 1.6"
+   },
+   "surprise_lash_on_skin": 520
+  },
+  "R": {
+   "sphere": {
+    "centre": [
+     -0.01977,
+     -0.04406,
+     1.40236
+    ],
+    "R": 0.09884,
+    "C": 0.15135
+   },
+   "sphere_fit_res_mm": 0.68,
+   "poses": {
+    "ExHappyB": {
+     "cu": [
+      0.628,
+      1.35
+     ],
+     "cl": [
+      0.492,
+      1.597
+     ],
+     "lid_lift_verts": 91,
+     "lid_lift_max_mm": 0.728,
+     "lash_push_verts": 30,
+     "lash_push_max_mm": 0.371
+    },
+    "ExHappyA": {
+     "cu": [
+      0.151,
+      0.486
+     ],
+     "cl": [
+      0.038,
+      0.621
+     ],
+     "lid_lift_verts": 0,
+     "lid_lift_max_mm": 0.0,
+     "lash_push_verts": 3,
+     "lash_push_max_mm": 0.156
+    },
+    "ExAngry": {
+     "cu": [
+      0.031,
+      0.546
+     ],
+     "cl": [
+      0.009,
+      0.135
+     ],
+     "lid_lift_verts": 0,
+     "lid_lift_max_mm": 0.0,
+     "lash_push_verts": 4,
+     "lash_push_max_mm": 0.179
+    },
+    "ExSad": {
+     "cu": [
+      -0.08,
+      0.36
+     ],
+     "cl": [
+      0.013,
+      0.18
+     ],
+     "lid_lift_verts": 66,
+     "lid_lift_max_mm": 0.328,
+     "lash_push_verts": 2,
+     "lash_push_max_mm": 0.048
+    },
+    "ExCry": {
+     "cu": [
+      0.054,
+      0.12
+     ],
+     "cl": [
+      0.028,
+      0.4
+     ],
+     "lid_lift_verts": 0,
+     "lid_lift_max_mm": 0.0,
+     "lash_push_verts": 3,
+     "lash_push_max_mm": 0.11
+    },
+    "ExSurprise": "v1 Surprise key x 1.6"
+   },
+   "surprise_lash_on_skin": 483
+  }
+ },
+ "checks": {
+  "existing_keys": 99,
+  "existing_keys_changed": [],
+  "keys_added": 87,
+  "added": [
+   "Blockout_Head/ExAngry",
+   "Blockout_Head/ExHappy",
+   "Eye_Lash.L/ExAngry",
+   "Eye_Lash.L/ExCry",
+   "Eye_Lash.L/ExHappyA",
+   "Eye_Lash.L/ExHappyB",
+   "Eye_Lash.L/ExSad",
+   "Eye_Lash.L/ExSurprise",
+   "Eye_Lash.R/ExAngry",
+   "Eye_Lash.R/ExCry",
+   "Eye_Lash.R/ExHappyA",
+   "Eye_Lash.R/ExHappyB",
+   "Eye_Lash.R/ExSad",
+   "Eye_Lash.R/ExSurprise",
+   "Eye_Lids.L/ExAngry",
+   "Eye_Lids.L/ExCry",
+   "Eye_Lids.L/ExHappyA",
+   "Eye_Lids.L/ExHappyB",
+   "Eye_Lids.L/ExSad",
+   "Eye_Lids.L/ExSurprise",
+   "Eye_Lids.R/ExAngry",
+   "Eye_Lids.R/ExCry",
+   "Eye_Lids.R/ExHappyA",
+   "Eye_Lids.R/ExHappyB",
+   "Eye_Lids.R/ExSad",
+   "Eye_Lids.R/ExSurprise",
+   "Eye_Sparkle.L/Basis",
+   "Eye_Sparkle.L/ExSurprise",
+   "Eye_Sparkle.R/Basis",
+   "Eye_Sparkle.R/ExSurprise",
+   "Face_Blush.L/Basis",
+   "Face_Blush.L/ExAngry",
+   "Face_Blush.L/ExCry",
+   "Face_Blush.L/ExHappy",
+   "Face_Blush.L/ExSad",
+   "Face_Blush.L/ExSurprise",
+   "Face_Blush.R/Basis",
+   "Face_Blush.R/ExAngry",
+   "Face_Blush.R/ExCry",
+   "Face_Blush.R/ExHappy",
+   "Face_Blush.R/ExSad",
+   "Face_Blush.R/ExSurprise",
+   "Face_Brow.L/ExAngry",
+   "Face_Brow.L/ExCry",
+   "Face_Brow.L/ExHappy",
+   "Face_Brow.L/ExSad",
+   "Face_Brow.L/ExSurprise",
+   "Face_Brow.R/ExAngry",
+   "Face_Brow.R/ExCry",
+   "Face_Brow.R/ExHappy",
+   "Face_Brow.R/ExSad",
+   "Face_Brow.R/ExSurprise",
+   "Face_BrowCard.L/Basis",
+   "Face_BrowCard.L/Blink",
+   "Face_BrowCard.L/ExAngry",
+   "Face_BrowCard.L/ExCry",
+   "Face_BrowCard.L/ExHappy",
+   "Face_BrowCard.L/ExSad",
+   "Face_BrowCard.L/ExSurprise",
+   "Face_BrowCard.L/EyeSmile",
+   "Face_BrowCard.L/Smile",
+   "Face_BrowCard.L/Surprise",
+   "Face_BrowCard.R/Basis",
+   "Face_BrowCard.R/Blink",
+   "Face_BrowCard.R/ExAngry",
+   "Face_BrowCard.R/ExCry",
+   "Face_BrowCard.R/ExHappy",
+   "Face_BrowCard.R/ExSad",
+   "Face_BrowCard.R/ExSurprise",
+   "Face_BrowCard.R/EyeSmile",
+   "Face_BrowCard.R/Smile",
+   "Face_BrowCard.R/Surprise",
+   "Face_Mouth_ExO/Basis",
+   "Face_Mouth_ExO/ExSurprise",
+   "Face_Mouth_ExSmile/Basis",
+   "Face_Mouth_ExSmile/ExHappy",
+   "Face_Tear.L/Basis",
+   "Face_Tear.L/ExCry",
+   "Face_Tear.L/ExSad",
+   "Face_Tear.R/Basis",
+   "Face_Tear.R/ExCry",
+   "Face_Tear.R/ExSad",
+   "TT_Mouth_Closed/ExAngry",
+   "TT_Mouth_Closed/ExCry",
+   "TT_Mouth_Closed/ExHappy",
+   "TT_Mouth_Closed/ExSad",
+   "TT_Mouth_Closed/ExSurprise"
+  ]
+ },
+ "mixed_state_correction": {
+  "L": {
+   "passes": 3,
+   "points_per_pass": [
+    21949,
+    29,
+    0
+   ],
+   "states": 2970
+  },
+  "R": {
+   "passes": 3,
+   "points_per_pass": [
+    20035,
+    28,
+    0
+   ],
+   "states": 2970
+  }
+ },
+ "mouth": {
+  "half_width_px": 21.5,
+  "columns": 13
+ }
+}

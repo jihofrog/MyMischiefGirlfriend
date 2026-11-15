@@ -1,0 +1,51 @@
+{
+ "white_L_before_mm": {
+  "med": 5.1,
+  "max": 14.1
+ },
+ "white_L_after_mm": {
+  "med": 1.77,
+  "max": 4.03
+ },
+ "white_R_before_mm": {
+  "med": 5.1,
+  "max": 14.15
+ },
+ "white_R_after_mm": {
+  "med": 1.78,
+  "max": 4.04
+ },
+ "baked": [
+  "Face_Brow.L",
+  "Face_Brow.R",
+  "Face_Mouth_Smile_Inside",
+  "Face_Mouth_Smile_Teeth",
+  "Face_Mouth_Smile_Tongue",
+  "Face_Mouth_Smile_Line",
+  "Face_Blush.L",
+  "Face_Blush.R",
+  "TT_Mouth_Closed",
+  "Eye_UpperLid.L",
+  "Eye_UpperLid.R"
+ ],
+ "tris": {
+  "Eye_White.L": 1216,
+  "Eye_UpperLid.L": 1156,
+  "Eye_UpperLashes.L": 72,
+  "Eye_UpperCrease.L": 2876,
+  "Eye_OuterLine.L": 92,
+  "Eye_LowerLid.L": 3676,
+  "Eye_Iris.L": 1216,
+  "Eye_White.R": 1216,
+  "Eye_UpperLid.R": 1156,
+  "Eye_UpperLashes.R": 72,
+  "Eye_UpperCrease.R": 2876,
+  "Eye_OuterLine.R": 92,
+  "Eye_LowerLid.R": 3676,
+  "Eye_Iris.R": 1216,
+  "Face_UpperLashes.L": 72,
+  "Face_UpperLashes.R": 72,
+  "Face_LowerLashes.L": 36,
+  "Face_LowerLashes.R": 36
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "back_mm": 0.8,
+ "flat": 0.1,
+ "lids": true,
+ "mat": true,
+ "head_socket_verts_moved_L": 926,
+ "dome_max_before_mm_L": 6.98,
+ "dome_lowered_max_mm_L": 0.7,
+ "lid_shift_mm_L": {
+  "upper_max": 0.35,
+  "lower_outer_max": 0.45
+ },
+ "head_socket_verts_moved_R": 965,
+ "dome_max_before_mm_R": 7.05,
+ "dome_lowered_max_mm_R": 0.71,
+ "lid_shift_mm_R": {
+  "upper_max": 0.35,
+  "lower_outer_max": 0.45
+ }
+}

@@ -1,0 +1,223 @@
+{
+ "tag": "v5g",
+ "method": "v5g",
+ "L": {
+  "eye_vs_face": {
+   "min": 0.6,
+   "med": 3.92,
+   "max": 11.67
+  },
+  "eye_below_ring": {
+   "min": -23.05,
+   "med": -5.97,
+   "max": -0.66
+  },
+  "iris_sagitta_mm": 5.02,
+  "iris_over_face": {
+   "min": 1.4,
+   "med": 3.96,
+   "max": 8.22
+  },
+  "iris_over_white_mm": {
+   "min": 0.16,
+   "med": 0.24,
+   "max": 0.31
+  },
+  "upper_lid_edge": {
+   "min": -2.56,
+   "med": 0.39,
+   "max": 0.55
+  },
+  "lower_lid_step": {
+   "min": -11.73,
+   "med": -7.1,
+   "max": -2.85
+  },
+  "lower_lash_gap": {
+   "min": 7.33,
+   "med": 7.89,
+   "max": 8.45
+  }
+ },
+ "R": {
+  "eye_vs_face": {
+   "min": 1.08,
+   "med": 4.35,
+   "max": 12.8
+  },
+  "eye_below_ring": {
+   "min": -25.38,
+   "med": -5.75,
+   "max": -0.47
+  },
+  "iris_sagitta_mm": 5.12,
+  "iris_over_face": {
+   "min": 1.52,
+   "med": 4.35,
+   "max": 8.83
+  },
+  "iris_over_white_mm": {
+   "min": 0.17,
+   "med": 0.24,
+   "max": 0.29
+  },
+  "upper_lid_edge": {
+   "min": -3.97,
+   "med": -2.08,
+   "max": -1.9
+  },
+  "lower_lid_step": {
+   "min": -12.89,
+   "med": -8.1,
+   "max": -3.86
+  },
+  "lower_lash_gap": {
+   "min": 7.33,
+   "med": 7.9,
+   "max": 8.46
+  }
+ },
+ "head_tris": 24064,
+ "eye_cost": {
+  "objects": 18,
+  "tris": 19408,
+  "draws": 18,
+  "detail": {
+   "Eye_Iris.L": {
+    "tris": 1216,
+    "verts": 641,
+    "mats": 1
+   },
+   "Eye_Iris.R": {
+    "tris": 1216,
+    "verts": 641,
+    "mats": 1
+   },
+   "Eye_LowerLid.L": {
+    "tris": 3676,
+    "verts": 1860,
+    "mats": 1
+   },
+   "Eye_LowerLid.R": {
+    "tris": 3676,
+    "verts": 1860,
+    "mats": 1
+   },
+   "Eye_OuterLine.L": {
+    "tris": 92,
+    "verts": 72,
+    "mats": 1
+   },
+   "Eye_OuterLine.R": {
+    "tris": 92,
+    "verts": 72,
+    "mats": 1
+   },
+   "Eye_UpperCrease.L": {
+    "tris": 2876,
+    "verts": 1460,
+    "mats": 1
+   },
+   "Eye_UpperCrease.R": {
+    "tris": 2876,
+    "verts": 1460,
+    "mats": 1
+   },
+   "Eye_UpperLashes.L": {
+    "tris": 72,
+    "verts": 63,
+    "mats": 1
+   },
+   "Eye_UpperLashes.R": {
+    "tris": 72,
+    "verts": 63,
+    "mats": 1
+   },
+   "Eye_UpperLid.L": {
+    "tris": 448,
+    "verts": 291,
+    "mats": 1
+   },
+   "Eye_UpperLid.R": {
+    "tris": 448,
+    "verts": 291,
+    "mats": 1
+   },
+   "Eye_White.L": {
+    "tris": 1216,
+    "verts": 641,
+    "mats": 1
+   },
+   "Eye_White.R": {
+    "tris": 1216,
+    "verts": 641,
+    "mats": 1
+   },
+   "Face_LowerLashes.L": {
+    "tris": 36,
+    "verts": 36,
+    "mats": 1
+   },
+   "Face_LowerLashes.R": {
+    "tris": 36,
+    "verts": 36,
+    "mats": 1
+   },
+   "Face_UpperLashes.L": {
+    "tris": 72,
+    "verts": 63,
+    "mats": 1
+   },
+   "Face_UpperLashes.R": {
+    "tris": 72,
+    "verts": 63,
+    "mats": 1
+   }
+  }
+ },
+ "shape_keys": {
+  "Eye_Iris.L": [
+   "Blink",
+   "Smile"
+  ],
+  "Eye_Iris.R": [
+   "Blink",
+   "Smile"
+  ],
+  "Eye_OuterLine.L": [
+   "Blink"
+  ],
+  "Eye_OuterLine.R": [
+   "Blink"
+  ],
+  "Eye_UpperLashes.L": [
+   "Blink"
+  ],
+  "Eye_UpperLashes.R": [
+   "Blink"
+  ],
+  "Eye_UpperLid.L": [
+   "Blink"
+  ],
+  "Eye_UpperLid.R": [
+   "Blink"
+  ],
+  "Eye_White.L": [
+   "Blink",
+   "Smile"
+  ],
+  "Eye_White.R": [
+   "Blink",
+   "Smile"
+  ],
+  "Face_UpperLashes.L": [
+   "Blink"
+  ],
+  "Face_UpperLashes.R": [
+   "Blink"
+  ],
+  "TT_Mouth_Closed": [
+   "Smile"
+  ]
+ }
+}

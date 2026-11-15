@@ -1,0 +1,199 @@
+{
+ "tag": "v6i",
+ "L": {
+  "VF": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_GazeOut": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_GazeIn": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_Blink50": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_Blink": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_EyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_SmileEyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_Surprise": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_Smile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF30_Blink50": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF60": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF60_Blink50": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF90_Surprise": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF90_EyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "RAW_VF_Blink": {
+   "lid_behind_ball": 2,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 9,
+   "skin_through_ball": 0
+  },
+  "RAW_VF_EyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 23,
+   "skin_through_ball": 0
+  }
+ },
+ "R": {
+  "VF": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_GazeOut": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_GazeIn": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_Blink50": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_Blink": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_EyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_SmileEyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_Surprise": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF_Smile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF30_Blink50": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF60": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF60_Blink50": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF90_Surprise": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "VF90_EyeSmile": {
+   "lid_behind_ball": 0,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 0,
+   "skin_through_ball": 0
+  },
+  "RAW_VF_Blink": {
+   "lid_behind_ball": 2,
+   "lash_behind_ball": 2,
+   "lash_behind_lid": 13,
+   "skin_through_ball": 0
+  },
+  "RAW_VF_EyeSmile": {
+   "lid_behind_ball": 1,
+   "lash_behind_ball": 0,
+   "lash_behind_lid": 8,
+   "skin_through_ball": 0
+  }
+ }
+}

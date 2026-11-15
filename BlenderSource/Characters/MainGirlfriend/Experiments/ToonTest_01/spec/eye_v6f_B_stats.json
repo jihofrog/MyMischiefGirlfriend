@@ -1,0 +1,49 @@
+{
+ "a": true,
+ "b": true,
+ "cap_deg": 56.0,
+ "lash": true,
+ "fwd": 0.0,
+ "lid_lift_for_blends": [
+  {
+   "side": "L",
+   "verts": 181,
+   "max_mm": 0.75
+  },
+  {
+   "side": "R",
+   "verts": 174,
+   "max_mm": 0.68
+  },
+  {
+   "side": "L",
+   "verts": 59,
+   "max_mm": 0.27
+  },
+  {
+   "side": "R",
+   "verts": 122,
+   "max_mm": 0.54
+  }
+ ],
+ "A": {
+  "lid_height_mm": {
+   "skirt": 0.35,
+   "edge": 0.7,
+   "row2": 1.0,
+   "row3": 1.3
+  },
+  "lash_drop_mm": {
+   "skirt": 0.8,
+   "row1": 1.0,
+   "row2": 0.7,
+   "row3": 0.3,
+   "lower_lash": 1.0
+  }
+ },
+ "B_back_mm_max_L": 1.47,
+ "B_forward_mm_max_L": -0.0,
+ "B_back_mm_max_R": 3.41,
+ "B_forward_mm_max_R": -0.0,
+ "hair_penetration_face_band": 0
+}

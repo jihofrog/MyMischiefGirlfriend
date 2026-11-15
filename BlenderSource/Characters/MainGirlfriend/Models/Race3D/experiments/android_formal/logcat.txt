@@ -1,0 +1,428 @@
+--------- beginning of main
+11-15 14:13:40.337 25913 25913 V Unity   : Context Type: GameActivity
+11-15 14:13:40.338 25913 25913 D Unity   : CommandLine:  
+11-15 14:13:40.364 25913 25947 I Unity   : UnityApplication::CreateInstance
+11-15 14:13:40.364 25913 25947 I Unity   : GameActivity Package Version '4.4.0'
+11-15 14:13:40.365 25913 25947 I Unity   : Starting Game Loop
+11-15 14:13:40.371 25913 25947 I Unity   : Handle cmd APP_CMD_START(11)
+11-15 14:13:40.372 25913 25913 I Unity   : onResume
+11-15 14:13:40.372 25913 25913 I Unity   : resumeUnity
+11-15 14:13:40.373 25913 25947 I Unity   : Handle cmd APP_CMD_RESUME(12)
+11-15 14:13:40.383 25913 25947 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-15 14:13:40.394 25913 25947 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-15 14:13:40.395 25913 25947 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+11-15 14:13:40.397 25913 25947 I Unity   : Handle cmd APP_CMD_INIT_WINDOW(1)
+11-15 14:13:40.402 25913 25947 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+11-15 14:13:40.402 25913 25947 I Unity   : Mimalloc is enabled and will override the Dynamic Heap and Dual Thread (Main and MainThread) allocators.
+11-15 14:13:40.402 25913 25947 D Unity   : [UnityMemory] Configuration Parameters - Can be set up in boot.config
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-temp-allocator-size-cloud-worker=32768"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-temp-allocator-size-audio-worker=65536"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-temp-allocator-size-preload-manager=262144"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-remapper-allocator-initial-capacity=32768"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-temp-allocator-size-gfx=262144"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-allocator-temp-initial-block-size-main=262144"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-allocator-temp-initial-block-size-worker=262144"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-temp-allocator-size-background-worker=32768"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-temp-allocator-size-job-worker=262144"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-bucket-allocator-granularity=16"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-bucket-allocator-bucket-count=8"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-bucket-allocator-block-size=4194304"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-bucket-allocator-block-count=1"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-main-allocator-block-size=16777216"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-thread-allocator-block-size=16777216"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-main-allocator-mimalloc-enabled=1"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-gfx-main-allocator-block-size=16777216"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-gfx-thread-allocator-block-size=16777216"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-cache-allocator-block-size=4194304"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-typetree-allocator-block-size=2097152"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-profiler-bucket-allocator-granularity=16"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-profiler-bucket-allocator-bucket-count=8"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-profiler-bucket-allocator-block-size=4194304"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-profiler-bucket-allocator-block-count=1"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-profiler-allocator-block-size=16777216"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-profiler-editor-allocator-block-size=1048576"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-temp-allocator-size-main=4194304"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-job-temp-allocator-block-size=2097152"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-job-temp-allocator-block-size-background=1048576"
+11-15 14:13:40.402 25913 25947 D Unity   :     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+11-15 14:13:40.408 25913 25947 D Unity   : Enabling Unity systrace
+11-15 14:13:40.408 25913 25947 D Unity   : Starting Unity systrace
+11-15 14:13:40.416 25913 25947 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: -2, quality: -1
+11-15 14:13:40.419 25913 25947 D Unity   : [VFS] Mount /data/app/~~Xotu6E4FjKPtLD1kThEY9g==/com.mmg.formalexprtest-LDKYUbjn1nOHHhPIZtwuNw==/base.apk
+11-15 14:13:40.423 25913 25947 E Unity   : java.lang.ClassNotFoundException: Didn't find class "com.google.android.play.core.assetpacks.AssetPackManager" on path: DexPathList[[zip file "/data/app/~~Xotu6E4FjKPtLD1kThEY9g==/com.mmg.formalexprtest-LDKYUbjn1nOHHhPIZtwuNw==/base.apk"],nativeLibraryDirectories=[/data/app/~~Xotu6E4FjKPtLD1kThEY9g==/com.mmg.formalexprtest-LDKYUbjn1nOHHhPIZtwuNw==/lib/arm64, /data/app/~~Xotu6E4FjKPtLD1kThEY9g==/com.mmg.formalexprtest-LDKYUbjn1nOHHhPIZtwuNw==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]]
+11-15 14:13:40.425 25913 25947 I Unity   : SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 8, Memory = 7118mb
+11-15 14:13:40.425 25913 25947 I Unity   : SystemInfo ARM big.LITTLE configuration: 6 big (mask: 0xfc), 2 little (mask: 0x3)
+11-15 14:13:40.425 25913 25947 I Unity   : ApplicationInfo 'com.mmg.formalexprtest', Version '0.1.0', Min API Level '26', Target API Level '36'
+11-15 14:13:40.425 25913 25947 I Unity   : Built from '6000.6/respin/6000.6.8f1-b6138bef9630' branch, Version '6000.6.8f1 (237b6593792b)', Build type 'Development', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+11-15 14:13:40.425 25913 25947 I Unity   : Device Model 'samsung SM-S921U', OS 'Android OS 14 (API 34)'
+11-15 14:13:40.426 25913 25947 D Unity   : Determine if il2cpp resources need to be extracted:
+11-15 14:13:40.426 25913 25947 D Unity   :     Missing '/storage/emulated/0/Android/data/com.mmg.formalexprtest/files/il2cpp/unity.ver'
+11-15 14:13:40.426 25913 25947 D Unity   :     Extracting il2cpp resources
+11-15 14:13:40.432 25913 25913 I Unity   : windowFocusChanged: true
+11-15 14:13:40.485 25913 25947 D Unity   : Unable to find library path for 'il2cpp.usym'.
+11-15 14:13:40.532 25913 25947 D Unity   : CodeReloadManager initialized
+11-15 14:13:40.532 25913 25947 D Unity   : InitializeScriptEngine OK (0x79e1a20e80)
+11-15 14:13:40.532 25913 25947 D Unity   : [EGL] Attaching window :0xb4000078aed058e0
+11-15 14:13:40.532 25913 25947 D Unity   : Found 1 interfaces on host :
+11-15 14:13:40.532 25913 25947 D Unity   :  0) 192.168.4.87
+11-15 14:13:40.532 25913 25947 D Unity   : 
+11-15 14:13:40.534 25913 25947 D Unity   : Player connection [507943726128]  Target information:
+11-15 14:13:40.534 25913 25947 D Unity   : 
+11-15 14:13:40.534 25913 25947 D Unity   : Player connection [507943726128]  * "[IP] 192.168.4.87 [Port] 55000 [Flags] 2 [Guid] 1948207101 [EditorId] 2259604507 [Version] 1048832 [Id] AndroidPlayer(11,samsung_SM-S921U@192.168.4.87) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] FormalExprTest" 
+11-15 14:13:40.534 25913 25947 D Unity   : 
+11-15 14:13:40.534 25913 25947 D Unity   : Player connection [507943726128] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+11-15 14:13:40.534 25913 25947 D Unity   : 
+11-15 14:13:40.545 25913 25947 D Unity   : Input System module state changed to: Initialized.
+11-15 14:13:40.547 25913 25947 D Unity   : [Physics::Module] Initialized fallback backend.
+11-15 14:13:40.547 25913 25947 D Unity   : [Physics::Module] Id: 0xdecafbad
+11-15 14:13:40.553 25913 25947 D Unity   : PlayerInitEngineNoGraphics OK
+11-15 14:13:40.553 25913 25947 I Unity   : Company Name: DefaultCompany
+11-15 14:13:40.553 25913 25947 I Unity   : Product Name: FormalExprTest
+11-15 14:13:40.553 25913 25947 D Unity   : AndroidGraphics::Startup window =  0xb4000078aed058e0
+11-15 14:13:40.553 25913 25947 D Unity   : [EGL] Attaching window :0xb4000078aed058e0
+11-15 14:13:40.555 25913 25947 D Unity   : [Subsystems] Discovering subsystems at path /data/app/~~Xotu6E4FjKPtLD1kThEY9g==/com.mmg.formalexprtest-LDKYUbjn1nOHHhPIZtwuNw==/base.apk/assets/bin/Data/UnitySubsystems
+11-15 14:13:40.555 25913 25947 D Unity   : GfxDevice: creating device client; kGfxThreadingModeThreaded
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: count=14
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=1, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_surface_maintenance1 [enabled=0, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_GOOGLE_surfaceless_query [enabled=0, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_android_surface [enabled=1, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+11-15 14:13:40.561 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=0x0
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] Physical Device 0xb4000077eed05230 [0]: "Adreno (TM) 750" deviceType=1 vendorID=5143 deviceID=43051401
+11-15 14:13:40.567 25913 25947 D Unity   : [VULKAN] Android Device Info:
+11-15 14:13:40.567 25913 25947 D Unity   : {"Vendor": "Qualcomm","Device Name": "Adreno (TM) 750","Brand": "samsung","Product Name": "e1qsqw","Android OS Version": "14","Vulkan API Version": "Variant: 0 major.minor.patch:1.3.128","Driver Version": "2150604812"}
+11-15 14:13:40.567 25913 25947 D Unity   : Vulkan detection: 2
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: count=14
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=1, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_surface_maintenance1 [enabled=0, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_GOOGLE_surfaceless_query [enabled=0, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_android_surface [enabled=1, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+11-15 14:13:40.567 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=0x0
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] Physical Device 0xb4000077eed03f50 [0]: "Adreno (TM) 750" deviceType=1 vendorID=5143 deviceID=43051401
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] Selected physical device 0xb4000077eed03f50
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] Graphics queue count=1
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: count=131
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_ANDROID_external_memory_android_hardware_buffer [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_4444_formats [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_astc_decode_mode [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_blend_operation_advanced [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_border_color_swizzle [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_calibrated_timestamps [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_color_write_enable [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_conditional_rendering [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_conservative_rasterization [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_custom_border_color [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_depth_clamp_zero_one [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_depth_clip_control [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_depth_clip_enable [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_descriptor_indexing [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_device_address_binding_report [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_device_fault [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_device_memory_report [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_extended_dynamic_state [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_extended_dynamic_state2 [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_filter_cubic [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_fragment_density_map [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_fragment_density_map2 [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_global_priority [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_global_priority_query [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_hdr_metadata [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_host_query_reset [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_image_2d_view_of_3d [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_image_robustness [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_image_view_min_lod [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_index_type_uint8 [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_inline_uniform_block [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_line_rasterization [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_load_store_op_none [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_multisampled_render_to_single_sampled [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_pipeline_creation_cache_control [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_pipeline_creation_feedback [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_primitive_topology_list_restart [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_private_data [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_provoking_vertex [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_queue_family_foreign [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_robustness2 [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_sample_locations [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_sampler_filter_minmax [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_scalar_block_layout [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_separate_stencil_usage [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_shader_atomic_float [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_shader_demote_to_helper_invocation [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_shader_module_identifier [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_shader_stencil_export [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_shader_viewport_index_layer [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_subgroup_size_control [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_swapchain_maintenance1 [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_texel_buffer_alignment [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_texture_compression_astc_hdr [enabled=1, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_tooling_info [enabled=0, external=0]
+11-15 14:13:40.569 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_transform_feedback [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_vertex_attribute_divisor [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_EXT_vertex_input_dynamic_state [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_GOOGLE_display_timing [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_IMG_filter_cubic [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_16bit_storage [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_8bit_storage [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_acceleration_structure [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_bind_memory2 [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_buffer_device_address [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_copy_commands2 [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_create_renderpass2 [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_dedicated_allocation [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_deferred_host_operations [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_depth_stencil_resolve [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_descriptor_update_template [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_device_group [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_draw_indirect_count [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_driver_properties [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_dynamic_rendering [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_fence [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_fence_fd [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_memory [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_memory_fd [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_semaphore [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_external_semaphore_fd [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_format_feature_flags2 [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_fragment_shading_rate [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_get_memory_requirements2 [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_global_priority [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_image_format_list [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_imageless_framebuffer [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_incremental_present [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_maintenance1 [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_maintenance2 [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_maintenance3 [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_maintenance4 [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_multiview [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_pipeline_executable_properties [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_push_descriptor [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_ray_query [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_relaxed_block_layout [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_sampler_mirror_clamp_to_edge [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_sampler_ycbcr_conversion [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_separate_depth_stencil_layouts [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_atomic_int64 [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_clock [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_draw_parameters [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_float16_int8 [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_float_controls [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_integer_dot_product [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_non_semantic_info [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_subgroup_extended_types [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_subgroup_uniform_control_flow [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shader_terminate_invocation [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_shared_presentable_image [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_spirv_1_4 [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_storage_buffer_storage_class [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_swapchain [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_synchronization2 [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_timeline_semaphore [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_uniform_buffer_standard_layout [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_variable_pointers [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_vulkan_memory_model [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_workgroup_memory_explicit_layout [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_KHR_zero_initialize_workgroup_memory [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_NV_optical_flow [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_fragment_density_map_offset [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_image_processing [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_multiview_per_view_render_areas [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_multiview_per_view_viewports [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_render_pass_shader_resolve [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_render_pass_store_ops [enabled=1, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_render_pass_transform [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_rotated_copy_commands [enabled=0, external=0]
+11-15 14:13:40.570 25913 25947 D Unity   : [Vulkan init] extensions: name=VK_QCOM_tile_properties [enabled=1, external=0]
+11-15 14:13:40.572 25913 25947 D Unity   : Vulkan API version 1.1.0 (1.3.128 supported by driver, 1.1.0 requested)
+11-15 14:13:40.572 25913 25947 D Unity   : Vulkan vendor=[Qualcomm] id=[5143]
+11-15 14:13:40.572 25913 25947 D Unity   : Vulkan renderer=[Adreno (TM) 750] id=[43051401]
+11-15 14:13:40.572 25913 25947 D Unity   : Vulkan device type 1
+11-15 14:13:40.572 25913 25947 D Unity   : Vulkan driverversion=[512.762.12 (0x802fa00c)] uint=[-2144362484]
+11-15 14:13:40.572 25913 25947 D Unity   : Vulkan driverLibraryString=[Qualcomm Technologies Inc. Adreno Vulkan Driver (8), Driver Build: 11e73fe00c, I4ff0bacd4f, 1710154332
+11-15 14:13:40.572 25913 25947 D Unity   : Date: 03/11/24
+11-15 14:13:40.572 25913 25947 D Unity   : Compiler Version: E031.45.02.06
+11-15 14:13:40.572 25913 25947 D Unity   : Driver Branch: 
+11-15 14:13:40.572 25913 25947 D Unity   : ]
+11-15 14:13:40.572 25913 25947 D Unity   : VK use pretransform: 1
+11-15 14:13:40.584 25913 25947 D Unity   : Vulkan PSO: cache data not found [path=/storage/emulated/0/Android/data/com.mmg.formalexprtest/cache/vulkan_pso_cache.bin]
+11-15 14:13:40.586 25913 25947 D Unity   : [EGL] Attaching window :0x0
+11-15 14:13:40.586 25913 25947 D Unity   : AndroidDisplayManagerVulkan::AttachWindow(0xb4000078aed058e0, 0)
+11-15 14:13:40.587 25913 25947 D Unity   : InitializeOrResetSwapChain 1080x2340 hdr=0 samples=0
+11-15 14:13:40.601 25913 25947 D Unity   : AndroidDisplayManagerVulkan::AttachWindow(0xb4000078aed058e0, 0)
+11-15 14:13:40.601 25913 25947 D Unity   : Initialize engine version: 6000.6.8f1 (237b6593792b)
+11-15 14:13:40.601 25913 25947 D Unity   : [EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=262144, entitiesPerBlock=1024, blocksPerSlotPage=0, slots reserved=4294967296 bytes
+11-15 14:13:40.738 25913 25947 D Unity   : [Physics::Module] Selected backend (deferred post-plugins).
+11-15 14:13:40.738 25913 25947 D Unity   : [Physics::Module] Name: PhysX
+11-15 14:13:40.738 25913 25947 D Unity   : [Physics::Module] Id: 0xf2b8ea05
+11-15 14:13:40.738 25913 25947 D Unity   : [Physics::Module] SDK Version: 4.1.2
+11-15 14:13:40.738 25913 25947 D Unity   : [Physics::Module] Integration Version: 1.0.0
+11-15 14:13:40.739 25913 25947 D Unity   : [Physics::Module] Threading Mode: Multi-Threaded
+11-15 14:13:40.810 25913 25947 D Unity   : PlayerInitEngineGraphics OK
+11-15 14:13:40.818 25913 25947 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: -1, quality: 0
+11-15 14:13:40.819 25913 25947 I Unity   :     HasWindow = 1, HasFocus = 0
+11-15 14:13:40.819 25913 25947 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+11-15 14:13:40.819 25913 25947 D Unity   : NativeWindow resized 1080x2340
+11-15 14:13:40.819 25913 25947 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-15 14:13:40.819 25913 25947 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-15 14:13:40.819 25913 25947 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-15 14:13:40.820 25913 25947 D Unity   : InitializeOrResetSwapChain 1080x2340 hdr=0 samples=0
+11-15 14:13:40.857 25913 25947 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: 0, quality: 0
+11-15 14:13:42.881 25913 25947 D Unity   : UnloadTime: 5.468646 ms
+11-15 14:13:42.890 25913 25947 D Unity   : UUID: c4d27f7bbc84df66 => 926c94fb9264806eb4ea4f33ea01445a
+11-15 14:13:42.934 25913 25947 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: 0, quality: 0
+11-15 14:13:42.938 25913 25947 D Unity   : Using NDK Choreographer.
+11-15 14:13:42.943 25913 25947 D Unity   : Stopping Unity systrace
+11-15 14:13:42.946 25913 25947 I Unity   : [FormalExprDevice] [2.1s f1] START device samsung SM-S921U, OS Android OS 14 / API-34 (UP1A.231005.007/S921USQS3AXI1), GPU Adreno (TM) 750 (Vulkan), RAM 7118 MB, screen 1080x2340, URP Mobile_RPAsset msaa 1 rs 0.80, hostcapture True, phases [quality,isolation,perf,soak], soakSec 780
+11-15 14:13:42.946 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:13:42.946 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:13:42.946 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Start>d__20:MoveNext()
+11-15 14:13:42.946 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:13:42.946 25913 25947 I Unity   : 
+11-15 14:13:42.972 25913 25947 I Unity   : Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.DepthOfFieldGaussianPostProcessPass:.ctor(Shader)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderer:.ctor(UniversalRendererData)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRendererData:Create()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-15 14:13:42.972 25913 25947 I Unity   : 
+11-15 14:13:42.972 25913 25947 I Unity   : Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.DepthOfFieldGaussianPostProcessPass:.ctor(Shader)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderer:.ctor(UniversalRendererData)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRendererData:Create()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-15 14:13:42.972 25913 25947 I Unity   : 
+11-15 14:13:42.972 25913 25947 I Unity   : Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.DepthOfFieldBokehPostProcessPass:.ctor(Shader)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderer:.ctor(UniversalRendererData)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRendererData:Create()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-15 14:13:42.972 25913 25947 I Unity   : 
+11-15 14:13:42.972 25913 25947 I Unity   : Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute.
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PaniniProjectionPostProcessPass:.ctor(Shader)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderer:.ctor(UniversalRendererData)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRendererData:Create()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-15 14:13:42.972 25913 25947 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-15 14:13:42.972 25913 25947 I Unity   : 
+11-15 14:13:43.028 25913 25947 D Unity   : InitializeOrResetSwapChain 1080x2340 hdr=0 samples=1
+11-15 14:13:43.047 25913 25947 I Unity   : [FormalExprDevice] [2.2s f2] actor0 pull 0.030 m mats 25
+11-15 14:13:43.047 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:13:43.047 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:13:43.047 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Start>d__20:MoveNext()
+11-15 14:13:43.047 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:13:43.047 25913 25947 I Unity   : 
+11-15 14:13:43.059 25913 25947 D Unity   : InitializeOrResetSwapChain 1080x2340 hdr=0 samples=1
+11-15 14:13:43.093 25913 25947 I Unity   : [FormalExprDevice] [2.2s f3] quality C_msaa4_rs080: msaa 4, rs 0.80
+11-15 14:13:43.093 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:13:43.093 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:13:43.093 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Quality>d__26:MoveNext()
+11-15 14:13:43.093 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:13:43.093 25913 25947 I Unity   : 
+11-15 14:14:07.022 25913 25947 I Unity   : [FormalExprDevice] [26.2s f2864] quality done
+11-15 14:14:07.022 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:14:07.022 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:14:07.022 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Quality>d__26:MoveNext()
+11-15 14:14:07.022 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:14:07.022 25913 25947 I Unity   : 
+11-15 14:14:07.048 25913 25947 I Unity   : [FormalExprDevice] [26.2s f2867] ISOLATION ok=True
+11-15 14:14:07.048 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:14:07.048 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:14:07.048 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Isolation>d__27:MoveNext()
+11-15 14:14:07.048 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:14:07.048 25913 25947 I Unity   : 
+11-15 14:14:07.815 25913 25947 I Unity   : [FormalExprDevice] [27.0s f2959] perf1 C_msaa4_rs080: msaa 4, rs 0.80
+11-15 14:14:07.815 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:14:07.815 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:14:07.815 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<PerfShort>d__30:MoveNext()
+11-15 14:14:07.815 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:14:07.815 25913 25947 I Unity   : 
+11-15 14:14:21.834 25913 25947 I Unity   : [FormalExprDevice] [41.0s f4641] PERF 1char_C_short12s: frames 1441, fps 120.0, frame ms avg 8.33 p95 8.75, cpu main avg 3.21 p95 3.86, gpu avg 2.90 p95 3.07, expr avg 76.7 us, alloc 74.5 MB
+11-15 14:14:21.834 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:14:21.834 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:14:21.834 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Measure>d__29:MoveNext()
+11-15 14:14:21.834 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:14:21.834 25913 25947 I Unity   : 
+11-15 14:14:21.861 25913 25947 I Unity   : [FormalExprDevice] [41.0s f4642] perf12 C_msaa4_rs080: msaa 4, rs 0.80
+11-15 14:14:21.861 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:14:21.861 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:14:21.861 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<PerfShort>d__30:MoveNext()
+11-15 14:14:21.861 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:14:21.861 25913 25947 I Unity   : 
+11-15 14:14:35.877 25913 25947 I Unity   : [FormalExprDevice] [55.0s f6313] PERF 12char_C_short12s: frames 1440, fps 119.9, frame ms avg 8.34 p95 8.76, cpu main avg 4.53 p95 5.76, gpu avg 6.48 p95 7.25, expr avg 375.5 us, alloc 77.2 MB
+11-15 14:14:35.877 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:14:35.877 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:14:35.877 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Measure>d__29:MoveNext()
+11-15 14:14:35.877 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:14:35.877 25913 25947 I Unity   : 
+11-15 14:14:36.324 25913 25947 I Unity   : [FormalExprDevice] [55.5s f6365] SOAK start C_msaa4_rs080: msaa 4, rs 0.80 duration 780s
+11-15 14:14:36.324 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:14:36.324 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:14:36.324 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Soak>d__31:MoveNext()
+11-15 14:14:36.324 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:14:36.324 25913 25947 I Unity   : 
+11-15 14:17:17.314 25913 25947 D Unity   : Changing screen orientation to Portrait.
+11-15 14:27:38.380 25913 25947 I Unity   : [FormalExprDevice] [837.5s f100130] PERF 12char_C_soak: frames 93524, fps 119.9, frame ms avg 8.34 p95 8.70, cpu main avg 4.53 p95 5.66, gpu avg 6.77 p95 7.36, expr avg 369.1 us, alloc 77.8 MB
+11-15 14:27:38.380 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:27:38.380 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:27:38.380 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Measure>d__29:MoveNext()
+11-15 14:27:38.380 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:27:38.380 25913 25947 I Unity   : 
+11-15 14:27:39.131 25913 25947 I Unity   : [FormalExprDevice] [838.3s f100221] SOAK done
+11-15 14:27:39.131 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:27:39.131 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:27:39.131 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Soak>d__31:MoveNext()
+11-15 14:27:39.131 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:27:39.131 25913 25947 I Unity   : 
+11-15 14:27:39.132 25913 25947 I Unity   : [FormalExprDevice] [838.3s f100221] ALL_DONE
+11-15 14:27:39.132 25913 25947 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-15 14:27:39.132 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.FormalExprDeviceTest:Log(String)
+11-15 14:27:39.132 25913 25947 I Unity   : MMG.Experiments.Race3DFormal.<Start>d__20:MoveNext()
+11-15 14:27:39.132 25913 25947 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-15 14:27:39.132 25913 25947 I Unity   : 

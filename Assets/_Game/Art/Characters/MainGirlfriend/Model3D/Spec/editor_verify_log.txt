@@ -1,0 +1,6 @@
+CONFLICT Angry+Angry2 -> weak=0.000 strong=1.000 ok=True
+ISOLATION ok=True A sparkle=1.00 flow=0.00 pull=0.030; B sparkle=0.00 flow=1.00 pull=0.045
+Happy0.8 viewSuppress=0.800 (expect ~0.8)
+blendshape_channels=137 (expect 137)
+blink1 ExSurprise weight=0.00 (expect 0); blinkIdx=0
+EDITOR_VERIFY ok=True

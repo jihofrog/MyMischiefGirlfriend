@@ -1,0 +1,82 @@
+{
+ "turn": {
+  "frames": 241,
+  "max_diff_vs_A": 0.0091,
+  "max_step_A": 0.0523,
+  "max_step_v6j": 0.0532,
+  "max_step_excess": 0.002,
+  "at_frame": 45,
+  "at_yaw": 45.0,
+  "far_weight_max_step": 0.072
+ },
+ "blink35": {
+  "frames": 46,
+  "max_diff_vs_A": 0.0307,
+  "max_step_A": 0.0685,
+  "max_step_v6j": 0.0646,
+  "max_step_excess": 0.0,
+  "at_frame": 0,
+  "at_yaw": 35.0,
+  "far_weight_max_step": 0.0
+ },
+ "gaze35": {
+  "frames": 81,
+  "max_diff_vs_A": 0.0487,
+  "max_step_A": 0.0158,
+  "max_step_v6j": 0.0178,
+  "max_step_excess": 0.0047,
+  "at_frame": 2,
+  "at_yaw": 35.0,
+  "far_weight_max_step": 0.0
+ },
+ "smile35": {
+  "frames": 49,
+  "max_diff_vs_A": 0.0364,
+  "max_step_A": 0.0186,
+  "max_step_v6j": 0.018,
+  "max_step_excess": 0.0007,
+  "at_frame": 26,
+  "at_yaw": 35.0,
+  "far_weight_max_step": 0.0
+ },
+ "above": {
+  "frames": 241,
+  "max_diff_vs_A": 0.0066,
+  "max_step_A": 0.0555,
+  "max_step_v6j": 0.0551,
+  "max_step_excess": 0.0019,
+  "at_frame": 41,
+  "at_yaw": 41.0,
+  "far_weight_max_step": 0.072
+ },
+ "below": {
+  "frames": 241,
+  "max_diff_vs_A": 0.0098,
+  "max_step_A": 0.0555,
+  "max_step_v6j": 0.057,
+  "max_step_excess": 0.0019,
+  "at_frame": 43,
+  "at_yaw": 43.0,
+  "far_weight_max_step": 0.072
+ },
+ "dolly35": {
+  "frames": 151,
+  "max_diff_vs_A": 0.0154,
+  "max_step_A": 0.1595,
+  "max_step_v6j": 0.1659,
+  "max_step_excess": 0.0128,
+  "at_frame": 59,
+  "at_yaw": 35.0,
+  "far_weight_max_step": 0.003
+ },
+ "dolly25": {
+  "frames": 121,
+  "max_diff_vs_A": 0.0213,
+  "max_step_A": 0.1834,
+  "max_step_v6j": 0.1935,
+  "max_step_excess": 0.0101,
+  "at_frame": 59,
+  "at_yaw": 25.0,
+  "far_weight_max_step": 0.047
+ }
+}

@@ -1,0 +1,264 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "각도 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "각도 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "각도 Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "왼쪽 눈 깜빡임"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "왼쪽 눈 미소"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "오른쪽 눈 깜빡임"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "오른쪽 눈 미소"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "눈 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "눈 Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "왼쪽 눈썹 위아래로"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "오른쪽 눈썹 위아래로"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "",
+			"Name": "왼쪽 눈썹 좌우로"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "",
+			"Name": "오른쪽 눈썹 좌우로"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "",
+			"Name": "왼쪽 눈썹 각도"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "",
+			"Name": "오른쪽 눈썹 각도"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "왼쪽 눈썹 변형"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "오른쪽 눈썹 변형"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "입 변형"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "입 여닫기"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "수줍음"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "몸의 회전 X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "몸의 회전 Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "몸의 회전 Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "호흡"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "머리 흔들림 앞"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "머리 흔들림 옆"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "머리 흔들림 뒤"
+		},
+		{
+			"Id": "ParamBustY",
+			"GroupId": "",
+			"Name": "가슴 흔들림"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part3",
+			"Name": "MainGirlfriend_Front_v11.psd(레이어를 찾을 수 없음)"
+		},
+		{
+			"Id": "Part2",
+			"Name": "MainGirlfriend_Front_v9.psd(레이어를 찾을 수 없음)"
+		},
+		{
+			"Id": "Part",
+			"Name": "MainGirlfriend_Front_v8.psd(레이어를 찾을 수 없음)"
+		},
+		{
+			"Id": "Head",
+			"Name": "Head"
+		},
+		{
+			"Id": "Arm_L",
+			"Name": "Arm_L"
+		},
+		{
+			"Id": "Arm_R",
+			"Name": "Arm_R"
+		},
+		{
+			"Id": "Skirt",
+			"Name": "Skirt"
+		},
+		{
+			"Id": "Body",
+			"Name": "Body"
+		},
+		{
+			"Id": "Leg_L",
+			"Name": "Leg_L"
+		},
+		{
+			"Id": "Leg_R",
+			"Name": "Leg_R"
+		},
+		{
+			"Id": "Hair_Back",
+			"Name": "Hair_Back"
+		},
+		{
+			"Id": "Head2",
+			"Name": "Head"
+		},
+		{
+			"Id": "Arm_L2",
+			"Name": "Arm_L"
+		},
+		{
+			"Id": "Arm_R2",
+			"Name": "Arm_R"
+		},
+		{
+			"Id": "Body3",
+			"Name": "Body"
+		},
+		{
+			"Id": "Body2",
+			"Name": "Body"
+		},
+		{
+			"Id": "Hair_Front",
+			"Name": "Hair_Front"
+		},
+		{
+			"Id": "Brow_L",
+			"Name": "Brow_L"
+		},
+		{
+			"Id": "Brow_R",
+			"Name": "Brow_R"
+		},
+		{
+			"Id": "Eye_L",
+			"Name": "Eye_L"
+		},
+		{
+			"Id": "EyeBall_L",
+			"Name": "EyeBall_L"
+		},
+		{
+			"Id": "Eye_R",
+			"Name": "Eye_R"
+		},
+		{
+			"Id": "EyeBall_R",
+			"Name": "EyeBall_R"
+		},
+		{
+			"Id": "Mouth",
+			"Name": "Mouth"
+		},
+		{
+			"Id": "Nose",
+			"Name": "Nose"
+		},
+		{
+			"Id": "Face",
+			"Name": "Face"
+		},
+		{
+			"Id": "Ear_L",
+			"Name": "Ear_L"
+		},
+		{
+			"Id": "Ear_R",
+			"Name": "Ear_R"
+		},
+		{
+			"Id": "Face2",
+			"Name": "Face"
+		}
+	]
+}

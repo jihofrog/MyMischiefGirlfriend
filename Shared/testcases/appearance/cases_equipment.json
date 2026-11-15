@@ -1,0 +1,411 @@
+{
+  "$comment": "Gameplay rule cases (scope gameplay): the Unity C# EquipmentRules and the server TypeScript implementation must both produce exactly these results. 'state' and 'ownership' in a case name a fixture; an expected 'state' may be a fixture name or an inline object.",
+  "schemaVersion": 1,
+  "catalog": "catalog_rules_test.json",
+  "fixtures": {
+    "context": { "characterDefId": "chr_mainGirlfriend_01", "bodyPresetId": "body_base_01" },
+    "ownership": {
+      "std": { "items": [
+        { "itemId": "hair_bob_01", "variants": ["hair_bob_01.default"] },
+        { "itemId": "top_blouse_01", "variants": ["top_blouse_01.cream", "top_blouse_01.pink"] },
+        { "itemId": "bottom_pleatskirt_01", "variants": ["bottom_pleatskirt_01.navy"] },
+        { "itemId": "legwear_thighhigh_01", "variants": ["legwear_thighhigh_01.black"] },
+        { "itemId": "shoes_ankleboot_01", "variants": ["shoes_ankleboot_01.black"] },
+        { "itemId": "acc_head_hairclip_x_01", "variants": ["acc_head_hairclip_x_01.white"] },
+        { "itemId": "hair_long_01", "variants": ["hair_long_01.default"] },
+        { "itemId": "onepiece_sundress_01", "variants": ["onepiece_sundress_01.white"] },
+        { "itemId": "top_hoodie_01", "variants": ["top_hoodie_01.gray"] },
+        { "itemId": "top_petite_01", "variants": ["top_petite_01.default"] },
+        { "itemId": "bottom_retired_01", "variants": ["bottom_retired_01.default"] },
+        { "itemId": "shoes_longboot_01", "variants": ["shoes_longboot_01.brown"] },
+        { "itemId": "acc_head_beret_01", "variants": ["acc_head_beret_01.red"] },
+        { "itemId": "acc_ear_earring_01", "variants": ["acc_ear_earring_01.gold"] },
+        { "itemId": "acc_neck_ribbon_01", "variants": ["acc_neck_ribbon_01.red"] },
+        { "itemId": "acc_back_backpack_01", "variants": ["acc_back_backpack_01.default"] }
+      ] },
+      "noHoodie": { "items": [
+        { "itemId": "hair_bob_01", "variants": ["hair_bob_01.default"] },
+        { "itemId": "top_blouse_01", "variants": ["top_blouse_01.cream"] },
+        { "itemId": "bottom_pleatskirt_01", "variants": ["bottom_pleatskirt_01.navy"] },
+        { "itemId": "legwear_thighhigh_01", "variants": ["legwear_thighhigh_01.black"] },
+        { "itemId": "shoes_ankleboot_01", "variants": ["shoes_ankleboot_01.black"] },
+        { "itemId": "acc_head_hairclip_x_01", "variants": ["acc_head_hairclip_x_01.white"] }
+      ] },
+      "onepiecePinkOnly": { "items": [
+        { "itemId": "hair_bob_01", "variants": ["hair_bob_01.default"] },
+        { "itemId": "top_blouse_01", "variants": ["top_blouse_01.cream"] },
+        { "itemId": "bottom_pleatskirt_01", "variants": ["bottom_pleatskirt_01.navy"] },
+        { "itemId": "legwear_thighhigh_01", "variants": ["legwear_thighhigh_01.black"] },
+        { "itemId": "shoes_ankleboot_01", "variants": ["shoes_ankleboot_01.black"] },
+        { "itemId": "acc_head_hairclip_x_01", "variants": ["acc_head_hairclip_x_01.white"] },
+        { "itemId": "onepiece_sundress_01", "variants": ["onepiece_sundress_01.pink"] }
+      ] }
+    },
+    "states": {
+      "default": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+      ] },
+      "onepiece": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white" },
+        { "slotId": "bottom", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+      ] },
+      "longboot": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_longboot_01", "variantId": "shoes_longboot_01.brown" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+      ] },
+      "longHair": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_long_01", "variantId": "hair_long_01.default" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+      ] },
+      "longHairBeret": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_long_01", "variantId": "hair_long_01.default" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_beret_01", "variantId": "acc_head_beret_01.red" }
+      ] },
+      "backpack": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" },
+        { "slotId": "acc.back", "itemId": "acc_back_backpack_01", "variantId": "acc_back_backpack_01.default" }
+      ] },
+      "twoAccessories": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" },
+        { "slotId": "acc.ear", "itemId": "acc_ear_earring_01", "variantId": "acc_ear_earring_01.gold" }
+      ] },
+      "broken": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+      ] },
+      "conflicts": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+        { "slotId": "top", "itemId": "top_hoodie_01", "variantId": "top_hoodie_01.gray" },
+        { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+        { "slotId": "acc.head", "itemId": "acc_head_beret_01", "variantId": "acc_head_beret_01.red" },
+        { "slotId": "acc.ear", "itemId": "acc_ear_earring_01", "variantId": "acc_ear_earring_01.gold" },
+        { "slotId": "acc.back", "itemId": "acc_back_backpack_01", "variantId": "acc_back_backpack_01.default" }
+      ] },
+      "statMix": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+        { "slotId": "acc.ear", "itemId": "acc_ear_earring_01", "variantId": "acc_ear_earring_01.gold" },
+        { "slotId": "shoes", "itemId": "shoes_longboot_01", "variantId": "shoes_longboot_01.brown" },
+        { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+        { "slotId": "bottom", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white" },
+        { "slotId": "top", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white" },
+        { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" },
+        { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" }
+      ] }
+    }
+  },
+  "cases": [
+    {
+      "caseId": "onepiece_replaces_top_and_bottom", "scope": "gameplay",
+      "description": "U2/U8: a one-piece takes top and bottom; both are taken off automatically and listed.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "onepiece_sundress_01", "variantId": null },
+      "expected": { "success": true, "error": null, "state": "onepiece", "changes": [
+        { "change": "unequipped", "slotIds": ["top"], "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream", "reason": "onePiece" },
+        { "change": "unequipped", "slotIds": ["bottom"], "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy", "reason": "onePiece" },
+        { "change": "equipped", "slotIds": ["top", "bottom"], "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white", "reason": null }
+      ] }
+    },
+    {
+      "caseId": "top_over_onepiece_restores_default_bottom", "scope": "gameplay",
+      "description": "U8/U12: a top removes the one-piece; the empty bottom gets the character's default bottom.",
+      "ownership": "std", "state": "onepiece",
+      "operation": { "op": "equip", "itemId": "top_hoodie_01", "variantId": null },
+      "expected": { "success": true, "error": null,
+        "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+          { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+          { "slotId": "top", "itemId": "top_hoodie_01", "variantId": "top_hoodie_01.gray" },
+          { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+          { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+          { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+          { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+        ] },
+        "changes": [
+          { "change": "unequipped", "slotIds": ["top", "bottom"], "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white", "reason": "onePiece" },
+          { "change": "defaultRestored", "slotIds": ["bottom"], "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy", "reason": null },
+          { "change": "equipped", "slotIds": ["top"], "itemId": "top_hoodie_01", "variantId": "top_hoodie_01.gray", "reason": null }
+        ] }
+    },
+    {
+      "caseId": "shoes_replace_keeps_legwear", "scope": "gameplay",
+      "description": "U1: shoes and legwear are separate slots; changing shoes leaves the stockings on.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "shoes_longboot_01", "variantId": null },
+      "expected": { "success": true, "error": null, "state": "longboot", "changes": [
+        { "change": "unequipped", "slotIds": ["shoes"], "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black", "reason": "replaced" },
+        { "change": "equipped", "slotIds": ["shoes"], "itemId": "shoes_longboot_01", "variantId": "shoes_longboot_01.brown", "reason": null }
+      ] }
+    },
+    {
+      "caseId": "unequip_legwear_allowed", "scope": "gameplay",
+      "description": "U12: legwear can be empty.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "unequip", "slotId": "legwear" },
+      "expected": { "success": true, "error": null,
+        "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+          { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+          { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+          { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+          { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+          { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+        ] },
+        "changes": [
+          { "change": "unequipped", "slotIds": ["legwear"], "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black", "reason": "requested" }
+        ] }
+    },
+    {
+      "caseId": "unequip_accessory_allowed", "scope": "gameplay",
+      "description": "U12: accessories can be empty.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "unequip", "slotId": "acc.head" },
+      "expected": { "success": true, "error": null,
+        "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+          { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+          { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream" },
+          { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+          { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+          { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" }
+        ] },
+        "changes": [
+          { "change": "unequipped", "slotIds": ["acc.head"], "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white", "reason": "requested" }
+        ] }
+    },
+    {
+      "caseId": "unequip_shoes_restores_default", "scope": "gameplay",
+      "description": "U12: shoes cannot be empty; taking them off brings back the default shoes.",
+      "ownership": "std", "state": "longboot",
+      "operation": { "op": "unequip", "slotId": "shoes" },
+      "expected": { "success": true, "error": null, "state": "default", "changes": [
+        { "change": "unequipped", "slotIds": ["shoes"], "itemId": "shoes_longboot_01", "variantId": "shoes_longboot_01.brown", "reason": "requested" },
+        { "change": "defaultRestored", "slotIds": ["shoes"], "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black", "reason": null }
+      ] }
+    },
+    {
+      "caseId": "unequip_default_shoes_is_noop", "scope": "gameplay",
+      "description": "U12: the default shoes stay; nothing changes.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "unequip", "slotId": "shoes" },
+      "expected": { "success": true, "error": null, "state": "default", "changes": [] }
+    },
+    {
+      "caseId": "hat_rejected_without_hair_form", "scope": "gameplay",
+      "description": "U8: the bob has no under_hat form, so the beret is refused and nothing changes.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "acc_head_beret_01", "variantId": null },
+      "expected": { "success": false, "error": "hairFormUnavailable", "state": "default", "changes": [] }
+    },
+    {
+      "caseId": "hat_allowed_with_hair_form", "scope": "gameplay",
+      "description": "U8: long hair has an under_hat form; the beret replaces the hair clip.",
+      "ownership": "std", "state": "longHair",
+      "operation": { "op": "equip", "itemId": "acc_head_beret_01", "variantId": null },
+      "expected": { "success": true, "error": null, "state": "longHairBeret", "changes": [
+        { "change": "unequipped", "slotIds": ["acc.head"], "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white", "reason": "replaced" },
+        { "change": "equipped", "slotIds": ["acc.head"], "itemId": "acc_head_beret_01", "variantId": "acc_head_beret_01.red", "reason": null }
+      ] }
+    },
+    {
+      "caseId": "hair_change_blocked_by_hat", "scope": "gameplay",
+      "description": "U8: with the beret on, switching to a hair without under_hat is refused.",
+      "ownership": "std", "state": "longHairBeret",
+      "operation": { "op": "equip", "itemId": "hair_bob_01", "variantId": null },
+      "expected": { "success": false, "error": "hairFormUnavailable", "state": "longHairBeret", "changes": [] }
+    },
+    {
+      "caseId": "exclusive_tag_auto_unequip", "scope": "gameplay",
+      "description": "U8: hood and backpack are exclusive; the backpack is taken off automatically.",
+      "ownership": "std", "state": "backpack",
+      "operation": { "op": "equip", "itemId": "top_hoodie_01", "variantId": null },
+      "expected": { "success": true, "error": null,
+        "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+          { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+          { "slotId": "top", "itemId": "top_hoodie_01", "variantId": "top_hoodie_01.gray" },
+          { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+          { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+          { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+          { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+        ] },
+        "changes": [
+          { "change": "unequipped", "slotIds": ["top"], "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream", "reason": "replaced" },
+          { "change": "unequipped", "slotIds": ["acc.back"], "itemId": "acc_back_backpack_01", "variantId": "acc_back_backpack_01.default", "reason": "exclusive" },
+          { "change": "equipped", "slotIds": ["top"], "itemId": "top_hoodie_01", "variantId": "top_hoodie_01.gray", "reason": null }
+        ] }
+    },
+    {
+      "caseId": "variant_change_same_item", "scope": "gameplay",
+      "description": "U3: switching to another owned variant of the same item.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "top_blouse_01", "variantId": "top_blouse_01.pink" },
+      "expected": { "success": true, "error": null,
+        "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+          { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+          { "slotId": "top", "itemId": "top_blouse_01", "variantId": "top_blouse_01.pink" },
+          { "slotId": "bottom", "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy" },
+          { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+          { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+          { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+        ] },
+        "changes": [
+          { "change": "unequipped", "slotIds": ["top"], "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream", "reason": "replaced" },
+          { "change": "equipped", "slotIds": ["top"], "itemId": "top_blouse_01", "variantId": "top_blouse_01.pink", "reason": null }
+        ] }
+    },
+    {
+      "caseId": "equip_already_worn_is_noop", "scope": "gameplay",
+      "description": "Equipping what is already worn (default variant) changes nothing.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "top_blouse_01", "variantId": null },
+      "expected": { "success": true, "error": null, "state": "default", "changes": [] }
+    },
+    {
+      "caseId": "variant_not_owned", "scope": "gameplay",
+      "description": "U3: only owned variants can be chosen.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.pink" },
+      "expected": { "success": false, "error": "variantNotOwned", "state": "default", "changes": [] }
+    },
+    {
+      "caseId": "default_variant_not_owned_picks_owned_variant", "scope": "gameplay",
+      "description": "U3: with no variant requested and the default variant not owned, the first owned variant is used.",
+      "ownership": "onepiecePinkOnly", "state": "default",
+      "operation": { "op": "equip", "itemId": "onepiece_sundress_01", "variantId": null },
+      "expected": { "success": true, "error": null,
+        "state": { "characterId": "pc_test_01", "version": 7, "rulesVersion": 1, "entries": [
+          { "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default" },
+          { "slotId": "top", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.pink" },
+          { "slotId": "bottom", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.pink" },
+          { "slotId": "legwear", "itemId": "legwear_thighhigh_01", "variantId": "legwear_thighhigh_01.black" },
+          { "slotId": "shoes", "itemId": "shoes_ankleboot_01", "variantId": "shoes_ankleboot_01.black" },
+          { "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white" }
+        ] },
+        "changes": [
+          { "change": "unequipped", "slotIds": ["top"], "itemId": "top_blouse_01", "variantId": "top_blouse_01.cream", "reason": "onePiece" },
+          { "change": "unequipped", "slotIds": ["bottom"], "itemId": "bottom_pleatskirt_01", "variantId": "bottom_pleatskirt_01.navy", "reason": "onePiece" },
+          { "change": "equipped", "slotIds": ["top", "bottom"], "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.pink", "reason": null }
+        ] }
+    },
+    {
+      "caseId": "item_not_owned", "scope": "gameplay",
+      "description": "Items that are not owned cannot be equipped.",
+      "ownership": "noHoodie", "state": "default",
+      "operation": { "op": "equip", "itemId": "top_hoodie_01", "variantId": null },
+      "expected": { "success": false, "error": "itemNotOwned", "state": "default", "changes": [] }
+    },
+    {
+      "caseId": "body_type_mismatch", "scope": "gameplay",
+      "description": "U11: an item for another body type cannot be equipped.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "top_petite_01", "variantId": null },
+      "expected": { "success": false, "error": "bodyTypeMismatch", "state": "default", "changes": [] }
+    },
+    {
+      "caseId": "inactive_item", "scope": "gameplay",
+      "description": "Inactive items cannot be equipped even when owned.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "bottom_retired_01", "variantId": null },
+      "expected": { "success": false, "error": "itemInactive", "state": "default", "changes": [] }
+    },
+    {
+      "caseId": "unknown_item", "scope": "gameplay",
+      "description": "Unknown item ids are refused.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "equip", "itemId": "top_nothing_01", "variantId": null },
+      "expected": { "success": false, "error": "unknownItem", "state": "default", "changes": [] }
+    },
+    {
+      "caseId": "accessory_limit", "scope": "gameplay",
+      "description": "accessoryMaxCount 2 in the test catalog: a third accessory is refused.",
+      "ownership": "std", "state": "twoAccessories",
+      "operation": { "op": "equip", "itemId": "acc_neck_ribbon_01", "variantId": null },
+      "expected": { "success": false, "error": "accessoryLimit", "state": "twoAccessories", "changes": [] }
+    },
+    {
+      "caseId": "validate_default_ok", "scope": "gameplay",
+      "description": "The default outfit is valid.",
+      "ownership": "std", "state": "default",
+      "operation": { "op": "validate" },
+      "expected": { "issues": [] }
+    },
+    {
+      "caseId": "validate_broken_state", "scope": "gameplay",
+      "description": "Stored state with a half one-piece, an unowned variant and empty required slots.",
+      "ownership": "onepiecePinkOnly", "state": "broken",
+      "operation": { "op": "validate" },
+      "expected": { "issues": [
+        { "code": "variantNotOwned", "slotId": "top", "itemId": "onepiece_sundress_01" },
+        { "code": "onePieceIncomplete", "slotId": "bottom", "itemId": "onepiece_sundress_01" },
+        { "code": "requiredSlotEmpty", "slotId": "bottom", "itemId": null },
+        { "code": "requiredSlotEmpty", "slotId": "shoes", "itemId": null }
+      ] }
+    },
+    {
+      "caseId": "validate_rule_conflicts", "scope": "gameplay",
+      "description": "Stored state breaking the hat, exclusive-tag and accessory-count rules.",
+      "ownership": "std", "state": "conflicts",
+      "operation": { "op": "validate" },
+      "expected": { "issues": [
+        { "code": "hairFormUnavailable", "slotId": "acc.head", "itemId": "acc_head_beret_01" },
+        { "code": "exclusiveConflict", "slotId": "acc.back", "itemId": "acc_back_backpack_01" },
+        { "code": "accessoryLimit", "slotId": null, "itemId": null }
+      ] }
+    },
+    {
+      "caseId": "stat_sources_onepiece_and_shoes", "scope": "gameplay",
+      "description": "U1/U2: Footwear from shoes only (no legwear), the one-piece feeds Top and Bottom. Input entries are deliberately unordered.",
+      "ownership": "std", "state": "statMix",
+      "operation": { "op": "statSources" },
+      "expected": { "sources": [
+        { "statGroup": "Hair", "slotId": "hair", "itemId": "hair_bob_01", "variantId": "hair_bob_01.default", "viaOnePiece": false },
+        { "statGroup": "Top", "slotId": "top", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white", "viaOnePiece": true },
+        { "statGroup": "Bottom", "slotId": "bottom", "itemId": "onepiece_sundress_01", "variantId": "onepiece_sundress_01.white", "viaOnePiece": true },
+        { "statGroup": "Footwear", "slotId": "shoes", "itemId": "shoes_longboot_01", "variantId": "shoes_longboot_01.brown", "viaOnePiece": false },
+        { "statGroup": "Accessory", "slotId": "acc.head", "itemId": "acc_head_hairclip_x_01", "variantId": "acc_head_hairclip_x_01.white", "viaOnePiece": false },
+        { "statGroup": "Accessory", "slotId": "acc.ear", "itemId": "acc_ear_earring_01", "variantId": "acc_ear_earring_01.gold", "viaOnePiece": false }
+      ] }
+    },
+    {
+      "caseId": "onepiece_stat_normalize", "scope": "gameplay",
+      "description": "U2: each one-piece value is capped by the reference top or bottom maximum, so the sum never exceeds the best top + bottom pair.",
+      "operation": { "op": "normalizeOnePiece", "cases": [
+        { "top": 900, "bottom": 800, "referenceTopMax": 1000, "referenceBottomMax": 1000, "expectedTop": 900, "expectedBottom": 800 },
+        { "top": 1300, "bottom": 700, "referenceTopMax": 1000, "referenceBottomMax": 1000, "expectedTop": 1000, "expectedBottom": 700 },
+        { "top": 1500, "bottom": 1500, "referenceTopMax": 1000, "referenceBottomMax": 900, "expectedTop": 1000, "expectedBottom": 900 },
+        { "top": 0, "bottom": 0, "referenceTopMax": 0, "referenceBottomMax": 0, "expectedTop": 0, "expectedBottom": 0 }
+      ] },
+      "expected": null
+    }
+  ]
+}

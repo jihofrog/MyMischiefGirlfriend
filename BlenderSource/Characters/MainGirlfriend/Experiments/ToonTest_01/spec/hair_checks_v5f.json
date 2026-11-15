@@ -1,0 +1,113 @@
+{
+ "penetration": {
+  "hair_bob_01__Volume": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__Bangs": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__Side_L": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__Side_R": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  },
+  "hair_bob_01__Back": {
+   "Blockout_Head": 0,
+   "Face_Ear.L": 0,
+   "Face_Ear.R": 0,
+   "Blockout_Neck": 0,
+   "Blockout_Torso": 0
+  }
+ },
+ "ends_forward_min_y": 0.009,
+ "ends_lowest_z": 1.1608,
+ "ear_visible": {
+  "front": {
+   "with_hair": 753,
+   "no_hair": 1346,
+   "visible_share": 0.559
+  },
+  "side_L": {
+   "with_hair": 157,
+   "no_hair": 1347,
+   "visible_share": 0.117
+  },
+  "side_R": {
+   "with_hair": 291,
+   "no_hair": 1349,
+   "visible_share": 0.216
+  },
+  "34_L": {
+   "with_hair": 750,
+   "no_hair": 1305,
+   "visible_share": 0.575
+  },
+  "34_R": {
+   "with_hair": 430,
+   "no_hair": 1307,
+   "visible_share": 0.329
+  }
+ },
+ "head_skin_34_px": {
+  "34_L": 27185,
+  "34_R": 22265
+ },
+ "eye_visible": {
+  "front": {
+   "with_hair": 6607,
+   "no_hair": 6707,
+   "visible_share": 0.985
+  },
+  "side_L": {
+   "with_hair": 1170,
+   "no_hair": 2043,
+   "visible_share": 0.573
+  },
+  "side_R": {
+   "with_hair": 1167,
+   "no_hair": 2046,
+   "visible_share": 0.57
+  },
+  "34_L": {
+   "with_hair": 5437,
+   "no_hair": 5507,
+   "visible_share": 0.987
+  },
+  "34_R": {
+   "with_hair": 5243,
+   "no_hair": 5509,
+   "visible_share": 0.952
+  }
+ },
+ "temple_cover": {
+  "front_L": 0.953,
+  "front_L_upper": 1.0,
+  "34_L": 0.629,
+  "34_L_upper": 0.844,
+  "side_L": 0.75,
+  "side_L_upper": 0.838,
+  "front_R": 0.974,
+  "front_R_upper": 1.0,
+  "34_R": 1.0,
+  "34_R_upper": 1.0,
+  "side_R": 1.0,
+  "side_R_upper": 1.0
+ }
+}

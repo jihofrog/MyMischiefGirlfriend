@@ -1,0 +1,36 @@
+{
+ "back_layer_tips_z": [
+  1.176,
+  1.194,
+  1.1887,
+  1.1758,
+  1.192
+ ],
+ "temple_vertices_tucked": 17,
+ "side_root_vertices_flushed": 540,
+ "side_root_vertices_converged": 538,
+ "volume_vertices_pushed_under_bangs": 89,
+ "hem_wave_m": 0.006,
+ "objects": {
+  "hair_bob_01__Volume": {
+   "verts": 5068,
+   "tris": 10088
+  },
+  "hair_bob_01__Bangs": {
+   "verts": 2080,
+   "tris": 4140
+  },
+  "hair_bob_01__Side_L": {
+   "verts": 1200,
+   "tris": 2392
+  },
+  "hair_bob_01__Side_R": {
+   "verts": 1200,
+   "tris": 2392
+  },
+  "hair_bob_01__Back": {
+   "verts": 3420,
+   "tris": 6820
+  }
+ }
+}

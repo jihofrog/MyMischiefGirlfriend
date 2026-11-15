@@ -1,0 +1,40 @@
+{
+ "mode": "keep",
+ "shorten": 0.35,
+ "keep_from_iris_radii": [
+  0.85,
+  1.2
+ ],
+ "ViewFarL": {
+  "cols_kept": 25,
+  "cols_partial": 7
+ },
+ "ViewFarL_GO": {
+  "cols_kept": 25,
+  "cols_partial": 7
+ },
+ "ViewFarL_GI": {
+  "cols_kept": 25,
+  "cols_partial": 7
+ },
+ "ViewFarR": {
+  "cols_kept": 26,
+  "cols_partial": 6
+ },
+ "ViewFarR_GO": {
+  "cols_kept": 26,
+  "cols_partial": 6
+ },
+ "ViewFarR_GI": {
+  "cols_kept": 26,
+  "cols_partial": 6
+ },
+ "lash_lift_L": [
+  24,
+  3.27
+ ],
+ "lash_lift_R": [
+  30,
+  3.15
+ ]
+}
